@@ -1,7 +1,7 @@
 
 from os import terminal_size
 from django.shortcuts import render
-from django.contrib.auth.views import PasswordResetView
+from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView
 from django. contrib.auth.forms import PasswordResetForm
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy
@@ -33,3 +33,8 @@ def signup_page(request):
 #end of user regestration functionality
 
 
+#password_change_done_view
+class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
+    template_name = "password_change_done.html"
+    title = "Password Change Done Successfully"
+#end of password_change_done_view
