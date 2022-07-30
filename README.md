@@ -1,8 +1,13 @@
+
 # PRICEJAR PROJECT
 
 ![Home page](homepage.JPG)
 
+<<<<<<< HEAD
 # The User Guide
+=======
+# The User Guide 
+>>>>>>> d88a6279dd1801887c46145cd720065a732d1054
 
 This part of the documentation contains detailed instructions on the frameworks and software used in the overall build-up of our website. It focuses on the background information embedded in the different classes and templates used for breathing life into the website.
 
