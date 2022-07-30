@@ -1,2 +1,2 @@
-# PriceJar_price_compare_projTeam30
+# PRICEJAR PROJECT
 ![Home page](homepage.JPG)
