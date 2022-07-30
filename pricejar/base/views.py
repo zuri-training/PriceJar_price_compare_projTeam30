@@ -33,6 +33,12 @@ def signup_page(request):
 #end of user regestration functionality
 
 
+#PasswordResetView
+class Password_Reset_View(PasswordResetView):
+    template_name = "password_reset.html"
+#end of PasswordResetView
+
+
 #password_change_done_view
 class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
     template_name = "password_change_done.html"
