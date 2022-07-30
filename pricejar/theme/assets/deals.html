@@ -12,7 +12,7 @@
 		<!-- Bootstrap CSS v5.2.0-beta1 -->
    <link rel="stylesheet" href="../css/bootstrap.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="/pricejar/theme/assets/css/style.css"/>
 	</head>
 	<body>
     <!-- nav start -->
@@ -88,6 +88,15 @@
 </div>
 </section>
 <div class="container d-flex align-items-center">
+  <div class="container p-0 my-0" style="max-width: 74rem;">
+    <div class=" row d-flex justify-content-between p-0 m-0" >
+      <div class="col-9 mx-0"><h4>New deals</h4></div>
+      <div class="col-3 d-flex justify-content-end"><small class="text-muted">view as</small><button class="btn"><i class="bi bi-list least"></i></button>  <button class="btn
+      "> <i class="bi bi-grid-fill greed"></i></button></div>
+
+    </div>
+    <hr>
+  </div>
   
 </div>
 <section id="ndeal">
@@ -163,6 +172,15 @@
 <section id="top-deals">
 <div class="container-fluid d-flex justify-content-center">
   <div class="row gx-2 p-3 justify-content-center">
+    <div class="container p-0 my-0" style="max-width: 74rem;">
+      <div class=" row d-flex justify-content-between p-0 m-0" >
+        <div class="col-9 mx-0"><h4> Top Deals</h4></div>
+        <div class="col-3 d-flex justify-content-end"><small class="text-muted">view as</small><button class="btn"><i class="bi bi-list least"></i></button>  <button class="btn
+        "> <i class="bi bi-grid-fill greed"></i></button></div>
+  
+      </div>
+      <hr>
+    </div>
     <div class="card mb-3 mx-2" style="max-width: 37rem;">
       <div class="row g-0">
         <div class="col-md-8">
@@ -225,6 +243,15 @@
 <section id="excluisive-deals">
   <div class="container p-5">
     <div class="row p-4">
+      <div class="container p-0 my-0">
+        <div class=" row d-flex justify-content-between p-0 m-0" >
+          <div class="col-9"><h4> Exclusive Deals</h4></div>
+          <div class="col-3 d-flex justify-content-end  mx-0"><small class="text-muted mx-0">view as</small><button class="btn"><i class="bi bi-list least"></i></button>  <button class="btn
+          "> <i class="bi bi-grid-fill greed"></i></button></div>
+    
+        </div>
+      </div>
+      <hr>
       <div class="card">
         <div class="row g-0">
           <div class="col-md-11">
@@ -359,6 +386,19 @@
 </footer>
 <!-- End Footer -->
 		<!-- Bootstrap JavaScript Libraries -->
+    <script>function showList(e) {
+      var $gridCont = $('.grid-container');
+      e.preventDefault();
+      $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
+    }
+    function gridList(e) {
+      var $gridCont = $('.grid-container')
+      e.preventDefault();
+      $gridCont.removeClass('list-view');
+    }
+    
+    $(document).on('click', '.greed', gridList);
+    $(document).on('click', '.least', showList);</script>
     <script src="/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
