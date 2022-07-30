@@ -1,13 +1,9 @@
-
 # PRICEJAR PROJECT
 
 ![Home page](homepage.JPG)
 
-<<<<<<< HEAD
+
 # The User Guide
-=======
-# The User Guide 
->>>>>>> d88a6279dd1801887c46145cd720065a732d1054
 
 This part of the documentation contains detailed instructions on the frameworks and software used in the overall build-up of our website. It focuses on the background information embedded in the different classes and templates used for breathing life into the website.
 
@@ -138,7 +134,6 @@ This segment contains a breakdown of the implementations deployed to achieve use
       -**template_name**: This refers to the full name of a template to display the password to confirm the view.
       -**form_class**: This refers to the form that will be used to set the password.
       -**success_url**: This refers to the page to redirect to after a successful password reset.
-
 
   - ## PasswordResetCompleteView
 
