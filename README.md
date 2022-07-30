@@ -125,15 +125,15 @@ This segment contains a breakdown of the implementations deployed to achieve use
 
   - ## PasswordResetDoneView
 
-  This handles the page displayed after a successful password reset. All that is needed to be supplied to it is the template_name which stores the HTML template to be displayed on successful implementation of resetting our password.
+    This handles the page displayed after a successful password reset. All that is needed to be supplied to it is the template_name which stores the HTML template to be displayed on successful implementation of resetting our password.
 
   - ## PasswordResetConfirmView
 
-  After the request to reset the password had been made by the user, on clicking the unique link sent to the user’s email, the user has to be redirected to a page which presents a form for entering a new password. PasswordResetConfirmView takes care of the aforementioned requirement. It consists of the following attributes :
+    After the request to reset the password had been made by the user, on clicking the unique link sent to the user’s email, the user has to be redirected to a page which presents a form for entering a new password. PasswordResetConfirmView takes care of the aforementioned requirement. It consists of the following attributes :
 
-     -**template_name**: This refers to the full name of a template to display the password to confirm the view.
-     -**form_class**: This refers to the form that will be used to set the password.
-     -**success_url**: This refers to the page to redirect to after a successful password reset.
+     - **template_name**: This refers to the full name of a template to display the password to confirm the view.
+     - **form_class**: This refers to the form that will be used to set the password.
+     - **success_url**: This refers to the page to redirect to after a successful password reset.
 
   - ## PasswordResetCompleteView
 
