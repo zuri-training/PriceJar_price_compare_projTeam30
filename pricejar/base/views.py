@@ -33,7 +33,7 @@ def signup_page(request):
 #end of user regestration functionality
 
  #PasswordChangeView
-class PasswordChangeView(PasswordChangeView):
+class Password_Change_View(PasswordChangeView):
     Form_class = PasswordChangeForm
     success_url = reverse_lazy('PasswordChangeView')
     template_name = 'registration/password_change_form.html'
