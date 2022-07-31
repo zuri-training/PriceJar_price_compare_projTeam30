@@ -15,7 +15,6 @@ urlpatterns = [
            redirect_authenticated_user=True),
         name='login'),
     path('logout', LogoutView.as_view(),name='logout'),
-    path('accounts/password_reset/',views.PasswordResetView.as_view(),name='password_reset'),
     path('password_change/', views.PasswordChangeView.as_view(), name="account_change_password"),
 
     ]
