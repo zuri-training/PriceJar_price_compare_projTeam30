@@ -1,8 +1,8 @@
 
 from os import terminal_size
 from django.shortcuts import render
-from django.contrib.auth.views import PasswordChangeView
-from django. contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView
+from django. contrib.auth.forms import PasswordResetForm,PasswordChangeForm
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy
 from django.http import HttpResponse
@@ -40,3 +40,15 @@ class PasswordChangeView(PasswordChangeView):
     title = gettext_lazy('password change')
     #end of PasswordChangeView
  
+
+#PasswordResetView
+class Password_Reset_View(PasswordResetView):
+    template_name = "password_reset.html"
+#end of PasswordResetView
+
+
+#password_change_done_view
+class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
+    template_name = "password_change_done.html"
+    title = "Password Change Done Successfully"
+#end of password_change_done_view
