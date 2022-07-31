@@ -3,8 +3,6 @@ from os import terminal_size
 from django.shortcuts import render
 from django.contrib.auth.views import PasswordResetView
 from django. contrib.auth.forms import PasswordResetForm
-from django.contrib.auth.views import PasswordChangeView
-from django.contrib.auth.forms import PasswordChangeForm
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy
 from django.http import HttpResponse
@@ -34,9 +32,4 @@ def signup_page(request):
     return render(request, 'base/register.html', context={'form': form})
 #end of user regestration functionality
 
-  #PasswordChangeView
-class PasswordChangeView(PasswordChangeView):
-    Form_class = PasswordChangeForm
-    success_url = reverse_lazy('PasswordChangeView')
-    template_name = 'registration/password_change_form.html'
-    title = gettext_lazy('password change')
+ 
