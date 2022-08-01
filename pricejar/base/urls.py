@@ -7,14 +7,15 @@ from . import views
 urlpatterns = [
 
     path('', views.homePage, name='home'),
-    path('register', views.signup_page, name='register'),
 
+    #user registration, login, logout
+    path('register', views.signup_page, name='register'),
     path('login', LoginView.as_view(
            template_name='base/login.html',
            redirect_authenticated_user=True),
         name='login'),
     path('logout', LogoutView.as_view(),name='logout'),
-    
+
     path('password_reset/', views.PasswordResetView.as_view(), name ='password_reset'), # Corrected an error in the spelling of 'reset'
     path('reset_password_sent/', views.PriceJarPassWordResetDoneView.as_view(), name ='password_reset_done'),
     
@@ -22,3 +23,5 @@ urlpatterns = [
     path('accounts/password_change_done/',views.PriceJar_Password_Change_Done_View.as_view(),name="password_change_done"),
 
     ] 
+
+
