@@ -1,7 +1,7 @@
 
 from os import terminal_size
 from django.shortcuts import render
-from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView, PasswordResetDoneView
+from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
 from django. contrib.auth.forms import PasswordResetForm,PasswordChangeForm
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy
