@@ -1,5 +1,9 @@
 # PRICEJAR PROJECT
 
+ ### [Full Documentation](https://docs.google.com/document/d/10J00hqO47xMX0zim5sT4b4InULSyD2A4T1RIMesly-A/edit)
+  
+ ### [Figma board](https://www.figma.com/file/hrjyHlK8Q1n2bBCBpCFDj1/Team30_PriceJar?node-id=28%3A2)
+
 ![Home page](homepage.JPG)
 
 # The User Guide
@@ -225,3 +229,5 @@ This segment contains a breakdown of the implementations deployed to achieve use
 - ## AuthenticatedSearchView
 
   This view has the capabilities to search for products across e-commerce websites and accompany the products with links to these products. It consists of the template_name attribute which is the name of the template embodying the products to be displayed and their respective links.
+  
+  
