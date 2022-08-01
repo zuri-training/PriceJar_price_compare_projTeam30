@@ -17,5 +17,5 @@ urlpatterns = [
     path('password_change/', views.PasswordChangeView.as_view(), name="account_change_password"),
     path('password_rest/', views.PasswordResetView.as_view(), name ='password_reset'),
     path('accounts/password_change_done/',views.PriceJar_Password_Change_Done_View.as_view(),name="password_change_done"),
-    path('reset_password_sent/', views.PasswordResetDoneView.as_view(), name ='password_reset_done'),
+    path('reset_password_sent/', views.PriceJarPassWordResetDoneView.as_view(), name ='password_reset_done'),
     ] 
