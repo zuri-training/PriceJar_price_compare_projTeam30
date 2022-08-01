@@ -20,5 +20,5 @@ urlpatterns = [
     
     path('password_change/', views.PasswordChangeView.as_view(), name="account_change_password"),
     path('accounts/password_change_done/',views.PriceJar_Password_Change_Done_View.as_view(),name="password_change_done"),
-    
+
     ] 
