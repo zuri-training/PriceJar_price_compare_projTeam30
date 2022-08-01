@@ -3,6 +3,8 @@
  ### [Full Documentation](https://docs.google.com/document/d/10J00hqO47xMX0zim5sT4b4InULSyD2A4T1RIMesly-A/edit)
   
  ### [Figma board](https://www.figma.com/file/hrjyHlK8Q1n2bBCBpCFDj1/Team30_PriceJar?node-id=28%3A2)
+ 
+ ### [Github Project](https://github.com/orgs/zuri-training/projects/380)
 
 ![Home page](homepage.JPG)
 
