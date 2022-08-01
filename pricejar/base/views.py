@@ -53,6 +53,6 @@ class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
     title = "Password Change Done Successfully"
 #end of password_change_done_view
 
-#password_change_reset_view
+#password__reset_done_view
 class PriceJarPassWordResetDoneView(PasswordResetDoneView):
     template_name = "password_reset_sent.html"
