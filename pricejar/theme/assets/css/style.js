@@ -1,3 +1,5 @@
+
+//new deals
 function showList(e) {
   var $gridCont = $('.grid-container');
   e.preventDefault();
@@ -14,6 +16,7 @@ $(document).on('click', '.btn-list', showList);
 
 
 
+//top deals
 function listShow(e) {
   var $gridCont = $('.grid-containers');
   e.preventDefault();
@@ -22,8 +25,26 @@ function listShow(e) {
 function gList(e) {
   var $gridCont = $('.grid-containers')
   e.preventDefault();
-  $gridCont.removeClass('list-view');
+  $gridCont.removeClass('list-views');
 }
 
-$(document).on('click', '.btn-griid', gridList);
-$(document).on('click', '.btn-liist', showList);
+$(document).on('click', '.btn-griid', gList);
+$(document).on('click', '.btn-liist', listShow);
+
+
+//exclusive deals
+
+function leastShow(e) {
+  var $gridCont = $('.grid-containerz');
+  e.preventDefault();
+  $gridCont.hasClass('list-viewz') ? $gridCont.removeClass('list-viewz') : $gridCont.addClass('list-viewz');
+}
+function greedList(e) {
+  var $gridCont = $('.grid-containerz')
+  e.preventDefault();
+  $gridCont.removeClass('list-viewz');
+}
+
+$(document).on('click', '.btn-greed', greedList);
+$(document).on('click', '.btn-least', leastShow);
+

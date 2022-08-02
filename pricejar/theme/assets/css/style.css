@@ -221,6 +221,8 @@ p{
 .col-lg-9 ul {
   width: 100%;
 }
+
+/*new deals*/
 .card {
   margin-bottom: 1rem;
 }
@@ -244,25 +246,51 @@ p{
   display: inline-block;
 }
 
-.carding {
+/*Top deals*/
+.card {
   margin-bottom: 1rem;
 }
 
-.list-view .row > [class*=col-] {
+.list-views .row > [class*=col-] {
   max-width: 100%;
   flex: 0 0 100%;
 }
-.list-view .card {
+.list-views .card {
   flex-direction: row;
 }
 @media (max-width: 575.98px) {
-  .list-view .card {
+  .list-views .card {
     flex-direction: column;
   }
 }
-.list-view .card > .card-img-top {
+.list-views .card > .card-img-top {
   width: auto;
 }
-.list-view .card .card-body {
+.list-views .card .card-body {
+  display: inline-block;
+}
+
+/*excluisive deals*/
+.card {
+  margin-bottom: 1rem;
+}
+
+.list-viewz .row > [class*=col-] {
+  max-width: 100%;
+  flex: 0 0 100%;
+  flex-direction: column;
+}
+.list-viewz .card {
+  flex-direction: row;
+}
+@media (max-width: 575.98px) {
+  .list-viewz .card {
+    flex-direction: column;
+  }
+}
+.list-viewz .card > .card-img-top {
+  width: auto;
+}
+.list-viewz .card .card-body {
   display: inline-block;
 }
