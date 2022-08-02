@@ -1,3 +1,4 @@
+
 //new deals
 function showList(e) {
   var $gridCont = $('.grid-container');
@@ -14,11 +15,12 @@ $(document).on('click', '.btn-grid', gridList);
 $(document).on('click', '.btn-list', showList);
 
 
+
 //top deals
 function listShow(e) {
   var $gridCont = $('.grid-containers');
   e.preventDefault();
-  $gridCont.hasClass('list-views') ? $gridCont.removeClass('list-views') : $gridCont.addClass('list-views');
+  $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
 }
 function gList(e) {
   var $gridCont = $('.grid-containers')
@@ -45,3 +47,4 @@ function greedList(e) {
 
 $(document).on('click', '.btn-greed', greedList);
 $(document).on('click', '.btn-least', leastShow);
+
