@@ -2,7 +2,7 @@
     font-family: Poppins , sans-serif;
 }
 main{
-	margin: 0 auto;
+	margin-top: 5rem;
 }
 .accordion {
 	background-color: #eee;
@@ -21,7 +21,7 @@ main{
 	font-family: "Font Awesome 5 Free";
 	content: '\f078';
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 15px;
 	position: absolute;
 	left:65%;
 }
@@ -50,6 +50,17 @@ main{
 }
 .bottom-content{
 	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.bottom-content p{
+	text-align: center;
+	width: 28%;
+}
+.bottom-content h3{
+	text-align: center;
 }
 .panel {
 	padding: 0 18px;
@@ -64,6 +75,34 @@ main{
 }
 .panel > p{
 	margin: auto 0;
+}
+.lowest-main-section{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 13px;
+	padding: 20px;
+}
+.left-side-box{
+	background-color: #aaaaaa;
+	border-radius: 5px;
+	margin: 10px;
+	width: 200px;
+	height: 100px;
+}
+.middle-box{
+	background-color: #aaaaaa;
+	border-radius: 5px;
+	width: 200px;
+	height: 150px;
+	margin: 10px;
+}
+.right-side-box{
+	background-color: #aaaaaa;
+	border-radius: 5px;
+	width: 200px;
+	height: 100px;
+	margin: 10px;
 }
 #footer {
 	color: #fff;
@@ -195,5 +234,19 @@ main{
 		position: absolute;
 		left:65%;
 
+	}
+	.lowest-main-section{
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.left-side-box,.middle-box,.right-side-box{
+		width: 60%;
+	}
+	.bottom-content p{
+		text-align: center;
+		width: 70%;
 	}
 }
