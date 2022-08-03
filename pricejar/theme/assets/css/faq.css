@@ -29,7 +29,7 @@ main{
 	content: '\f077';
 }
 .active, .accordion:hover {
-	background-color: #ccc;
+	background-color: #F6F6F6;
 }
 .flex-container{
 	display: flex;
@@ -61,6 +61,7 @@ main{
 }
 .bottom-content h3{
 	text-align: center;
+	margin: 0 20px;
 }
 .panel {
 	padding: 0 18px;
@@ -80,39 +81,57 @@ main{
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	font-size: 13px;
+	font-size: 12px;
 	padding: 20px;
 }
+.lowest-main-section p{
+	margin-top: 10px;
+}
 .left-side-box{
-	background-color: #aaaaaa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F6F6F6;
 	border-radius: 5px;
 	margin: 10px;
 	width: 200px;
 	height: 100px;
+	padding-top: 5px;
 }
 .middle-box{
-	background-color: #aaaaaa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F6F6F6;
 	border-radius: 5px;
 	width: 200px;
 	height: 150px;
 	margin: 10px;
+	padding: 0 5px 5px 5px;
 }
 .right-side-box{
-	background-color: #aaaaaa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F6F6F6;
 	border-radius: 5px;
 	width: 200px;
 	height: 100px;
 	margin: 10px;
+	padding-top: 5px;
 }
 #footer {
 	color: #fff;
 	font-size: 14px;
-	background: #111111;
+	background: #1A050F;;
     width: 100%;
 }
 #footer .footer-top {
 	padding: 60px 0 30px 0;
-	background: #1b1b1b;
+	background: #1A050F;
 }
 #footer .footer-top .footer-contact {
 	margin-bottom: 30px;
