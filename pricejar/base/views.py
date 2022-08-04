@@ -44,3 +44,10 @@ class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
     template_name = "password_change_done.html"
     title = "Password Change Done Successfully"
 #end of password_change_done_view
+
+
+
+#start of error 404 view
+def error404(request):
+    return render(request, 'base/error404.html')
+#end of error 404 view
