@@ -56,3 +56,9 @@ class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
 #password__reset_done_view
 class PriceJarPassWordResetDoneView(PasswordResetDoneView):
     template_name = "password_reset_sent.html"
+
+#start of error 404 view
+def error404(request):
+    return render(request, 'base/error404.html')
+#end of error 404 view
+    
