@@ -9,6 +9,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.conf import settings
 from django.contrib.auth import login
+from django.views import View
 from . import forms
 
 
@@ -57,6 +58,11 @@ class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
 class PriceJarPassWordResetDoneView(PasswordResetDoneView):
     template_name = "password_reset_sent.html"
 
+# class DealsPageView(View):
+#     template_name= "templates/deals.html"
+
+def DealsPageView(request):
+    return render(request, 'base/deals.html',)
 #start of error 404 view
 def error404(request):
     return render(request, 'base/error404.html')
