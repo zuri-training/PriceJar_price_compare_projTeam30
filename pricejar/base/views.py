@@ -19,7 +19,6 @@ def homePage(request):
     return render(request, 'base/home.html')
 #end of homepage view
 
-
 #user registration functionality
 def signup_page(request):
     form = forms.SignupForm()
@@ -63,6 +62,7 @@ class PriceJarPassWordResetDoneView(PasswordResetDoneView):
 
 def DealsPageView(request):
     return render(request, 'base/deals.html',)
+
 #start of error 404 view
 def error404(request):
     return render(request, 'base/error404.html')
