@@ -5,10 +5,11 @@
 }
 h1,h2,h3,h4,h5,h6{
 font-family: 'mulish', 'sans-serif;';
-font-weight: 800;
+
 }
 p{
   font-family: 'mulish', 'sans-serif';
+  font-weight: 800;
 }
 /* about us */
 .about {
@@ -18,13 +19,127 @@ p{
 	align-content: center;
 	align-items: center;
 }
-.About {
-	background-image: url("");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+.bout{
+font-family: Mulish;
+font-size: 28px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
 
+}
+.abouth2{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+  background: linear-gradient(90.27deg, #801B4B -1.51%, #F2B109 122.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.hw{
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 40px;
+/* or 143% */
+
+text-align: center;
+
+/* Black */
+
+color: #110109;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+.nbtn{
+  background-color:#801b4b
+}
+.logi{
+  color:#801b4b
+}
+.signpost{
+background-color: #801b4b;
+color:#FBFBFB;
+border-radius: 8px;
+}
+.signpost>h6{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.signpost>p{
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+}
+.searchm{
+  background-color: #f8d884;
+  border-radius: 8px;
+}
+.searchm>h6{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  border-radius: 15px; 
+}
+.searchm>p{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+}
+.comp{
+background: #110109;
+border-radius: 8px;
+}
+.comp>h6{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+color: #FBFBFB;
+}
+.comp>p{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #FBFBFB;
+}
+.team>h3{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+}
 #footer {
 	color: #fff;
 	font-size: 14px;
@@ -33,7 +148,7 @@ p{
 
 #footer .footer-top {
 	padding: 60px 0 30px 0;
-	background: #1b1b1b;
+	background: #1A050F;
 }
 
 #footer .footer-top .footer-contact {
@@ -70,7 +185,7 @@ p{
 	display: block;
 	width: 20px;
 	height: 2px;
-	background: #000000;
+	background:#1A050F;
 	bottom: 0;
 	left: 0;
 }
@@ -87,7 +202,7 @@ p{
 
 #footer .footer-top .footer-links ul i {
 	padding-right: 2px;
-	color: white;
+	color:#1A050F;
 	font-size: 18px;
 	line-height: 1;
 }
@@ -128,8 +243,8 @@ p{
 
 #footer .footer-newsletter form {
 	margin-top: 30px;
-	background: #fff;
-	padding: 5px 10px;
+	background:#fff;
+	padding: 2px 5px;
 	position: relative;
 	border-radius: 4px;
 	text-align: left;
@@ -137,8 +252,9 @@ p{
 
 #footer .footer-newsletter form input[type="email"] {
 	border: 0;
-	padding: 4px 8px;
+	padding: 5px 8px;
 	width: calc(100% - 100px);
+  background: #1A050F;
 }
 
 #footer .footer-newsletter form input[type="submit"] {
@@ -150,8 +266,8 @@ p{
 	background: none;
 	font-size: 16px;
 	padding: 0 20px;
-	background: #000000;
-	color: #fff;
+	background:#fff;
+	color:#1A050F;
 	transition: 0.3s;
 	border-radius: 0 4px 4px 0;
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -172,7 +288,7 @@ p{
   box-shadow: none;
   outline: none;
   background-color: #67971f;
-  color: white;
+  color:#1A050F;
   font-weight: 800;
   padding: 0px 15px;
   line-height: 22px;
