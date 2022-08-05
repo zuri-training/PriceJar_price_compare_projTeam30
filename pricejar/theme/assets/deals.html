@@ -49,21 +49,45 @@
           </div>
         </li>
       </ul>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Check Now</button>
+      <p class="mx-2 mt-2"><i class="bi bi-person-circle"></i>&nbsp;you are logged in</p> &nbsp;&nbsp;
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">log out</button>
     </div>
   </div>
 </nav>
 <!-- end of nav -->
-<!-- deals start --> 
-<section id="hero" class="hero">
-<div class="container d-flex justify-content-center p-5 ">
-          <h2 class="">Spend Less, Deal Smart</h2>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">30% OFF First Product Coupon</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Get 30% discount off your first purchase and shop like a pro</p>
+        <p>Copy your code:</p>
+        <h4>34902JE3Z</h4>
+        <div class="container text-center">
+          <div class="row d-flex justify-content-center">
+            <button  type="button" class="col-4 btn btn-dark">Shop with coupon code</button><button class="col-4 btn btn-light">Copy code</button>
           </div>
-<div class="container d-flex justify-content-center">
-  <div class="row ">
-      <div class="d-flex">
-              <div class="dropdown my-lg-0 my-2">
-                  <button class="btn btn-secondary d-flex justify-content-between align-items-center"
+        </div>
+      </div>
+<p class="text-center">Terms and conditions applies to the use of this coupon code. The provider (Amazon.co.uk sustains the right to withhold, restrict or annul the use of this code at any time due to reasons undeclared.</p>
+<p class="text-muted text-center">Amazon.co.uk</p>
+    </div>
+  </div>
+</div>
+<!-- deals start --> 
+<div class="container-fluid">
+<section id="hero" class="container my-5">
+<div class="container d-flex justify-content-center mt-5 pt-5">
+          <h1 class="">Spend Less, Deal Smart</h1>
+          </div>
+<div class="container">
+  <div class="row d-flex justify-content-center m-0 mt-5">
+              <div class=" d-flex justify-content-center m-2">
+                <div class="dropdown my-lg-0 mx-0 py-1 ">
+                  <button class="btn btn-secondary d-flex justify-content-start py-2
                       type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="true">
                       <span class=" w-100 d-flex align-items-center">
                           <span class=" fw-lighter pe-2">ALL</span><span class="fw-lighter pe-3">
@@ -78,11 +102,9 @@
                       <li><a class="dropdown-item" href="#">Fresh Berries</a></li>
                   </ul>
               </div>
-              <div class="d-flex align-items-center w-100 h-100 ps-lg-0 ps-sm-3">
-                  <input class=" ps-md-5 ps-3" type="text" placeholder="what do you need?">
-                  <div class="btn btn-primary d-flex align-items-center justify-content-center"> SEARCH</div>
+                  <input class=" w-75" type="text" placeholder="what do you need?">
+                  <div class="btn btn-secondary d-flex justify-content-end"> search</div>
               </div>
-          </div>
    </div>
 </div>
 </section>
@@ -178,11 +200,11 @@
   </div>
 </section>
  <section id="top-deals">
-<div class="container d-flex justify-content-center grid-containers">
+<div class="container d-flex justify-content-center">
   <div class="row gx-2 justify-content-center">
     <div class="container p-0 my-0">
       <div class=" row d-flex justify-content-between p-0 m-0" >
-        <div class="col-8 mx-0"><h4> Top Deals</h4></div>
+        <div class="col-8"><h4> Top Deals</h4></div>
         <div class="col-4 d-flex justify-content-end"><small class="text-muted mt-2"><a href="#" style="text-decoration:none;">see all</a>&nbsp;&nbsp; view as</small><button class="btn btn-liist"><i class="bi bi-list"></i></button>  <button class="btn btn-griid
         "> <i class="bi bi-grid-fill "></i></button></div>
       </div>
@@ -191,13 +213,13 @@
 <div class="container grid-containers">
   <div class="row">
     <div class="col-12 col-md-6 col-lg-6">
-      <div class="card" >
+      <div class="card">
         <div class="row g-0">
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">30% OFF First Product <br> Coupon</h5>
               <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
-              <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+              <p class="card-text"><small class="text-muted"><a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModal">amazon.co.uk</a></small></p>
             </div>
           </div>
           <div class="col-md-4">
@@ -213,7 +235,7 @@
             <div class="card-body">
               <h5 class="card-title">30% OFF First Product <br> Coupon</h5>
               <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
-              <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+              <p class="card-text"><small class="text-muted"><a href="#" class="card-link" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModal">amazon.co.uk</a></small></p>
             </div>
           </div>
           <div class="col-md-4">
@@ -229,7 +251,7 @@
             <div class="card-body">
               <h5 class="card-title">30% OFF First Product <br> Coupon</h5>
               <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
-              <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+              <p class="card-text"><small class="text-muted"><a href="#" class="card-link" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModal">amazon.co.uk</a></small></p>
             </div>
           </div>
           <div class="col-md-4">
@@ -245,7 +267,7 @@
             <div class="card-body">
               <h5 class="card-title">30% OFF First Product <br> Coupon</h5>
               <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
-              <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+              <p class="card-text"><small class="text-muted"><a href="#" class="card-link" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModal">amazon.co.uk</a></small></p>
             </div>
           </div>
           <div class="col-md-4">
@@ -269,7 +291,6 @@
           <div class="col-9"><h4> Exclusive Deals</h4></div>
           <div class="col-3 d-flex justify-content-end  mx-0"><small class="text-muted mx-0 mt-2">view as</small><button class="btn btn-least"><i class="bi bi-list"></i></button>  <button class="btn btn-greed
           "> <i class="bi bi-grid-fill"></i></button></div>
-    
         </div>
       </div>
    </div>
@@ -361,7 +382,7 @@
                     <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
                   </div>
                 </div>
-                <div class="col-4 d-inline-flex justify-content-end" >
+                <div class="col-4 d-inline-flex justify-content-end .d-none .d-lg-block .d-xl-none" >
                   <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
                 </div>
               </div>
@@ -434,6 +455,7 @@
     </div>
 
 </footer>
+</div>
 <!--End Footer -->
 		<!-- Bootstrap JavaScript Libraries -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
