@@ -7,10 +7,8 @@ from django.contrib.auth.models import User
 
 
 # Create your models here.
-<<<<<<< HEAD
 class Jumia(model.Model):
     pass
-=======
 
 # User profile
 class UserProfile(models.Model):
@@ -26,4 +24,3 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.username
->>>>>>> 3e65f0df4c5532e40a67cb9961b4dcd8b372ebcf
