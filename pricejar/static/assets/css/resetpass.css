@@ -1,0 +1,246 @@
+*{
+    font-family: Poppins , sans-serif;
+}
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 40px;
+}
+#reset-password-image{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.reset-password-field{
+    margin: 3rem auto 5rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #F4F4F4;
+    width: 80vh;
+    padding: 3rem 2.5rem;
+    font-weight: 600;
+}
+.reset-password-form{
+    font-size: 12px;
+    margin: 2rem 0 0 0;
+}
+.reset-password-h1, .reset-password-h6{
+    text-align: center;
+}
+.reset-password-h1{
+    font-weight: 500;
+    margin: 0 0 1.1rem 0;
+}
+label,
+label>span{
+    display: block;
+}
+label>span{
+    margin: 0 0 0.6vh;
+}
+#reset-password-submit-btn{
+    margin: 2rem auto 2.5rem;
+    display: block;
+    width: 110px;
+    background-color: black;
+    color: #ccc;
+    padding: 6px 0;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.reset-password-p{
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    padding: 6px 0;
+    margin: 2px auto;
+}
+#reset-passwprd-p-link{
+    text-decoration: none;
+}
+.reset-password-p:hover{
+    color: white;
+    background-color: rgb(145, 145, 145);
+    color: #ccc;
+    margin: 2px auto;
+    padding: 6px 0;
+    border-radius: 8px;
+    width: 22vh;
+}
+.reset-password-p:active{
+    color: white;
+    background-color: rgb(145, 145, 145);
+    color: #ccc;
+    margin: 0 auto;
+    padding: 7px 4px;
+    border-radius: 8px;
+    width: 22vh;
+}
+label{
+	display: block;
+	width: 100%;
+}
+#reset-password-input{
+    width: 100%;
+    height: 40px;
+    border-left: #fff;
+    border-right: #fff;
+    border-top: #fff;
+    border-width: 3px;
+    border-radius: 3px;
+    padding: 0 8px;
+}
+#footer {
+	color: #fff;
+	font-size: 14px;
+	background: #1A050F;;
+    width: 100%;
+}
+#footer .footer-top {
+	padding: 60px 0 30px 0;
+	background: #1A050F;
+}
+#footer .footer-top .footer-contact {
+	margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+	font-size: 26px;
+	line-height: 1;
+	font-weight: 700;
+}
+
+#footer .footer-top .footer-contact h3 span {
+	color: #ffffff;
+}
+
+#footer .footer-top .footer-contact p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Raleway", sans-serif;
+}
+
+#footer .footer-top h4 {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+#footer .footer-top h4::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #000000;
+	bottom: 0;
+	left: 0;
+}
+
+#footer .footer-top .footer-links {
+	margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: white;
+	font-size: 18px;
+	line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+	color: #aaaaaa;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+	text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+#footer .footer-newsletter {
+	font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+	margin-top: 30px;
+	background: #fff;
+	padding: 5px 10px;
+	position: relative;
+	border-radius: 4px;
+	text-align: left;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+	border: 0;
+	padding: 4px 8px;
+	width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+	position: absolute;
+	top: 0;
+	right: -1px;
+	bottom: 0;
+	border: 0;
+	background: none;
+	font-size: 16px;
+	padding: 0 20px;
+	background: #000000;
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 0 4px 4px 0;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+	background: #494343;
+}
+
+#footer .credits {
+	padding-top: 5px;
+	font-size: 13px;
+}
+@media (max-width: 800px) {
+	.reset-password-field{
+		width: 100%;
+	}
+	label{
+		display: block;
+		width: 100%;
+	}
+
+	#reset-password-submit-btn{
+		display: block;
+	}
+}
