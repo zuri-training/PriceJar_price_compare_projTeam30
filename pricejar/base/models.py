@@ -13,8 +13,9 @@ class UserProfile(models.Model):
 # base.UserProfile.avatar: (fields.E210) Cannot use ImageField because Pillow is not installed.
 #         HINT: Get Pillow at https://pypi.org/project/Pillow/ or run command "python -m pip install Pillow".
 
-    # avatar = models.ImageField(default='default.jpg', upload_to='profile_images')
-    bio = models.TextField()
+    #ordering products from most recent updated/created to least updated
+    class Meta:
+        ordering = ['-updated', '-created']
 
     def __str__(self):
         return self.user.username

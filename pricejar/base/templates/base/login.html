@@ -38,17 +38,16 @@
   
         <!-- Email input -->
         <form method="POST" action="" >
-          <!-- {% csrf_token %}
-          {{form.as_p}} -->
+          {% csrf_token %}
         <div class="form-outline mb-4">
           <label class="form-label" for="loginName">Username</label>
-          <input type="email" id="loginName" class="form-control"  placeholder="Mawuli Owusu"/>
+          <input type="username" name="username" id="loginName" class="form-control"  placeholder="Mawuli Owusu"/>
         </div>
   
         <!-- Password input -->
         <div class="form-outline mb-4">
           <label class="form-label" for="loginPassword" >Password</label>
-          <input type="password" id="loginPassword" value="" class="form-control" placeholder="Use Your Sense" />
+          <input type="password" name="password" id="loginPassword" value="" class="form-control" placeholder="Use Your Sense" />
         </div>
   
         <!-- 2 column grid layout -->
