@@ -138,3 +138,12 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = '<Your Gmail address>'
 EMAIL_HOST_PASSWORD = '<Your Gmail password>'
 EMAIL_USE_TLS = True
+
+
+# django_project/settings.py
+LOGIN_REDIRECT_URL = "/"
+
+
+# Media URL and ROOT for user profile images
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
