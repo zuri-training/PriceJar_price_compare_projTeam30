@@ -1,14 +1,8 @@
-from pyexpat import model
-from tkinter import CASCADE
-from unicodedata import name
 from django.db import models
 from django.contrib.auth.models import User
 
-
-
 # Create your models here.
-class Jumia(model.Model):
-    pass
+
 
 # User profile
 class UserProfile(models.Model):

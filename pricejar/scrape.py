@@ -6,74 +6,20 @@ from csv import writer
 
 headers ={'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'}
 
+def killamall_fashion_page():
+    url ="https://www.kilimall.co.ke/new/commoditysearch?c=1294&page="
 
-def jumia_mobile_phone_page():
-    url ="https://www.jumia.co.ke/phones-tablets/?page="
-    for page_number in range(1,2):
-        load_web = requests.get(url+str(page_number)+"#catalog-listing", headers=headers)
-        # print(load_web)
-
-        soup = BeautifulSoup(load_web.content, 'html.parser')
-        fetch_content = soup.find_all('div', class_="row _no-g _6cl-4cm-shs -paxs _1ln")
-        with open('mobilephone_jumia.csv','w', encoding='utf-8') as f:
-            the_writer = writer(f)
-            header=['Image','Link','Product_Name', 'Price']
-            the_writer.writerow(header)
-
-            for content in fetch_content:
-                image=content.find('img', class_='img')
-                image.get('data-src')
-
-                link=content.select_one('a[class="core"][href]')['href']
-                product_name=content.find('div',class_="name").text
-                price=content.find('div',class_='prc').text
-
-                product_info=[image,link,product_name,price]
-                the_writer.writerow(product_info)
-
-                sleep(randint(3,15))
-jumia_mobile_phone_page()
-
-def jumia_fashion_page():
-    url ="https://www.jumia.co.ke/category-fashion-by-jumia/?page="
-
-    for page_number in range(1,16):
-        load_web = requests.get(url+str(page_number)+"#catalog-listing", headers=headers)
+    for page_number in range(1,50):
+        load_web = requests.get(url+str(page_number), headers=headers)
         # print(load_web)
         soup = BeautifulSoup(load_web.content, 'html.parser')
-        fetch_content = soup.find_all('div',class_="-paxs row _no-g _4cl-3cm-shs")
-        with open('fashion_jumia.csv','w', encoding='utf-8') as f:
+        fetch_content = soup.find_all('section',class_="el-container")
+        with open('fashion_killamall.csv','w', encoding='utf-8') as f:
             the_writer = writer(f)
             header=['Image','Link','Product_Name', 'Price']
             the_writer.writerow(header)
 
        
-            for content in fetch_content:
-                image=content.find('img', class_='img')
-                image.get('data-src')
-                link=content.select_one('a[class="core"][href]')['href']
-                product_name=content.find('h3', class_='name').text
-                price=content.find('div', class_='prc').text
-
-                product_info=[image, link, product_name, price]
-                the_writer.writerow(product_info)
-
-            # sleep(randint(3,15))
-jumia_fashion_page()
-
-def mobile_phone_killgarden():
-    url ="https://www.kilimall.co.ke/new/commoditysearch?c=1057&page="
-
-    for page_number in range(1,16):
-        load_web = requests.get(url+str(page_number)+"#catalog-listing", headers=headers)
-        # print(load_web)
-        soup = BeautifulSoup(load_web.content, 'html.parser')
-        fetch_content = soup.find_all('section',class_="el-container")
-        with open('mobilephone_killgarden.csv','w', encoding='utf-8') as f:
-            the_writer = writer(f)
-            header=['Image','Link','Product_Name', 'Price']
-            the_writer.writerow(header)
-
             for content in fetch_content:
                 image=content.find('img', class_='imgClass')
                 image.get('data-src')
@@ -83,5 +29,5 @@ def mobile_phone_killgarden():
 
                 product_info=[image, link, product_name, price]
                 the_writer.writerow(product_info)
-
-mobile_phone_killgarden()
+        sleep(randint(3,10))
+killamall_fashion_page()
