@@ -20,7 +20,7 @@ $(document).on('click', '.btn-list', showList);
 function listShow(e) {
   var $gridCont = $('.grid-containers');
   e.preventDefault();
-  $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
+  $gridCont.hasClass('list-views') ? $gridCont.removeClass('list-views') : $gridCont.addClass('list-views');
 }
 function gList(e) {
   var $gridCont = $('.grid-containers')

@@ -16,3 +16,19 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.username
+
+#Product model start here
+class Product(models.Model):
+    name= models.CharField(max_length=400)
+    description = models.TextField(null=True)
+    avatar = models.ImageField(default='default.jpg', upload_to='profile_images')
+    updated = models.DateTimeField(auto_now= True)
+    created = models.DateTimeField(auto_now_add= True)
+
+    #ordering products from most recent updated/created to least updated
+    class Meta:
+        ordering = ['-updated', '-created']
+
+    def __str__(self):
+        return self.name
+    
