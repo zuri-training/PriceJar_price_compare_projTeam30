@@ -11,6 +11,8 @@ from django.conf import settings
 from django.contrib.auth import login
 from django.views import View
 from . import forms
+from django.contrib.auth.decorators import login_required
+
 
 
 
@@ -44,6 +46,7 @@ class Password_Change_View(PasswordChangeView):
 
 #PasswordResetView
 class Password_Reset_View(PasswordResetView):
+    Form_class = PasswordResetForm
     template_name = "password_reset.html"
 #end of PasswordResetView
 
@@ -67,4 +70,9 @@ def DealsPageView(request):
 def error404(request):
     return render(request, 'base/error404.html')
 #end of error 404 view
-    
+
+# start of user profile    
+@login_required
+def Userprofile(request):
+    return render(request, 'base/userprofilepage.html')
+# end of user profile
