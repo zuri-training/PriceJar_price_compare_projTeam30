@@ -2,8 +2,9 @@
 {%load static%}
 {% block content %}
 
-<h4>Welcome {{request.user.Username}}</h4>
-
+{%if request.user.is_authenticated%}
+<h4>Welcome {{request.user.Username}} </h4>
+{%endif%}
 <!-- head  -->
     <head>
         <meta charset="UTF-8">
