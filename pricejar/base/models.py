@@ -26,11 +26,12 @@ class UserProfile(models.Model):
         
 # contact model
 class Contact(models.Model):
-    name = models.CharField(max_length=150)
+    firstname = models.CharField(max_length=50)
+    lastname = models.CharField(max_length=50)
     email = models.EmailField()
     message = models.TextField()
 
     def __str__(self):
-        return self.name
+        return self.email
 
 
