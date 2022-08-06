@@ -1,4 +1,5 @@
 {% load static %}
+
 <!-- Nav -->
 <!-- navbar for authenticated user  -->
 
@@ -21,6 +22,7 @@
       </a>
       <button
         class="navbar-toggler ms-auto"
+
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"
@@ -30,6 +32,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div
         class="collapse navbar-collapse justify-content-center"
         id="navbarSupportedContent"
@@ -42,6 +45,7 @@
               href="{% url 'home' %}"
               >Home</a
             >
+
           </li>
 
           <li class="nav-item dropdown">
@@ -55,7 +59,9 @@
             >
               Categories
             </a>
+
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider" /></li>
@@ -65,6 +71,7 @@
             </ul>
           </li>
           <li class="nav-item">
+
             <a class="nav-link active" aria-current="page" href=""
               >Compare by stores</a
             >
@@ -76,10 +83,12 @@
               href="{% url 'deals-page' %}"
               >Deals</a
             >
+
           </li>
         </ul>
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item">
+
             <a class="nav-link active" aria-current="page" href=""
               >You are logged in</a
             >
@@ -93,6 +102,7 @@
       </div>
     </div>
   </nav>
+
 
   <br />
   <br />
@@ -231,4 +241,3 @@
 ></script>
 
 {% endif %}
-
