@@ -1,41 +1,224 @@
 {% load static %}
-  <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light container-fluid">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">PriceJar</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="collapsibleNavId">
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="{% url 'home' %}">Home <span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deals</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                </ul>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Check Now</button>
-            </div>
-        </div>
-    </nav>
-</header>
+<!-- navbar for unauthenticated user  -->
+<!-- Nav -->
+
+{% if request.user.is_authenticated %}
+<nav <!-- Nav -->
+  <nav
+    class="navbar fixed-top navbar-expand-lg navbar-light"
+    style="background-color: #ffff"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="padding: 10px">
+        <span style="color: #801b4b">P</span>
+        <span style="color: #801b4b">R</span>
+        <span style="color: #801b4b">I</span>
+        <span style="color: #f2b109">C</span>
+        <span style="color: #f2b109">E</span>
+        <span style="color: black">J</span>
+        <span style="color: black">A</span>
+        <span style="color: black">R</span>
+      </a>
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="{% url 'home' %}"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""
+              >Compare by stores</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="{% url 'deals-page' %}"
+              >Deals</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""
+              >You are logged in</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="{%url 'logout'%}"
+              ><button class="btn" type="submit">Logout</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+</nav>
+
+{% else %}
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="padding: 10px">PriceJar</a>
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'home'%}"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Deals
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Stores
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else is here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a href="login"><button class="btn" type="submit">Login</button></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">or</a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'register'%}"
+            ><button class="btn" type="submit">Signup</button></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br />
+<br />
+<br />
+<br />
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+  crossorigin="anonymous"
+></script>
+
+{% endif %}
+<!-- Nav -->
+<!-- navbar for authenticated user  -->
