@@ -20,9 +20,18 @@
 </head>
 <body>
   
-  <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #fffafa;">
     <div class="container-fluid">
-      <a class="navbar-brand " href="{% url 'home' %}" style="padding: 10px;">PriceJar</a>
+      <a class=" navbar-brand " href="{% url 'home' %}" style="padding: 10px;">
+        <span style="color: #801B4B;">P</span>
+        <span style="color: #801B4B;">R</span>
+        <span style="color: #801B4B;">I</span>
+        <span style="color: #F2B109">C</span>
+        <span style="color: #F2B109">E</span>
+        <span style="color: black;">J</span>
+        <span style="color: black;">A</span>
+        <span style="color: black;">R</span>
+      </a>
       <button
         class="navbar-toggler ms-auto  "
         type="button"
@@ -103,13 +112,13 @@
         </ul>
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item">
-            <a href="{% url 'login' %}"><button class="btn" type="submit">Login</button></a>
+            <a href="{% url 'login' %}"><button class="btn" type="submit" style="background: #801B4B;">Login</button></a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">or</a>
           </li>
           <li class="nav-item">
-            <a href="{% url 'register' %}"><button class="btn" type="submit">Signup</button></a>
+            <a href="{% url 'register' %}"><button class="btn" type="submit" style="color: #801B4B;">Signup</button></a>
           </li>
         </ul>
       </div>
