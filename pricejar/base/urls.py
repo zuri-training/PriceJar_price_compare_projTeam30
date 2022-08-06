@@ -30,4 +30,4 @@ urlpatterns = [
     path('user_profile/', views.Userprofile, name ='userprofilepage'),
     path('contact/', views.contact, name='contact'), # contact url
 ] 
-
+   

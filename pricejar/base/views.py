@@ -67,7 +67,7 @@ class Password_Change_View(PasswordChangeView):
 #PasswordResetView
 class Password_Reset_View(PasswordResetView):
     Form_class = PasswordResetForm
-    template_name = "password_reset.html"
+    template_name = "base/password_reset.html"
 #end of PasswordResetView
 
 
