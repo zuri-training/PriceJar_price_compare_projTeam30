@@ -7,5 +7,8 @@ class BaseConfig(AppConfig):
 
 class UserConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'users'
-    import users.signals
+    name = 'user'
+
+    # corrected import error
+    def ready(self):
+        import base.signals
