@@ -1,4 +1,18 @@
 
+body{
+  background-color: #feebf4;
+}
+/* multicoloured text */
+
+.multicolor{
+  background: linear-gradient(90.27deg, #801B4B -1.51%, #F2B109 122.8%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+
+}
+
 /* Cards */
 
 .card{
