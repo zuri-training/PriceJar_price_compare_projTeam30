@@ -14,7 +14,7 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth import login
 from django.views import View
-from .models import Product
+# from .models import Product
 from . import forms
 from .models import Contact
 
@@ -25,16 +25,16 @@ from .models import Contact
 def homePage(request):
      #--search logic
     #querying the database 
-    q = request.GET.get('q') if request.GET.get('q') != None else ''
+    # q = request.GET.get('q') if request.GET.get('q') != None else ''
 
-    products = Product.objects.filter(
-        Q(name__icontains = q) |
-        Q(description__icontains = q)
-        )
+    # products = Product.objects.filter(
+    #     Q(name__icontains = q) |
+    #     Q(description__icontains = q)
+    #     )
 
      #--end of search logic
-    context = {"products":products}
-    return render(request, 'base/home.html', context)
+    # context = {"products":products}
+    return render(request, 'base/home.html')
 #end of homepage view
 
 #user registration functionality

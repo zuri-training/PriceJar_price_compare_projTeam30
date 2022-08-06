@@ -19,8 +19,7 @@ class UserProfile(models.Model):
 #         HINT: Get Pillow at https://pypi.org/project/Pillow/ or run command "python -m pip install Pillow".
 
     #ordering products from most recent updated/created to least updated
-    class Meta:
-        ordering = ['-updated', '-created']
+     
 
     def __str__(self):
         return self.name
