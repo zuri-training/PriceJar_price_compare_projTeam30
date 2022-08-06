@@ -1,9 +1,9 @@
 {% load static %}
-<!-- navbar for unauthenticated user  -->
 <!-- Nav -->
+<!-- navbar for authenticated user  -->
 
 {% if request.user.is_authenticated %}
-<nav <!-- Nav -->
+<nav 
   <nav
     class="navbar fixed-top navbar-expand-lg navbar-light"
     style="background-color: #ffff"
@@ -106,9 +106,11 @@
 </nav>
 
 {% else %}
+<!-- Nav -->
+<!-- navbar for unauthenticated user  -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="padding: 10px">PriceJar</a>
+    <a class="navbar-brand" href="{% url 'home'%}" style="padding: 10px">PriceJar</a>
     <button
       class="navbar-toggler ms-auto"
       type="button"
@@ -220,5 +222,4 @@
 ></script>
 
 {% endif %}
-<!-- Nav -->
-<!-- navbar for authenticated user  -->
+
