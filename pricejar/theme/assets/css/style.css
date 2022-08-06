@@ -3,9 +3,11 @@
 *{
   box-sizing:border-box;
 }
+body{
+  background-color: #f1eaed;
+}
 h1,h2,h3,h4,h5,h6{
-font-family: 'mulish', 'sans-serif;';
-
+font-family: 'mulish', 'sans-serif';
 }
 p{
   font-family: 'mulish', 'sans-serif';
@@ -73,7 +75,7 @@ flex-grow: 0;
   color:#801b4b
 }
 .signpost{
-background-color: #801b4b;
+background-color: #f8d884;
 color:#FBFBFB;
 border-radius: 8px;
 }
@@ -83,6 +85,7 @@ border-radius: 8px;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  color:#801b4b
 }
 .signpost>p{
 font-family: 'Mulish';
@@ -91,9 +94,9 @@ font-weight: 500;
 font-size: 16px;
 line-height: 24px;
 text-align: center;
+color:#801b4b
 }
 .searchm{
-  background-color: #f8d884;
   border-radius: 8px;
 }
 .searchm>h6{
@@ -103,6 +106,7 @@ text-align: center;
   font-size: 24px;
   line-height: 32px;
   border-radius: 15px; 
+  color:#801b4b
 }
 .searchm>p{
   font-family: 'Mulish';
@@ -111,9 +115,10 @@ font-weight: 500;
 font-size: 16px;
 line-height: 24px;
 text-align: center;
+color:#801b4b
 }
 .comp{
-background: #110109;
+background: #f8d884;
 border-radius: 8px;
 }
 .comp>h6{
@@ -123,6 +128,7 @@ font-weight: 700;
 font-size: 24px;
 line-height: 32px;
 color: #FBFBFB;
+color:#801b4b
 }
 .comp>p{
   font-family: 'Mulish';
@@ -132,6 +138,7 @@ font-size: 16px;
 line-height: 24px;
 text-align: center;
 color: #FBFBFB;
+color:#801b4b
 }
 .team>h3{
   font-family: 'Mulish';
@@ -143,7 +150,7 @@ color: #FBFBFB;
 #footer {
 	color: #fff;
 	font-size: 14px;
-	background: #111111;
+	background:#1A050F;
 }
 
 #footer .footer-top {
@@ -169,7 +176,7 @@ color: #FBFBFB;
 	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 0;
-	font-family: "Raleway", sans-serif;
+	font-family: "mulish", sans-serif;
 }
 
 #footer .footer-top h4 {
@@ -274,7 +281,7 @@ color: #FBFBFB;
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-	background: #494343;
+	background:#1A050F;
 }
 
 #footer .credits {
