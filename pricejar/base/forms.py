@@ -2,8 +2,6 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 
-from django.forms import ModelForm
-from .models import Contact
 
 
 class SignupForm(UserCreationForm):
@@ -13,7 +11,3 @@ class SignupForm(UserCreationForm):
 
 
 # model form for contact model
-class ContactForm(ModelForm):
-    class Meta:
-        model = Contact
-        fields = '__all__'

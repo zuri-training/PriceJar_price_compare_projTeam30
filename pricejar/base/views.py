@@ -16,7 +16,7 @@ from django.contrib.auth import login
 from django.views import View
 # from .models import Product
 from . import forms
-from .forms import ContactForm
+from .models import Contact
 
 
 
@@ -103,14 +103,19 @@ def Userprofile(request):
 def contact(request):
     
     if request.method == "POST":
-        form = ContactForm(request.POST)
+        contact = Contact(request.POST)
+        first_name = request.POST.get('first_name')
+        last_name = request.POST.get('last_name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
 
-        if form.is_valid():
-            form.save()
-            messages.add_message(request, messages.INFO, 'Your contact information and message were successfully submitted.')
-
-    form = ContactForm()
-    context = {'form': form}
-    return render(request, 'base/contact.html', context)
+        contact.firstname = first_name
+        contact.lastname = last_name
+        contact.email = email
+        contact.message = message
+        contact.save()
+       
+    contact = Contact()
+    return render(request, 'base/contact.html')
 # End
 
