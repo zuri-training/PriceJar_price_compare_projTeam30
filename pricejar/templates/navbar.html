@@ -9,7 +9,7 @@
     style="background-color: #ffff"
   >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="padding: 10px">
+      <a class="navbar-brand" href="{% url 'home' %}" style="padding: 10px">
         <span style="color: #801b4b">P</span>
         <span style="color: #801b4b">R</span>
         <span style="color: #801b4b">I</span>
@@ -110,7 +110,16 @@
 <!-- navbar for unauthenticated user  -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'home'%}" style="padding: 10px">PriceJar</a>
+    <a class="navbar-brand" href="{% url 'home' %}" style="padding: 10px">
+      <span style="color: #801b4b">P</span>
+      <span style="color: #801b4b">R</span>
+      <span style="color: #801b4b">I</span>
+      <span style="color: #f2b109">C</span>
+      <span style="color: #f2b109">E</span>
+      <span style="color: black">J</span>
+      <span style="color: black">A</span>
+      <span style="color: black">R</span>
+    </a>
     <button
       class="navbar-toggler ms-auto"
       type="button"
@@ -196,7 +205,7 @@
       </ul>
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
-          <a href="login"><button class="btn" type="submit">Login</button></a>
+          <a href="{%url 'login' %}"><button class="btn" type="submit">Login</button></a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">or</a>
