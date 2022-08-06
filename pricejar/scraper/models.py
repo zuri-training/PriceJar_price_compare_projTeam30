@@ -33,7 +33,7 @@ def jumia_mobile_phone_page():
                 the_writer.writerow(product_info)
         #End Writing
                 sleep(randint(3,15)) #To mute process after click to sitmulate Human Interaction 
-jumia_mobile_phone_page()
+#jumia_mobile_phone_page()
 
 
 class JumiaMobilePhoneModel(models.Model):
@@ -70,7 +70,7 @@ def mobile_phone_killamall():
                 the_writer.writerow(product_info)
             #End Writing
             sleep(randint(3,15)) #To mute process after click to sitmulate Human Interaction 
-mobile_phone_killamall()
+#mobile_phone_killamall()
 
 class KillaMallMobilePhone(models.Model):
     image= models.URLField(_("Image"))
@@ -107,7 +107,7 @@ def jumia_fashion_page():
                 the_writer.writerow(product_info)
         sleep(randint(3,10))
     pass
-jumia_fashion_page()
+#jumia_fashion_page()
 
 class JumiaFasionModel(models.Model):
     image= models.URLField(_("Image"))
@@ -143,7 +143,7 @@ def killamall_fashion_page():
                 product_info=[image, link, product_name, price]
                 the_writer.writerow(product_info)
         sleep(randint(3,10))
-killamall_fashion_page()
+#killamall_fashion_page()
 
 class KillaMallFasionModel(models.Model):
     image= models.URLField(_("Image"))
