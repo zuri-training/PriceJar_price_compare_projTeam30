@@ -1,4 +1,23 @@
-/* carousel */
+/* multicolored text */
+
+.multicolor{
+  background: linear-gradient(90.27deg, #801B4B -1.51%, #F2B109 122.8%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+}
+
+/* images */
+/* https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=400 */
+
+.short-div{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit:contain;
+
+}
+
 
 /* general carousel */
 
@@ -183,7 +202,7 @@
 
 /* media query */
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 1450px) {
     div.item-a{
         display: none;
     }
@@ -202,7 +221,7 @@
     
   }
 
-@media only screen and (max-width: 170px){
+@media only screen and (max-width: 670px){
     div.item-a{
         display: none;
     }
@@ -216,7 +235,8 @@
         display: none;
         }
     div.item-c{
-        left: 10px;        }
+        left: 150px;
+        }
 }
   
   
