@@ -8,19 +8,33 @@ from django.utils.translation import gettext_lazy
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.http import HttpResponse
+from django.db.models import Q
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth import login
 from django.views import View
+from .models import Product
 from . import forms
-
+from .models import Contact
 
 
 
 
 #homepage view
 def homePage(request):
-    return render(request, 'base/home.html')
+     #--search logic
+    #querying the database 
+    q = request.GET.get('q') if request.GET.get('q') != None else ''
+
+    products = Product.objects.filter(
+        Q(name__icontains = q) |
+        Q(description__icontains = q)
+        )
+
+     #--end of search logic
+    context = {"products":products}
+    return render(request, 'base/home.html', context)
 #end of homepage view
 
 #user registration functionality
@@ -63,6 +77,7 @@ class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
     title = "Password Change Done Successfully"
 #end of password_change_done_view
 
+
 #password__reset_done_view
 class PriceJarPassWordResetDoneView(PasswordResetDoneView):
     template_name = "password_reset_sent.html"
@@ -83,3 +98,19 @@ def error404(request):
 def Userprofile(request):
     return render(request, 'base/userprofilepage.html')
 # end of user profile
+
+# Contact
+def contact(request):
+    if request.method == "POST":
+        contact = Contact()
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+
+        contact.name = name
+        contact.email = email
+        contact.message = message
+        contact.save()
+    return render(request, 'base/contact.html')
+# End
+

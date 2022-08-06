@@ -1,12 +1,13 @@
+
+import email
 from pyexpat import model
 from tkinter import CASCADE
 from unicodedata import name
 from django.db import models
 from django.contrib.auth.models import User
 
-
-
 # Create your models here.
+
 
 # User profile
 class UserProfile(models.Model):
@@ -17,8 +18,20 @@ class UserProfile(models.Model):
 # base.UserProfile.avatar: (fields.E210) Cannot use ImageField because Pillow is not installed.
 #         HINT: Get Pillow at https://pypi.org/project/Pillow/ or run command "python -m pip install Pillow".
 
-    # avatar = models.ImageField(default='default.jpg', upload_to='profile_images')
-    bio = models.TextField()
+    #ordering products from most recent updated/created to least updated
+    class Meta:
+        ordering = ['-updated', '-created']
 
     def __str__(self):
-        return self.user.username
+        return self.name
+        
+# contact model
+class Contact(models.Model):
+    name = models.CharField(max_length=150)
+    email = models.EmailField()
+    message = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
