@@ -1,6 +1,5 @@
 
 from os import terminal_size
-from re import TEMPLATE
 from django.shortcuts import render
 from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
 from django. contrib.auth.forms import PasswordResetForm,PasswordChangeForm
@@ -18,7 +17,6 @@ from django.views import View
 # from .models import Product
 from . import forms
 from .forms import ContactForm
-from django.views.generic import CreateView, TemplateView
 
 
 
@@ -116,6 +114,3 @@ def contact(request):
     return render(request, 'base/contact.html', context)
 # End
 
-# About us view
-class AboutUs(TemplateView):
-    template_name = 'about.html'

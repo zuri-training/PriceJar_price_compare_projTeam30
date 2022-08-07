@@ -28,7 +28,6 @@ urlpatterns = [
     path('error404', views.error404, name='error404'),
     # user profile
     path('user_profile/', views.Userprofile, name ='userprofilepage'),
-    path('contact/', views.contact, name='contact'), # contact url,
-    path('', views.AboutUs.as_view(), name='about') # about.url
+    path('contact/', views.contact, name='contact'), # contact url
 ] 
 
