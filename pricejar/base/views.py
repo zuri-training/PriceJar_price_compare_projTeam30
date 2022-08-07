@@ -93,6 +93,11 @@ def error404(request):
     return render(request, 'base/error404.html')
 #end of error 404 view
 
+#start of faq view
+def faq(request):
+    return render(request, 'base/faq.html')
+#end of faq view
+
 # start of user profile    
 @login_required
 def Userprofile(request):
