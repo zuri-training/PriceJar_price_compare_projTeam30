@@ -19,17 +19,123 @@ p{
 	align-items: center;
 }
 .logi{
-  
+  color:#801b4b
+}
+.nbtn{
+  background-color:#801b4b;
+  color: white;
+}
+.abouth2{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 72px;
+text-align: center;
+background: linear-gradient(90.27deg, #801B4B -1.51%, #F2B109 122.8%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-emphasis-color: transparent;
+}
+.bout{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 48px;
+text-align: center;
+color: #110109;
+}
+.hw{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+color: #110109;
+}
+.hwp{
+  font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #110109;
+}
+.signpost{
+background: #FBE5AD;
+border: 1px solid #F2B109;
+border-radius: 8px;
+}
+.signpost>h6{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+text-align: center;
+color: #801B4B;
+}
+.signpost>p{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+text-align: center;
+color: #801B4B;
+}
+.searchm{
+  background: #F4F4F4;
+border: 1px solid #AA6787;
+border-radius: 8px;
+}
+.searchm>h6{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #801B4B;
+}
+.searchm>p{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #801B4B;
+}
+.comp{
+  background: #FBE5AD;
+  border: 1px solid #F2B109;
+  border-radius: 8px; 
+}
+.comp>h6{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #801B4B;
+}
+.comp>p{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #801B4B;
 }
 #footer {
 	color: #fff;
 	font-size: 14px;
-	background: #111111;
+	background: #1A050F;;
 }
 
 #footer .footer-top {
 	padding: 60px 0 30px 0;
-	background: #1b1b1b;
+	background: #1A050F;;
 }
 
 #footer .footer-top .footer-contact {
@@ -125,16 +231,17 @@ p{
 #footer .footer-newsletter form {
 	margin-top: 30px;
 	background: #fff;
-	padding: 5px 10px;
+	padding: 2px 4px;
 	position: relative;
 	border-radius: 4px;
 	text-align: left;
 }
 
 #footer .footer-newsletter form input[type="email"] {
-	border: 0;
-	padding: 4px 8px;
+	border: 1px;
+	padding: 5px 10px;
 	width: calc(100% - 100px);
+  background-color: #1A050F;
 }
 
 #footer .footer-newsletter form input[type="submit"] {
@@ -146,8 +253,8 @@ p{
 	background: none;
 	font-size: 16px;
 	padding: 0 20px;
-	background: #000000;
-	color: #fff;
+	background: #fff;
+	color: #1A050F;;
 	transition: 0.3s;
 	border-radius: 0 4px 4px 0;
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
