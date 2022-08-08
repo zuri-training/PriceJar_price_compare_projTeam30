@@ -68,18 +68,14 @@ label>span{
     text-decoration: none;
 }
 .reset-password-p:hover{
-    color: white;
-    background-color: rgb(145, 145, 145);
-    color: #ccc;
+    color: #3f0e26;
     margin: 2px auto;
     padding: 6px 0;
     border-radius: 8px;
     width: 22vh;
 }
 .reset-password-p:active{
-    color: white;
-    background-color: rgb(145, 145, 145);
-    color: #ccc;
+    color: #e92d88;
     margin: 0 auto;
     padding: 7px 4px;
     border-radius: 8px;
