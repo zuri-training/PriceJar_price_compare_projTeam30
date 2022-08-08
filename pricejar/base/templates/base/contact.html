@@ -1,4 +1,5 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load crispy_forms_tags %} {%block
+content %}
 
 <div>
   <meta charset="UTF-8" />
@@ -41,41 +42,25 @@
       <div class="card-body">
         <div>
           <form method="POST" action="">
-            {% csrf_token %} {{ form }}
-
+            {% csrf_token %}
             <!-- Name input -->
             <div class="form-outline mb-4">
               <label class="form-label" for="loginName">First Name</label>
-              <input
-                name="firstname"
-                type="name"
-                id="loginName"
-                class="form-control"
-                placeholder="Mawuli"
-              />
+              <br />
+              {{form.firstname |as_crispy_field}}
             </div>
 
             <div class="form-outline mb-4">
               <label class="form-label" for="loginName">Last Name</label>
-              <input
-                name="lastname"
-                type="name"
-                id="loginName"
-                class="form-control"
-                placeholder="Owusu"
-              />
+              <br />
+              {{form.lastname |as_crispy_field}}
             </div>
 
             <!-- Email input -->
             <div class="form-outline mb-4">
               <label class="form-label" for="registerEmail">Email</label>
-              <input
-                name="email"
-                type="email"
-                id="registerEmail"
-                class="form-control"
-                placeholder="MawuliOwusu@gmail.com"
-              />
+              <br />
+              {{form.email |as_crispy_field}}
             </div>
 
             <!-- text input -->
@@ -85,13 +70,7 @@
               >
               <br />
               <br />
-              <textarea
-                name="message"
-                class="form-control rounded-0"
-                id="exampleFormControlTextarea1"
-                rows="10"
-                placeholder="What would you like to tell us?"
-              ></textarea>
+              {{form.message |as_crispy_field}}
             </div>
             <br />
             <!-- Submit button -->
