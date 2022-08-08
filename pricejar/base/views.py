@@ -1,4 +1,5 @@
 
+from email.message import Message
 from os import terminal_size
 from django.shortcuts import render
 from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
@@ -106,16 +107,8 @@ def Userprofile(request):
 
 # Contact
 def contact(request):
-    
-    if request.method == "POST":
-        form = ContactForm(request.POST)
-
-        if form.is_valid():
-            form.save()
-            messages.add_message(request, messages.INFO, 'Your contact information and message were successfully submitted.')
-
-    form = ContactForm()
-    context = {'form': form}
+    context = {}
+    context['form'] = ContactForm
     return render(request, 'base/contact.html', context)
-# End
+
 
