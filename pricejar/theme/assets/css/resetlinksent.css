@@ -60,6 +60,9 @@ fieldset{
     background-color: #551232;
     box-shadow: 8px 8px 32px #F3DBE7
 }
+#reset-password-submit-btn:active{
+	background: #954169;
+}
 #footer {
 	color: #fff;
 	font-size: 14px;
