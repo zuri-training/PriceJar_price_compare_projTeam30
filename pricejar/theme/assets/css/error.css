@@ -220,10 +220,13 @@ body{
 	#error-table-col1{
 		width: 100%;
 		margin-bottom: 10%;
+		text-align: center;
 	}
 	#error-table-col1 .lower-section{
 		display: flex;
+		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 	}
 	
 	#error-image{
@@ -232,6 +235,7 @@ body{
 	}
 	.error-label-link{
 		display: block;
+		margin: 0;
 	}
 	.error-input-btn{
 		display: inline-block;
@@ -239,6 +243,7 @@ body{
 		width: 120px;
 		height: 35px;
 		object-fit: contain;
+		margin-bottom: 10px;
 	}
 	/* #footer{
 		width: 100%;
