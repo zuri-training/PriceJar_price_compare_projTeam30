@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from django.forms import ModelForm
 from .models import Contact
-
+from crispy_forms.helper import FormHelper
 
 class SignupForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
@@ -14,6 +14,11 @@ class SignupForm(UserCreationForm):
 
 # model form for contact model
 class ContactForm(forms.ModelForm):
+    [...]
+    def __init__(self,*args,**kwargs):
+        super(ContactForm,self).__init__(*args,**kwargs)
+        self.helper = FormHelper()
+        self.helper.form_show_labels = False
     class Meta:
         model = Contact
         fields = '__all__'
@@ -21,4 +26,4 @@ class ContactForm(forms.ModelForm):
         'lastname' :   forms.TextInput(attrs = {'type':'name','id':'loginName','placeholder':'Owusu'}),
         'email'  : forms.TextInput(attrs = {'type':'email','id':'registerEmail','placeholder':'MawuliOwusu@gmail.com'}),
         'message' :  forms.Textarea(attrs = {'class':'form-control rounded-0','id':'exampleFormControlTextarea1','rows':'10','placeholder':'What would you like to tell us?'}),}
-        
+         
