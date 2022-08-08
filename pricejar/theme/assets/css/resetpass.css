@@ -55,7 +55,14 @@ label>span{
     padding: 10px 0;
     border-radius: 6px;
     font-size: 14px;
-	box-shadow: #801B4B9a 0 0 10px;
+	box-shadow: 8px 8px 32px #F3DBE7;
+}
+#reset-password-submit-btn:hover{
+    background-color: #551232;
+    box-shadow: 8px 8px 32px #F3DBE7
+}
+#reset-password-submit-btn:active{
+	background: #954169;
 }
 .reset-password-p{
     font-size: 12px;
