@@ -10,7 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -40,7 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'base.apps.BaseConfig',
+<<<<<<< HEAD
     'scraper.apps.ScraperConfig',
+=======
+>>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 ]
 
 MIDDLEWARE = [
@@ -143,9 +149,13 @@ EMAIL_USE_TLS = True
 
 
 # django_project/settings.py
+<<<<<<< HEAD
 LOGIN_REDIRECT_URL = "/"
 
 
 # Media URL and ROOT for user profile images
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+=======
+LOGIN_REDIRECT_URL = "/"
+>>>>>>> 113443751e7132b0b294df84db685278a2e26bb9

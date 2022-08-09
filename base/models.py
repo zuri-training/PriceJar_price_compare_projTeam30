@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 
 import email
+=======
+>>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 from pyexpat import model
 from tkinter import CASCADE
 from unicodedata import name
 from django.db import models
+<<<<<<< HEAD
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -35,3 +39,8 @@ class Contact(models.Model):
         return self.email
 
 
+=======
+
+
+# Create your models here.
+>>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
