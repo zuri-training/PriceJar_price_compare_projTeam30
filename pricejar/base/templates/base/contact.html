@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style(ls).css' %}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6d7c400781.js" crossorigin="anonymous"></script> 
+  </div>
+     
+  
+  <div style="background-color: #fff8f8;">
+
+    <!-- text -->
+    <div class=" px-5 mb-2 mx-auto m-5 " style="height:270px; width: 100%;">
+      <br>
+      <br>
+      <br>
+
+      <h1 class=" multicolor d-flex justify-content-center" > Contact Us</h1>
+      <p class="align-text-bottom d-flex justify-content-center">We will love to hear from you! Ask us a question or drop a comment , fill the form below and we'll get back to you as soon as we can.</p>
+
+    <!-- CARD!! -->  
+    <!-- 'm-5' margin .. 'mx-auto' center align -->
+    <div class="card px-5 mb-2 mx-auto m-5 " style=" width: 800px; height: 820px;">
+      <div class="card-body">
+
+    <div>
+      <form method='POST' action=''>
+        {% csrf_token %}
+        {{ form }}
+
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="loginName">First Name</label>
+          <input name="firstname" type="name" id="loginName" class="form-control"  placeholder="Your first name..."/>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="loginName">Last Name</label>
+          <input name="lastname" type="name" id="loginName" class="form-control"  placeholder="Your last name..."/>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="registerEmail">Email</label>
+          <input name="email" type="email" id="registerEmail" class="form-control" placeholder="Your email address..."/>
+        </div>
+
+        <!-- text input -->
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">What's on your mind?</label>
+          <br>
+          <br>
+          <textarea name="message" class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10" placeholder="What would you like to tell us?"></textarea>
+        </div>
+        <br>
+        <!-- Submit button -->
+        <div class="col text-center">
+          <button type="submit" class="btn btn-primary btn-block mb-5 form-control" style=" background-color: #801B4B;">Send</button>
+        </div>
+      </form>    
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div>
+      <h2 class="d-flex justify-content-center ">Reach out to us via:</h2>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col ">
+            <div class="card" style="border-color: #F2B109; background-color: transparent;">
+              <div class="card-body">
+                  <i class="fa-solid fa-phone d-flex justify-content-center"></i>
+                <p class="card-text d-flex justify-content-center">080xxxxxxxx</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border-color: #F2B109; background-color: transparent;">
+              <div class="card-body ">
+                  <i class="fa-solid fa-location-dot d-flex justify-content-center"></i>
+                <p class="card-text d-flex justify-content-center"> Km 24, Abeokuta express way,
+                  Abule Egba, Lagos state, Nigeria.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card " style="border-color: #F2B109; background-color: transparent;">
+              <div class="card-body">
+                  <i class="fa-solid fa-message d-flex justify-content-center"></i>
+                <p class="card-textjustify-content-center">Horlahidxxx"gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+  </div>
+  
+
+{% endblock content %}

@@ -2,7 +2,6 @@
 
 *{
   box-sizing:border-box;
-  font-family: 'mulish', 'sans-serif';
 }
 h1,h2,h3,h4,h5,h6{
 font-family: 'mulish', 'sans-serif;';
@@ -12,16 +11,19 @@ p{
   font-family: 'mulish', 'sans-serif';
 }
 /* about us */
-#hero {
-	min-height: 300px;
+.about {
+	min-height: 400px;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 150px;
 	align-content: center;
 	align-items: center;
 }
-
-/*search bar*/
-
+.About {
+	background-image: url("");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 #footer {
 	color: #fff;
@@ -244,6 +246,7 @@ p{
   display: inline-block;
 }
 
+/*Top deals*/
 .card {
   margin-bottom: 1rem;
 }
