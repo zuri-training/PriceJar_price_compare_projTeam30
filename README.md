@@ -76,7 +76,7 @@ The degree of essentiality betiding this project makes it fit to be open sourced
 # Contact 
  - Obed Nwachukwu (Team Lead) - [NwaGod](twitter.com/@ObedNwagod)
  - Olamide Emmanuel (Design Team Lead) - [perky_ola](twitter.come/perky_ola)
- - Mirera Nyaoundi  (Backend Team Lead) - [Moses](twitter.com/moses)
+ - Mirera Nyaoundi  (Backend Team Lead) - [Moses](twitter.com/@the_lose_kanon)
  - Victor Okwuonu   (Frontend Team Lead)- [Victor](twitter.com/Vickode_X)
 
  - Project Link : [https://github.com/zuri-training/PriceJar_price_compare_projTeam30](https://github.com/zuri-training/PriceJar_price_compare_projTeam30)
