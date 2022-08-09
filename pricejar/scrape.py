@@ -30,11 +30,6 @@ headers ={'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 
 
 
-
-
-
-
-
 # url ="https://www.jumia.co.ke/phones-tablets/?page="
 
 # for page_number in range(2,49):
