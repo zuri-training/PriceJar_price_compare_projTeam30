@@ -54,11 +54,21 @@
 
 <br>
   <div class="grid container-fluid" >
-    <div class="item-a"><img src="" class="img-fluid" alt=""></div>
-    <div class="item-b"><img src="" class="img-fluid" alt=""></div>
-    <div class="item-c"><img src="" class="img-fluid" alt=""></div>
-    <div class="item-d"><img src="" class="img-fluid" alt=""></div>
-    <div class="item-e"><img src="" class="img-fluid" alt=""></div>
+    <div class="item-a">
+      {% load static %}<img src="{% static 'base/media/frame1.png' %}" class="img-fluid" alt="">
+    </div>
+    <div class="item-b">
+      {% load static %}<img src="{% static 'base/media/frame2.png' %}" class="img-fluid" alt="">
+    </div>
+    <div class="item-c">
+      {% load static %}<img src="{% static 'base/media/frame3.png' %}" class="img-fluid" alt="">
+    </div>
+    <div class="item-d">
+      {% load static %}<img src="{% static 'base/media/frame4.png' %}" class="img-fluid" alt="">
+    </div>
+    <div class="item-e">
+      {% load static %}<img src="{% static 'base/media/frame5.png' %}" class="img-fluid" alt="">
+    </div>
  </div>
 
  <br>
@@ -96,11 +106,11 @@
 
 <!--  -->
 <div class="container">
-  <h1>Responsive Bootstrap</h1>
+  <h1>Bestselling</h1>
   <div class="row" style="height: 700px;">
     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="width: 33%;">
       <div class="short-div bg-light" style=" height: 250px; margin-bottom: 20px;" >
-        <img src="" class="img-fluid" alt="">
+        {% load static %}<img src="{% static 'base/media/frame1.png' %}" class="img-fluid" alt="">
         <div style="padding-top: 170px; width:auto; height: 50px;">
           <h4> Clothing</h4>
           <a href="" class="text-dark">Search within category</a>
