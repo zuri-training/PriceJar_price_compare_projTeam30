@@ -12,24 +12,31 @@ html,body{
 	align-items: center;
 	padding: 0 40px;
 }
+
 /* #reset-password-image{
     width: 200px;
     margin: 0 auto;
     display: block;
 } */
 /* i added border values to givr it the colour around fieldset */
+fieldset{
+    width: 100%;
+}
 .reset-password-field{
     margin: 5rem auto 5rem auto;
 	border: 1px solid #AA6787;
     background-color: #FDFDFD;
     width: 63%;
-	height: 70vh;
+	height: 85vh;
     padding: 4rem 5rem;
     font-weight: 600;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .reset-password-form{
     font-size: 12px;
-    margin: 2rem 0 0 0;
+    margin:0;
 }
 .reset-password-h1, .reset-password-h6{
     text-align: center;
@@ -91,13 +98,14 @@ label>span{
 label{
 	display: block;
 	width: 100%;
+    margin-top: 30px;
 }
 #reset-password-input{
     width: 100%;
     height: 40px;
-    border-left: #fff;
-    border-right: #fff;
-    border-top: #fff;
+    border-left: #FDFDFD;
+    border-right: #FDFDFD;
+    border-top: #FDFDFD;
 	border-bottom: #aaa;
     border-width: 3px;
     border-radius: 3px;
@@ -278,7 +286,6 @@ label{
 @media (min-width: 700px) and (min-height: 1000px){
 	.reset-password-field{
 		display: flex;
-		justify-content: center;
 		align-items: center;
 		padding: 40px 30px;
 		margin: 80px 0;
