@@ -287,6 +287,9 @@ label{
 	.reset-password-field{
 		display: flex;
 		align-items: center;
+		padding: 40px 30px;
+		margin: 80px 0;
+		width: 100%;
 	}
 }
 @media (max-width: 376px){
