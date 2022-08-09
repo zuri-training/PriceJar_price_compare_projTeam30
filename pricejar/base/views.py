@@ -1,5 +1,6 @@
 
 from os import terminal_size
+from re import TEMPLATE
 from django.shortcuts import render
 from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
 from django. contrib.auth.forms import PasswordResetForm,PasswordChangeForm
@@ -14,9 +15,10 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth import login
 from django.views import View
-from .models import Product
+# from .models import Product
 from . import forms
-from .models import Contact
+from .forms import ContactForm
+from django.views.generic import CreateView, TemplateView
 
 
 
@@ -25,16 +27,16 @@ from .models import Contact
 def homePage(request):
      #--search logic
     #querying the database 
-    q = request.GET.get('q') if request.GET.get('q') != None else ''
+    # q = request.GET.get('q') if request.GET.get('q') != None else ''
 
-    products = Product.objects.filter(
-        Q(name__icontains = q) |
-        Q(description__icontains = q)
-        )
+    # products = Product.objects.filter(
+    #     Q(name__icontains = q) |
+    #     Q(description__icontains = q)
+    #     )
 
-     #--end of search logic
-    context = {"products":products}
-    return render(request, 'base/home.html', context)
+    #  #--end of search logic
+    # context = {"products":products}
+    return render(request, 'base/home.html')
 #end of homepage view
 
 #user registration functionality
@@ -101,16 +103,19 @@ def Userprofile(request):
 
 # Contact
 def contact(request):
+    
     if request.method == "POST":
-        contact = Contact()
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        message = request.POST.get('message')
+        form = ContactForm(request.POST)
 
-        contact.name = name
-        contact.email = email
-        contact.message = message
-        contact.save()
-    return render(request, 'base/contact.html')
+        if form.is_valid():
+            form.save()
+            messages.add_message(request, messages.INFO, 'Your contact information and message were successfully submitted.')
+
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'base/contact.html', context)
 # End
 
+# About us view
+class AboutUs(TemplateView):
+    template_name = 'about.html'
