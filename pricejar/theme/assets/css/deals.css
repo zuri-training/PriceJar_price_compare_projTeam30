@@ -21,6 +21,16 @@ p {
   background-color: #801B4B;
   color: #FFF;
 }
+.card-body{
+  background: rgba(253, 253, 253, 0.7);
+backdrop-filter: blur(18px);
+border-radius: 8px;
+padding: 32px 24px;
+}
+.nbtnn{
+  background: #F2B109;
+  color: #FFF;
+}
 .card {
 	margin-bottom: 1rem;
 	background-color: #fffaed;
@@ -31,8 +41,7 @@ p {
   font-family: 'Mulish';
 font-style: normal;
 font-weight: 700;
-font-size: 32px;
-line-height: 48px;
+font-size: 25px;
 display: flex;
 align-items: center;
 color: #110109;
@@ -41,17 +50,16 @@ color: #110109;
   font-family: 'Mulish';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
-line-height: 32px;
+font-size: 14px;
 display: flex;
-align-items: center;
+align-items:flex-start;
 color: #801B4B;
 }
 .card-link{
   font-family: 'Mulish';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 12px;
 color: #110109;
 }
 .list-viewz .row > [class*="col-"] {
