@@ -1,13 +1,29 @@
-function showList(e) {
-  var $gridCont = $('.grid-container');
+
+function leastShow(e) {
+  var $gridCont = $('.grid-containerz');
   e.preventDefault();
-  $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
+  $gridCont.hasClass('list-viewz') ? $gridCont.removeClass('list-viewz') : $gridCont.addClass('list-viewz');
 }
-function gridList(e) {
-  var $gridCont = $('.grid-container')
+function greedList(e) {
+  var $gridCont = $('.grid-containerz')
   e.preventDefault();
-  $gridCont.removeClass('list-view');
+  $gridCont.removeClass('list-viewz');
 }
 
-$(document).on('click', '.btn-grid', gridList);
-$(document).on('click', '.btn-list', showList);
+$(document).on('click', '.btn-greed', greedList);
+$(document).on('click', '.btn-least', leastShow);
+
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick() {
+  btn.style.backgroundColor = '#801b4b';
+  btn.style.color = 'white';
+});
+
+const btnn = document.getElementById('btnn');
+
+btnn.addEventListener('click', function onClick() {
+  btnn.style.backgroundColor = '#801b4b';
+  btnn.style.color = 'white';
+});

@@ -1,27 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
-*{
-  box-sizing: border-box;
-  font-family: 'mulish', 'sans-serif';
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap");
+* {
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "mulish", "sans-serif;";
+	font-weight: 800;
+}
+p {
+	font-family: "mulish", "sans-serif";
+}
+.logi{
+  color: #801B4B;
+}
+.nbtn{
+  background-color: #801B4B;
+  color: #FFF;
 }
 .card {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
+	background-color: #fffaed;
+	border: 1px solid #f2b109;
+	border-radius: 4px;
 }
-
-.list-view .row > [class*=col-] {
-  max-width: 100%;
-  flex: 0 0 100%;
+.card-title{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+display: flex;
+align-items: center;
+color: #110109;
 }
-.list-view .card {
-  flex-direction: row;
+.card-text{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+display: flex;
+align-items: center;
+color: #801B4B;
+}
+.card-link{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #110109;
+}
+.list-viewz .row > [class*="col-"] {
+	max-width: 100%;
+	flex: 0 0 100%;
+	flex-direction: column;
+}
+.list-viewz .card {
+	flex-direction: row;
 }
 @media (max-width: 575.98px) {
-  .list-view .card {
-    flex-direction: column;
-  }
+	.list-viewz .card {
+		flex-direction: column;
+	}
 }
-.list-view .card > .card-img-top {
-  width: auto;
+.list-viewz .card > .card-img-top {
+	width: auto;
 }
-.list-view .card .card-body {
-  display: inline-block;
+.list-viewz .card .card-body {
+	display: inline-block;
+}
+
+#footer {
+	color: #fff;
+	font-size: 14px;
+	background: #1A050F;
+}
+
+#footer .footer-top {
+	padding: 60px 0 30px 0;
+	background: #1A050F;
+}
+
+#footer .footer-top .footer-contact {
+	margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+	font-size: 26px;
+	line-height: 1;
+	font-weight: 700;
+}
+
+#footer .footer-top .footer-contact h3 span {
+	color: #ffffff;
+}
+
+#footer .footer-top .footer-contact p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Raleway", sans-serif;
+}
+
+#footer .footer-top h4 {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+#footer .footer-top h4::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #000000;
+	bottom: 0;
+	left: 0;
+}
+
+#footer .footer-top .footer-links {
+	margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: white;
+	font-size: 18px;
+	line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+	color: #aaaaaa;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+	text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+	text-decoration: none;
+	color: #1A050F;
+}
+
+#footer .footer-newsletter {
+	font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+	margin-top: 30px;
+	background: #FFF;
+	padding: 3px 10px;
+	position: relative;
+	border-radius: 4px;
+	text-align: left;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+	border: 0;
+	padding: 4px 8px;
+	width: calc(100% - 100px);
+  background-color: #fff;
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+	position: absolute;
+	top: 0;
+	right: -1px;
+	bottom: 0;
+	border: 0;
+	background: none;
+	font-size: 16px;
+	padding: 0 20px;
+	background:#ffF;
+	color: #1A050F;
+	transition: 0.3s;
+	border-radius: 0 4px 4px 0;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+	background: #494343;
+}
+
+#footer .credits {
+	padding-top: 5px;
+	font-size: 13px;
 }
