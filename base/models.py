@@ -26,8 +26,8 @@ class UserProfile(models.Model):
         
 # contact model
 class Contact(models.Model):
-    firstname = models.CharField(max_length=50)
-    lastname = models.CharField(max_length=50)
+    firstname = models.CharField(max_length=50, default="")
+    lastname = models.CharField(max_length=50, default="")
     email = models.EmailField()
     message = models.TextField()
 
