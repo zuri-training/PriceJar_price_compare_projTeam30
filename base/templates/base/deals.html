@@ -1,0 +1,446 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>deals</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<!-- Bootstrap CSS v5.2.0-beta1 -->
+   <link rel="stylesheet" href="../static/deals/bootstrap.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/deals/style.css"/>
+	</head>
+	<body>
+    <!-- nav start -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">PriceJar</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item active ">
+          <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{% url 'deals-page' %}" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deals</a>
+          <!-- <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div> -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div>
+        </li>
+      </ul>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Check Now</button>
+    </div>
+  </div>
+</nav>
+<!-- end of nav -->
+<!-- deals start --> 
+<section id="hero" class="hero">
+<div class="container d-flex justify-content-center p-5 ">
+          <h2 class="">Spend Less, Deal Smart</h2>
+          </div>
+<div class="container d-flex justify-content-center">
+  <div class="row ">
+      <div class="d-flex">
+              <div class="dropdown my-lg-0 my-2">
+                  <button class="btn btn-secondary d-flex justify-content-between align-items-center"
+                      type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="true">
+                      <span class=" w-100 d-flex align-items-center">
+                          <span class=" fw-lighter pe-2">ALL</span><span class="fw-lighter pe-3">
+                              Categories</span>
+                          <span class="fas fa-chevron-down ms-auto"></span>
+                      </span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                      <li><a class="dropdown-item" href="#">Fresh Meat</a></li>
+                      <li><a class="dropdown-item" href="#">Vegetable</a></li>
+                      <li><a class="dropdown-item" href="#">Fruit & Nut Gifts</a></li>
+                      <li><a class="dropdown-item" href="#">Fresh Berries</a></li>
+                  </ul>
+              </div>
+              <div class="d-flex align-items-center w-100 h-100 ps-lg-0 ps-sm-3">
+                  <input class=" ps-md-5 ps-3" type="text" placeholder="what do you need?">
+                  <div class="btn btn-primary d-flex align-items-center justify-content-center"> SEARCH</div>
+              </div>
+          </div>
+   </div>
+</div>
+</section>
+<div class="container d-flex align-items-center">
+  <div class="container p-0 my-0">
+    <div class=" row d-flex justify-content-between p-0 m-0" >
+      <div class="col-8 mx-0"><h4>New deals</h4></div>
+      <div class="col-4 d-flex justify-content-end"><small class="text-muted mt-2">view as</small><button class="btn btn-list"><i class="bi bi-list least"></i></button>  <button class="btn btn-grid
+      "> <i class="bi bi-grid-fill greed"></i></button></div>
+
+    </div>
+    <hr>
+  </div>
+  
+</div>
+<section id="ndeal">
+  <div class="container grid-container pb-5">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card" >
+          <div class="card-body">
+            <h5 class="card-title">30% OFF First Product Coupon</h5>
+            <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+            <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">30% OFF First Product Coupon</h5>
+            <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+            <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">30% OFF First Product Coupon</h5>
+            <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+            <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">30% OFF First Product Coupon</h5>
+            <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+            <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">30% OFF First Product Coupon</h5>
+            <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+            <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">30% OFF First Product Coupon</h5>
+            <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+            <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">30% OFF First Product Coupon</h5>
+            <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+            <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">30% OFF First Product Coupon</h5>
+            <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+            <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+ <section id="top-deals">
+<div class="container d-flex justify-content-center grid-containers">
+  <div class="row gx-2 justify-content-center">
+    <div class="container p-0 my-0">
+      <div class=" row d-flex justify-content-between p-0 m-0" >
+        <div class="col-8 mx-0"><h4> Top Deals</h4></div>
+        <div class="col-4 d-flex justify-content-end"><small class="text-muted mt-2"><a href="#" style="text-decoration:none;">see all</a>&nbsp;&nbsp; view as</small><button class="btn btn-liist"><i class="bi bi-list"></i></button>  <button class="btn btn-griid
+        "> <i class="bi bi-grid-fill "></i></button></div>
+      </div>
+      <hr>
+    </div>
+<div class="container grid-containers">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="card" >
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">30% OFF First Product <br> Coupon</h5>
+              <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+              <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+                     <img src=" " class="img-fluid rounded-start" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">30% OFF First Product <br> Coupon</h5>
+              <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+              <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+                     <img src=" " class="img-fluid rounded-start" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">30% OFF First Product <br> Coupon</h5>
+              <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+              <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+                     <img src=" " class="img-fluid rounded-start" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">30% OFF First Product <br> Coupon</h5>
+              <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+              <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+                     <img src="" class="img-fluid rounded-start" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+  </div>
+</div>
+</section>
+<section id="excluisive-deals grid-container">
+  <div class="container p-0">
+    <div class="row p-0">
+      <div class="container p-0 my-0">
+        <div class=" row d-flex justify-content-between p-0 m-0" >
+          <div class="col-9"><h4> Exclusive Deals</h4></div>
+          <div class="col-3 d-flex justify-content-end  mx-0"><small class="text-muted mx-0 mt-2">view as</small><button class="btn btn-least"><i class="bi bi-list"></i></button>  <button class="btn btn-greed
+          "> <i class="bi bi-grid-fill"></i></button></div>
+    
+        </div>
+      </div>
+   </div>
+   <hr>
+  </div>
+      <div class="container grid-containerz">
+        <div class="row pb-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">30% OFF First Product Coupon</h5>
+                    <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+                  </div>
+                </div>
+                <div class="col-4 d-inline-flex justify-content-end" >
+                  <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">30% OFF First Product Coupon</h5>
+                    <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+                  </div>
+                </div>
+                <div class="col-4 d-inline-flex justify-content-end" >
+                  <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">30% OFF First Product Coupon</h5>
+                    <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+                  </div>
+                </div>
+                <div class="col-4 d-inline-flex justify-content-end" >
+                  <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">30% OFF First Product Coupon</h5>
+                    <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+                  </div>
+                </div>
+                <div class="col-4 d-inline-flex justify-content-end" >
+                  <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">30% OFF First Product Coupon</h5>
+                    <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+                  </div>
+                </div>
+                <div class="col-4 d-inline-flex justify-content-end" >
+                  <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">30% OFF First Product Coupon</h5>
+                    <p class="card-text">Get 30% discount off your first purchase and shop like a pro</p>
+                  </div>
+                </div>
+                <div class="col-4 d-inline-flex justify-content-end" >
+                  <p class="card-text"><small class="text-muted"><a href="#" class="card-link">amazon.co.uk</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      New York, NY 535022<br>
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>PriceJar<span>.</span></h3>
+          <p>
+            A108 Adam Street <br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Support</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Contact us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="me-auto text-center">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PriceJar</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Team _30</a>
+      </div>
+    </div>
+
+</footer>
+<!--End Footer -->
+		<!-- Bootstrap JavaScript Libraries -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+    <script src="../static/deals/bootstrap.bundle.js"></script>
+    <script src="../static/deals/style.js"></script>
+	</body>
+</html>
