@@ -32,6 +32,6 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'), # contact url
 
     #About Us
-    path('about/', views.About_Us_View.as_view())
+    path('about/', views.About_Us_View.as_view(), name='about')
 ] 
    

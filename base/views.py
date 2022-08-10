@@ -18,7 +18,7 @@ from django.contrib.auth import login
 from . import forms
 from .forms import ContactForm
 
-
+from django.views.generic import TemplateView
 
 
 #homepage view
