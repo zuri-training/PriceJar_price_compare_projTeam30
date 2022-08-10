@@ -4,226 +4,174 @@
 <!-- navbar for authenticated user  -->
 
 {% if request.user.is_authenticated %}
-<nav 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light"
-    style="background-color: #ffff">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'home' %}" style="padding: 10px">
-        <span style="color: #801b4b">P</span>
-        <span style="color: #801b4b">R</span>
-        <span style="color: #801b4b">I</span>
-        <span style="color: #f2b109">C</span>
-        <span style="color: #f2b109">E</span>
-        <span style="color: black">J</span>
-        <span style="color: black">A</span>
-        <span style="color: black">R</span>
-      </a>
-      <button
-        class="navbar-toggler ms-auto"
+<nav
+  class="navbar fixed-top navbar-expand-lg navbar-light"
+  style="background-color: #ffff"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="padding: 10px">
+      <span style="color: #801b4b">P</span>
+      <span style="color: #801b4b">R</span>
+      <span style="color: #801b4b">I</span>
+      <span style="color: #f2b109">C</span>
+      <span style="color: #f2b109">E</span>
+      <span style="color: black">J</span>
+      <span style="color: black">A</span>
+      <span style="color: black">R</span>
+    </a>
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{%url 'home'%}"
+            >Home</a
+          >
+        </li>
 
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="{% url 'home' %}"
-              >Home</a
-            >
-
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Categories
-            </a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-
-            <a class="nav-link active" aria-current="page" href=""
-              >Compare by stores</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="{% url 'deals-page' %}"
-              >Deals</a
-            >
-
-          </li>
-        </ul>
-        <ul class="navbar-nav justify-content-end">
-          <li class="nav-item">
-
-            <a class="nav-link active" aria-current="page" href=""
-              >You are logged in</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="{%url 'logout'%}"
-              ><button class="btn" type="submit">Logout</button></a
-            >
-          </li>
-        </ul>
-      </div>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href=""
+            >Compare by stores</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{%url 'deals-page'%}"
+            >Deals</a
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href=""
+            >You are logged in</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="{%url 'logout'%}"><button class="btn" type="submit">Logout</button></a>
+        </li>
+      </ul>
     </div>
-  </nav>
-
-
-  <br />
-  <br />
-  <br />
-  <br />
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"
-  ></script>
+  </div>
 </nav>
 
 {% else %}
 <!-- Nav -->
 <!-- navbar for unauthenticated user  -->
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #fffafa;">
-    <div class="container-fluid">
-      <a class=" navbar-brand " href="#" style="padding: 10px;">
-        <span style="color: #801B4B;">P</span>
-        <span style="color: #801B4B;">R</span>
-        <span style="color: #801B4B;">I</span>
-        <span style="color: #F2B109">C</span>
-        <span style="color: #F2B109">E</span>
-        <span style="color: black;">J</span>
-        <span style="color: black;">A</span>
-        <span style="color: black;">R</span>
-      </a>
-      <button
-        class="navbar-toggler ms-auto  "
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
-          <li class="nav-item">
-            <!-- <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a> -->
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Deals
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Stores
-            </a>
+<nav
+  class="navbar fixed-top navbar-expand-lg navbar-light"
+  style="background-color: #ffff"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="padding: 10px">
+      <span style="color: #801b4b">P</span>
+      <span style="color: #801b4b">R</span>
+      <span style="color: #801b4b">I</span>
+      <span style="color: #f2b109">C</span>
+      <span style="color: #f2b109">E</span>
+      <span style="color: black">J</span>
+      <span style="color: black">A</span>
+      <span style="color: black">R</span>
+    </a>
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{%url 'home'%}"
+            >Home</a
+          >
+        </li>
 
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Categories
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="navbar-nav justify-content-end">
-          <li class="nav-item">
-            <a href="{% url 'login' %}"><button class="btn" type="submit" style="color: #801B4B; ">Login</button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">or</a>
-          </li>
-          <li class="nav-item">
-            <a href="{% url 'register' %}"><button class="btn" type="submit" style="color: #801B4B;">Signup</button></a>
-          </li>
-        </ul>
-      </div>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href=""
+            >Compare by stores</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{%url 'deals-page'%}">Deals</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{%url 'login'%}"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="{%url 'register'%}"
+            ><button class="btn" type="submit">SignUp</button></a
+          >
+        </li>
+      </ul>
     </div>
-  </nav>
-
-
-    </div>
-    </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </div>
+</nav>
 {% endif %}
