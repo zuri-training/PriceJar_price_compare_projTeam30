@@ -5,31 +5,53 @@ from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,P
 from django. contrib.auth.forms import PasswordResetForm,PasswordChangeForm
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.http import HttpResponse
+from django.db.models import Q
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth import login
 from django.views import View
+# from .models import Product
 from . import forms
+from .forms import ContactForm
+
 
 
 
 #homepage view
 def homePage(request):
+     #--search logic
+    #querying the database 
+    # q = request.GET.get('q') if request.GET.get('q') != None else ''
+
+    # products = Product.objects.filter(
+    #     Q(name__icontains = q) |
+    #     Q(description__icontains = q)
+    #     )
+
+    #  #--end of search logic
+    # context = {"products":products}
     return render(request, 'base/home.html')
 #end of homepage view
-
 
 #user registration functionality
 def signup_page(request):
     form = forms.SignupForm()
+
     if request.method == 'POST':
         form = forms.SignupForm(request.POST)
         if form.is_valid():
-            user = form.save()
+            user = form.save(commit=False)
+            user.username = user.username.lower()
+            user.save()
             # auto-login user
             login(request, user)
             return redirect(settings.LOGIN_REDIRECT_URL)
+        else:
+            messages.error(request, 'An error occurred during regestration, please try again')
     return render(request, 'base/register.html', context={'form': form})
 #end of user registration functionality
 
@@ -44,7 +66,8 @@ class Password_Change_View(PasswordChangeView):
 
 #PasswordResetView
 class Password_Reset_View(PasswordResetView):
-    template_name = "password_reset.html"
+    Form_class = PasswordResetForm
+    template_name = "base/password_reset.html"
 #end of PasswordResetView
 
 
@@ -53,6 +76,7 @@ class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
     template_name = "password_change_done.html"
     title = "Password Change Done Successfully"
 #end of password_change_done_view
+
 
 #password__reset_done_view
 class PriceJarPassWordResetDoneView(PasswordResetDoneView):
@@ -63,13 +87,35 @@ class PriceJarPassWordResetDoneView(PasswordResetDoneView):
 
 def DealsPageView(request):
     return render(request, 'base/deals.html',)
+
 #start of error 404 view
 def error404(request):
     return render(request, 'base/error404.html')
 #end of error 404 view
-    
+
 #start of faq view
 def faq(request):
     return render(request, 'base/faq.html')
 #end of faq view
+
+# start of user profile    
+@login_required
+def Userprofile(request):
+    return render(request, 'base/userprofilepage.html')
+# end of user profile
+
+# Contact
+def contact(request):
+    
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            messages.add_message(request, messages.INFO, 'Your contact information and message were successfully submitted.')
+
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'base/contact.html', context)
+# End
 
