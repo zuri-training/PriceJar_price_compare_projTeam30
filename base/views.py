@@ -1,4 +1,5 @@
 
+from email.mime import base
 from os import terminal_size
 from django.shortcuts import render
 from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
@@ -13,7 +14,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth import login
-from django.views import View
+from django.views.generic import TemplateView
 # from .models import Product
 from . import forms
 from .forms import ContactForm
@@ -118,4 +119,7 @@ def contact(request):
     context = {'form': form}
     return render(request, 'base/contact.html', context)
 # End
+
+class About_Us_View(TemplateView):
+    template_name = "base/about.html"
 
