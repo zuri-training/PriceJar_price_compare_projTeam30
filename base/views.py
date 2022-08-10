@@ -104,3 +104,6 @@ def contact(request):
     context['form'] = ContactForm
     return render(request, 'base/contact.html', context)
 
+#faq
+def faq(request):
+    return render(request,'base/faq.html')
