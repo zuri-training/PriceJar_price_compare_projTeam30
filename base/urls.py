@@ -23,32 +23,28 @@ urlpatterns = [
         # password change
     path('password_change/', views.PasswordChangeView.as_view(), name="account_change_password"),
     path('accounts/password_change_done/',views.PriceJar_Password_Change_Done_View.as_view(),name="password_change_done"),
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
     path('deals/',views.DealsPageView, name='deals-page'),
     path('error404', views.error404, name='error404'),
     # user profile
     path('user_profile/', views.Userprofile, name ='userprofilepage'),
     path('contact/', views.contact, name='contact'), # contact url
-=======
+
     path('deals/',views.DealsPageView, name='deals-page'),
     path('error404', views.error404, name='error404'),
     path('faq',views.faq, name='faq'),
-    
->>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
-] 
-=======
-
     path('deals/',views.DealsPageView, name='deals-page'),
     path('error404', views.error404, name='error404'),
     path('faq',views.faq, name='faq'),
     # user profile
     path('user_profile/', views.Userprofile, name ='userprofilepage'),
     path('contact/', views.contact, name='contact'), # contact url
->>>>>>> own
+
 
     #About Us
     path('about/', views.About_Us_View.as_view())
+    
+
 ] 
-   
+
