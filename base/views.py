@@ -1,6 +1,7 @@
 
 from email.mime import base
 from os import terminal_size
+
 from django.shortcuts import render
 from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
 from django. contrib.auth.forms import PasswordResetForm,PasswordChangeForm
@@ -8,13 +9,11 @@ from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.http import HttpResponse
-from django.db.models import Q
+
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth import login
-from django.views.generic import TemplateView
 # from .models import Product
 from . import forms
 from .forms import ContactForm
@@ -94,11 +93,6 @@ def error404(request):
     return render(request, 'base/error404.html')
 #end of error 404 view
 
-#start of faq view
-def faq(request):
-    return render(request, 'base/faq.html')
-#end of faq view
-
 # start of user profile    
 @login_required
 def Userprofile(request):
@@ -107,19 +101,13 @@ def Userprofile(request):
 
 # Contact
 def contact(request):
-    
-    if request.method == "POST":
-        form = ContactForm(request.POST)
-
-        if form.is_valid():
-            form.save()
-            messages.add_message(request, messages.INFO, 'Your contact information and message were successfully submitted.')
-
-    form = ContactForm()
-    context = {'form': form}
+    context = {}
+    context['form'] = ContactForm
     return render(request, 'base/contact.html', context)
-# End
 
 class About_Us_View(TemplateView):
     template_name = "base/about.html"
 
+#faq
+def faq(request):
+    return render(request,'base/faq.html')

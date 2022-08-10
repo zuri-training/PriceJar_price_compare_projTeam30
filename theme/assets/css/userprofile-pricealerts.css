@@ -1,0 +1,241 @@
+*{
+    font-family: 'mulish' , sans-serif;
+    color: #000;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 40px;
+}
+.profile-field{
+    margin: 80px auto 5rem auto;
+	border: 1px solid #AA6787;
+    background-color: #FDFDFD;
+    width: 95%;
+	height: 85vh;
+    font-weight: 600;
+    display: flex;
+	justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+.profile-section{
+    width: 20%;
+    border-right: 1px solid #AA6787;
+    background-color: #FFFAED;
+}
+.profile-section h1{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.profile-section h6{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.profile-section p{
+    font-size: 13px;
+}
+.profile-section a{
+    text-decoration: none;
+    color: black;
+    margin: 8px 0;
+}
+.profile-section a:hover{
+    text-decoration: none;
+    color: #6B173F;
+    margin: 8px 0;
+}
+.profile-section a:active{
+    text-decoration: none;
+    color: #AA6787;
+    margin: 8px 0;
+}
+.profile-section img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+.other-profile-views{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-top: 45px;
+}
+#pricealert-pagelink{
+    font-size: 25px;
+}
+.price-alert-section{
+    width: 80%;
+    text-align:start;
+    margin: 25px 60px;
+}
+#footer {
+	color: #fff;
+	font-size: 14px;
+	background: #1A050F;;
+    width: 100%;
+}
+#footer .footer-top {
+	padding: 60px 0 30px 0;
+	background: #1A050F;
+}
+#footer .footer-top .footer-contact {
+	margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+	font-size: 26px;
+	line-height: 1;
+	font-weight: 700;
+}
+
+#footer .footer-top .footer-contact h3 span {
+	color: #ffffff;
+}
+
+#footer .footer-top .footer-contact p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Raleway", sans-serif;
+}
+
+#footer .footer-top h4 {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+#footer .footer-top h4::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #000000;
+	bottom: 0;
+	left: 0;
+}
+
+#footer .footer-top .footer-links {
+	margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: white;
+	font-size: 18px;
+	line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+	color: #aaaaaa;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+	text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+#footer .footer-newsletter {
+	font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+	margin-top: 30px;
+	background: #fff;
+	padding: 5px 10px;
+	position: relative;
+	border-radius: 4px;
+	text-align: left;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+	border: 0;
+	padding: 4px 8px;
+	width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+	position: absolute;
+	top: 0;
+	right: -1px;
+	bottom: 0;
+	border: 0;
+	background: none;
+	font-size: 16px;
+	padding: 0 20px;
+	background: #000000;
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 0 4px 4px 0;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+	background: #494343;
+}
+
+#footer .credits {
+	padding-top: 5px;
+	font-size: 13px;
+}
+@media(max-width: 800px) {
+    .profile-field{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 376px){
+    .profile-field{
+        width: 100%;
+        padding: 0;
+    }
+} 
+@media (max-width: 330px){
+    .profile-field{
+        width: 100%;
+        padding: 0;
+    }
+    .profile-field img{
+        width: 80%;
+        height: auto;
+    }
+} 

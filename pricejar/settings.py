@@ -40,9 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
+    #installed apps and libraries
     'base.apps.BaseConfig',
     'scraper.apps.ScraperConfig',
+    "crispy_forms", # new
+    "crispy_bootstrap5", # new
 ]
 
 MIDDLEWARE = [
@@ -147,7 +150,8 @@ EMAIL_USE_TLS = True
 
 # django_project/settings.py
 LOGIN_REDIRECT_URL = "/"
-
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
+CRISPY_TEMPLATE_PACK = "bootstrap5" 
 
 # Media URL and ROOT for user profile images
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

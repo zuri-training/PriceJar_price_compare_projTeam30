@@ -5,11 +5,16 @@ beautifulsoup4==4.11.1
 certifi==2022.6.15
 cffi==1.15.1
 charset-normalizer==2.1.0
+crispy-bootstrap5==0.6
 cryptography==37.0.4
 dj-database-url==1.0.0
 Django==4.0.6
+<<<<<<< HEAD
 django-on-heroku==1.1.2
 gunicorn==20.1.0
+=======
+django-crispy-forms==1.13.0
+>>>>>>> 2c4e8819a0594ba9a38ad80a0c0c5b8004e4ba41
 h11==0.13.0
 idna==3.3
 lxml==4.9.1

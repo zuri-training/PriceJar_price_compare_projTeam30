@@ -1,419 +1,314 @@
-{% extends 'base.html' %}
+{%extends 'base.html'%}
 {%load static%}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% if request.user.is_authenticated %}
+{%block content%}
+<body style="background:white">
 
-<h4>Welcome {{request.user.Username}} </h4>
-
-{% endif %}
-
-<!-- head  -->
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <!-- <link rel="stylesheet" href="{% static 'assets/css/style(home).css' %}" /> -->
-
-        <!-- css file link added in the static folder -->
-        
-
-        <link rel="stylesheet" href="{% static 'base/css/home.css' %}">
-        <script src="{% static 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' %}" ></script>
     
-        <link
-          href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' %}"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
-        />
-    </head>
-  <!-- Body -->
+      <!-- Body -->
 <br>
 <br>
 <br>
 <br>
 
 <!-- search -->
-  <div>
-    <h2 class="text-center">Shop Less. Deal Smartly</h2>
-    <div class="input-group">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Filter by categories
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-      <input type="search" name="q" class="form-control rounded bg-light" placeholder="Search for products" aria-label="Search" aria-describedby="search-addon" />
-      <button type="button" class="btn btn-outline-primary text-white bg-secondary">search</button>
-    </div>
-  </div>
-
-  <!-- card entourage -->
-<br>
-
-<br>
-  <div class="grid container-fluid" >
-    <div class="item-a">
-      {% load static %}<img src="{% static 'base/media/frame1.png' %}" class="img-fluid" alt="">
-    </div>
-    <div class="item-b">
-      {% load static %}<img src="{% static 'base/media/frame2.png' %}" class="img-fluid" alt="">
-    </div>
-    <div class="item-c">
-      {% load static %}<img src="{% static 'base/media/frame3.png' %}" class="img-fluid" alt="">
-    </div>
-    <div class="item-d">
-      {% load static %}<img src="{% static 'base/media/frame4.png' %}" class="img-fluid" alt="">
-    </div>
-    <div class="item-e">
-      {% load static %}<img src="{% static 'base/media/frame5.png' %}" class="img-fluid" alt="">
-    </div>
- </div>
-
- <br>
- <br>
- <br>
-
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br><br>
-<br>
-<br>
-<br>
-
-
-  <!-- best selling -->
-
-</table>
-
-
-<div class="container">
-  <h1>Bestselling</h1>
-  <div class="row" style="height: 700px;">
-    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="width: 33%;">
-      <div class="short-div bg-light" style=" height: 250px; margin-bottom: 20px;" >
-        {% load static %}<img src="{% static 'base/media/Bestsellingframe1.jpeg' %}" class="img-fluid" alt="">
-        <div style="padding-top: 170px; width:auto; height: 50px;">
-          <h4> Clothing</h4>
-          <a href="" class="text-dark">Search within category</a>
-        </div>
-      </div>
-      <div class="long-div bg-light" style=" height: 400px;">
-        {% load static %}<img src="{% static 'base/media/Bestsellingframe2.jpg' %}" class="img-fluid" alt="">
-        <div style="padding-top: 315px; width:auto; height: 50px;">
-          <h4> Clothing</h4>
-          <a href="" class="text-dark">Search within category</a>
-        </div>
-      </div>
-    </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="width: 33%;">
-        <div class="short-div bg-light align-items-end" style="height: 200px; margin-bottom: 20px;">
-          {% load static %}<img src="{% static 'base/media/Bestsellingframe3.jpg' %}" class="img-fluid" alt="">
-          <div style="padding-top: 115px; width:auto; height: 50px;">
-            <h4> Clothing</h4>
-            <a href="" class="text-dark">Search within category</a>
+      <div>
+        <h2 class="multicolor text-center">Spend Less. Deal Smartly</h2>
+        <div class="input-group">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #801B4B;">
+            Filter by categories
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Tech</a></li>
+            <li><a class="dropdown-item" href="#">Clothing </a></li>
+            <li><a class="dropdown-item" href="#">Home</a></li>
+            </ul>
           </div>
-         </div>
-        <div class="short-div bg-light" style=" height: 230px; margin-bottom: 10px;">
-          {% load static %}<img src="{% static 'base/media/Bestsellingframe4.jpg' %}" class="img-fluid" alt="">
-          <div style="padding-top: 145px; width:auto; height: 50px;">
-            <h4> Clothing</h4>
-            <a href="" class="text-dark">Search within category</a>
+          <input type="search" class="form-control rounded bg-light" placeholder="Search for products" aria-label="Search" aria-describedby="search-addon"  />
+          <button type="button" class="btn btn-outline-primary text-white" style="background-color: #801B4B;">search</button>
+        </div>
+      </div>
+
+      <!-- card entourage -->
+<br>
+
+<br>
+      <div class="grid container-fluid" >
+        <div class="item-a"><img src="" class="img-fluid" alt=""></div>
+        <div class="item-b"><img src="" class="img-fluid" alt=""></div>
+        <div class="item-c"><img src="" class="img-fluid" alt=""></div>
+        <div class="item-d"><img src="" class="img-fluid" alt=""></div>
+        <div class="item-e"><img src="" class="img-fluid" alt=""></div>
+     </div>
+
+     <br>
+     <br>
+     <br>
+
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+<br>
+<br>
+<br>
+
+      <!-- best selling -->
+
+    </table>
+
+    <!--  -->
+    <div class="container">
+      <h1>Bestselling</h1>
+      <div class="row" style="height: 700px;">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="width: 33%;">
+          <div class="short-div bg-light " style=" height: 250px; margin-bottom: 20px; " >
+            <div style=" width:auto; height: 50px; padding-top: 140px; margin: 10px; ">
+              <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
+              <h4> Beauty products</h4>
+              <a href="" class="text-dark">Search within category</a>
+              </div>
+            </div>
+          </div>
+          <div class="short-div bg-light " style=" height: 400px;">
+            <div style="padding-top: 280px; width:auto; height: 50px; margin: 10px;">
+              <h4> Groceries</h4>
+              <a href="" class="text-dark">Search within category</a>
+            </div>
           </div>
         </div>
-        <div class="short-div bg-light" style=" height: 210px; margin-bottom: 10px;">
-          {% load static %}<img src="{% static 'base/media/Bestsellingframe5.jpg' %}" class="img-fluid" alt="">
-          <div style="padding-top: 120px; width:auto; height: 50px;">
-            <h4> Clothing</h4>
-            <a href="" class="text-dark">Search within category</a>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="width: 33%;">
+            <div class="short-div bg-light align-items-end" style="height: 200px; margin-bottom: 20px;">
+              <div style="padding-top: 120px; width:auto; height: 50px; margin: 10px;">
+                <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
+                <h4> Watches</h4>
+                <a href="" class="text-dark">Search within category</a>
+                </div>
+              </div>
+             </div>
+            <div class="short-div bg-light" style=" height: 230px; margin-bottom: 10px;">
+              <div style="padding-top: 150px; width:auto; height: 50px; margin: 10px;">
+                <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
+                <h4> Gadgets</h4>
+                <a href="" class="text-dark">Search within category</a>
+                </div>
+              </div>
+            </div>
+            <div class="short-div bg-light" style=" height: 210px; margin-bottom: 10px;">
+              <div style="padding-top: 124px; width:auto; height: 50px; margin: 10px;">
+                <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
+                  <h4> Automotive</h4>
+                  <a href="" class="text-dark">Search within category</a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-2" style="padding:0px; width: 33%; ">
+          <div class="short-div bg-light" style=" margin-bottom: 10px; height: 300px;">
+            <div style="padding-top: 190px; width:auto; height: 50px; margin: 10px; ">
+              <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
+                <h4> Clothing & Accesories</h4>
+                <a href="" class="text-dark"> Search within category</a>
+              </div>
+            </div>
+          </div>
+          <div class="short-div bg-light" style="  height: 360px;">
+            <div style="padding-top: 235px; width:auto; height: 50px; margin: 10px;">
+              <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
+                <h4>Home decor</h4>
+                <a href="" class="text-dark">Search within category</a>  
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    
-    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-2" style="padding:0px; width: 33%;">
-      <div class="short-div bg-light" style=" margin-bottom: 10px; height: 300px;">
-        {% load static %}<img src="{% static 'base/media/Bestsellingframe6.jpeg' %}" class="img-fluid" alt="">
-        <div style="padding-top: 205px; width:auto; height: 50px;">
-          <h4> Clothing</h4>
-          <a href="" class="text-dark">Search within category</a>
-        </div>
-      </div>
-      <div class="short-div bg-light" style="  height: 360px;">
-        {% load static %}<img src="" class="img-fluid" alt="">
-        <div style="padding-top: 265px; width:auto; height: 50px;">
-          <h4> Clothing</h4>
-          <a href="" class="text-dark">Search within category</a>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-
-<!-- <div class = 'Bestselling'>
-  <div class="red">Red</div>
-  <div class="green">Green</div>
-  <div class="black">Black</div>
-  <div class="yellow">Yellow</div>
-  <div class="pink">Pink</div>
-  <div class="indigo">Indigo</div>
-</div> -->
 
 
-  <br>
-  <br>
-  <br>
 
-  <br>
 
-  <!-- partner brands -->
-  <div style="width: 100%;">
-    <br>
-    <br>
-    <h3  class=" text-center">Partner Brands</h3>
-    <br>
-    <div class="row bg-light" style="width: 100%; right: 0px;">
-      <div class="col" style="width: 20%;">
-        <h4>STOREFRONTS</h4>
+      <br>
+      <br>
+      <br>
+
+      <br>
+
+      <!-- partner brands -->
+      <div style="width: 100%;">
         <br>
-        <div class="row" style="width: 100%;">
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href="" class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
+        <br>
+        <h3  class=" text-center">Partner Brands</h3>
+        <br>
+        <div class="row" style="width: 100%; right: 0px;">
+          <div class="col-3" >
+            <h4 style="color: #801B4B; padding-left: 20px;">STOREFRONTS</h4>
+            <br>
+            <div class="container">
+              <div class="row row-cols-2">
+                <div class="col " style="width: fit-content; ">
+                  <a href="" class="card-body text-dark">
+                    <h5 class="card-title">Aliexpress</h5>
+                    <p class="card-text">Aliexpress.com</p>
+                  </a>
+                </div>
+                <div class="col" style="width: fit-content;">
+                  <a href="" class="card-body text-dark">
+                    <h5 class="card-title">Aliexpress</h5>
+                    <p class="card-text">Aliexpress.com</p>
+                  </a>
+                </div>
+                <div class="col" style="width: fit-content;">
+                  <a href="" class="card-body text-dark">
+                    <h5 class="card-title">Aliexpress</h5>
+                    <p class="card-text">Aliexpress.com</p>
+                  </a>
+                </div>
+                <div class="col" style="width: fit-content;">
+                  <a href="" class="card-body text-dark">
+                    <h5 class="card-title">Jumia</h5>
+                    <p class="card-text">Jumia.com</p>
+                  </a>
+                </div>
+                <div class="col " style="width: fit-content;">
+                  <a href="" class="card-body text-dark">
+                    <h5 class="card-title"> Aliexpress</h5>
+                    <p class="card-text">Aliexpress.com</p>
+                  </a>
+                </div>
+                <div class="col " style="width: fit-content;">
+                  <a href="" class="card-body text-dark">
+                    <h5 class="card-title">Aliexpress  </h5>
+                    <p class="card-text">Aliexpress.com</p>
+                  </a>
+                </div>
+                <div class="col" style="width: fit-content;">
+                  <a href="" class="card-body text-dark">
+                    <h5 class="card-title">Walmart</h5>
+                    <p class="card-text">Walmart.com</p>
+                  </a>
+                </div>
+                <div class="col " style="width: fit-content;">
+                  <a href="" class="card-body text-dark">
+                    <h5 class="card-title">Aliexpress</h5>
+                    <p class="card-text">Aliexpress.com</p>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row" style="width: 100%;">
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href="" class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
-          </div>
 
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href="" class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
           </div>
-        </div>
-        <div class="row" style="width: 100%;">
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href="" class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
-          </div>
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href="" class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row" style="width: 100%;">
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
-          </div>
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href="" class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row"  style="width: 100%;">
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width: auto;">
-              <a href="" class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
-          </div>
-          <div class="col" style="width: 50%;">
-            <div class="card" style="width:  auto;">
-              <a href="" class="card-body text-dark">
-                <h5 class="card-title">Amazon</h5>
-                <p class="card-text">amazon.co.uk</p>
-              </a>
-            </div>
+          <div class="col-9">
+              <div class="" style="padding-top: px; padding-left: 40px;">
+                <img src="something.png" class="img-fluid " alt="" style="padding-top: 140px; ">
+                <div class="" style="padding-top: px; width:270px; height: 50px;">
+                  <h2>SAMSUNG</h2>
+                  <p>Discover the latest in electronic & smart appliance 
+                    technology with Samsung. Find the next big 
+                    thing from smartphones & ablets to laptops &
+                    tvs & more.</p>
+                  <button class="btn bg-secondary text-white" style="width: fit-content ;">Search by brand</button>
+                </div>
+              </div>
           </div>
         </div>
       </div>
-      <div class="col" style="width: 80%; left: 0px;">
-        <div class="row">
-          <div class="" style="padding-top: 140px;">
-            <img src="something.png" class="img-fluid " alt="" style="padding-top: 140px; ">
-            <div class=" align-items-end" style="padding-top: 10px; width:350px; height: 50px;">
-              <h2>SAMSUNG</h2>
-              <p>Discover the latest in electronic & smart appliance 
-                technology with Samsung. Find the next big 
-                thing from smartphones & ablets to laptops &
-                tvs & more.</p>
-              <button class="btn bg-secondary text-white" style="width: 100%;">Search by brand</button>
+
+      <br>
+
+      <!-- top deals -->
+      <div class="row" style="padding: 40px; background:;">
+        <h4 class="col" style="text-align: left;">Top Deals</h4>
+        <a href="" class="col" style="text-align: right; color: black;">See all</a>
+        <hr>
+<!-- carousel -->
+        <div class="col carousel" style="width: 50%; padding-top: 100px;">
+
+          <input type="radio" name="position"/>
+          <input type="radio" name="position2" checked />
+          <input type="radio" name="position" />
+          
+          <main id="carousel">
+            <div class="item">
+              <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
             </div>
+            <div class="item">
+              <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
+            </div>
+            <div class="item active">
+              <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
+            </div>
+
+          <main>
+          
           </div>
-        </div>
+          <div class="text-center">
+            <button class="btn text-white " style="width: 240px; background: #801B4B;
+            box-shadow: 8px 8px 32px #F3DBE7;
+            border-radius: 8px;">Compare price</button>
+          </div>
       </div>
+
+      
+      <!-- top trends -->
+      <div class="row" style="padding: 40px;">
+        <h4 class="col" style="text-align: left;">Top trends</h4>
+        <a href="" class="col" style="text-align: right; color: black;">See all</a>
+        <hr>
+
+        <!-- note; only one same name posti0n can be checked -->
+
+<!-- carousel -->
+<div class="col carousel" style="width: 50%; padding-top: 100px;">
+
+  <input type="radio" name="position"/>
+  <input type="radio" name="position" checked />
+  <input type="radio" name="position" />
+  
+  <main id="carousel">
+    <div class="item">
+      <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
     </div>
+    <div class="item">
+      <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
+    </div>
+    <div class="item active">
+      <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
+    </div>
+
+  <main>
+  
   </div>
 
-  <!-- top deals -->
-  <div class="row" style="padding: 40px;">
-    <h4 class="col" style="text-align: left;">Top Deals</h4>
-    <a href="" class="col" style="text-align: right; color: black;">See all</a>
-    <hr>
-<!-- carousel -->
-    <div class="col carousel" style="width: 50%; padding-top: 100px;">
-
-      <input type="radio" name="position"/>
-      <input type="radio" name="position2" checked />
-      <input type="radio" name="position" />
-      
-      <main id="carousel">
-        <div class="item">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-        <div class="item">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-        <div class="item active">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-
-      <main>
-      
       </div>
       <div class="text-center">
-        <button class="btn bg-secondary text-white " style="width: auto;">Compare price</button>
-      </div>
-  </div>
-
-  <!-- ex-problem -->
-
-  <div class="row bg-light">
-    <div class="col bg-secondary" style="padding: 15px; margin:150px; height: 250px; width: 100px;">
-      <p class="text-white">Grab the best deals.</p>
-      <h2 class="text-white"> Spend less. Stress less.</h2>
-      <button class="btn bg-white text-black">See deals</button>
-    </div>
-    <div class="col carousel" style="width: 50%; padding-top: 100px;">
-
-      <input type="radio" name="position"/>
-      <input type="radio" name="position" checked />
-      <input type="radio" name="position" />
-      
-      <main id="carousel">
-        <div class="item">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-        <div class="item">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-        <div class="item active">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-
-      <main>
-      
-      </div>
-      
-  </div>
-
-  <!-- top trends -->
-  <div class="row" style="padding: 40px;">
-    <h4 class="col" style="text-align: left;">Top trends</h4>
-    <a href="" class="col" style="text-align: right; color: black;">See all</a>
-    <hr>
-
-    <!-- note; only one same name posti0n can be checked -->
-
-<!-- carousel -->
-    <div class="col carousel" style="width: 50%; padding-top: 100px;">
-
-      <input type="radio" name="position"/>
-      <input type="radio" name="position3" checked />
-      <input type="radio" name="position" />
-      
-      <main id="carousel">
-        <div class="item">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-        <div class="item">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-        <div class="item active">
-          <h3 class="align-items-start text-white" style="padding-left: 15px;">50% OFF</h3>
-        </div>
-
-      <main>
-      
+        <button class="btn  text-white " style="width: 240px; background: #801B4B;
+        box-shadow: 8px 8px 32px #F3DBE7;
+        border-radius: 8px;">Compare price</button>
       </div>
 
-  </div>
-  <div class="text-center">
-    <button class="btn bg-secondary text-white " style="width: auto;">Compare price</button>
-  </div>
-
-  <br>
-  <br>
-  <br>
+      <br>
+      <br>
+      <br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-{% endblock content %}
-
-
-
-
-
-
-
+  </body>
+</html>
+{%endblock content%}
