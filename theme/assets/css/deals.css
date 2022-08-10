@@ -21,6 +21,9 @@ p {
   background-color: #801B4B;
   color: #FFF;
 }
+.nbtn:hover{
+  color: #000000;
+}
 .card-body{
   background: rgba(253, 253, 253, 0.7);
 backdrop-filter: blur(18px);
