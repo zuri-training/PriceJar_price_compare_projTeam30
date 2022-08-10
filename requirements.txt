@@ -5,8 +5,10 @@ beautifulsoup4==4.11.1
 certifi==2022.6.15
 cffi==1.15.1
 charset-normalizer==2.1.0
+crispy-bootstrap5==0.6
 cryptography==37.0.4
 Django==4.0.6
+django-crispy-forms==1.13.0
 h11==0.13.0
 idna==3.3
 lxml==4.9.1
