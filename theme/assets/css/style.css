@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
 * {
 	box-sizing: border-box;
@@ -18,6 +19,19 @@ h6 {
 p {
 	font-family: "mulish", "sans-serif";
 	font-weight: 800;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;800&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'mulish', 'sans-serif;';
+font-weight: 800;
+}
+p{
+  font-family: 'mulish', 'sans-serif';
+>>>>>>> own
 }
 /* about us */
 .about {
@@ -27,6 +41,7 @@ p {
 	align-content: center;
 	align-items: center;
 }
+<<<<<<< HEAD
 .bout {
 	font-family: Mulish;
 	font-size: 28px;
@@ -155,11 +170,28 @@ p {
 	color: #fff;
 	font-size: 14px;
 	background: #1a050f;
+=======
+.About {
+	background-image: url("");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#footer {
+	color: #fff;
+	font-size: 14px;
+	background: #111111;
+>>>>>>> own
 }
 
 #footer .footer-top {
 	padding: 60px 0 30px 0;
+<<<<<<< HEAD
 	background: #1a050f;
+=======
+	background: #1b1b1b;
+>>>>>>> own
 }
 
 #footer .footer-top .footer-contact {
@@ -180,7 +212,11 @@ p {
 	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 0;
+<<<<<<< HEAD
 	font-family: "mulish", sans-serif;
+=======
+	font-family: "Raleway", sans-serif;
+>>>>>>> own
 }
 
 #footer .footer-top h4 {
@@ -196,7 +232,11 @@ p {
 	display: block;
 	width: 20px;
 	height: 2px;
+<<<<<<< HEAD
 	background: #1a050f;
+=======
+	background: #000000;
+>>>>>>> own
 	bottom: 0;
 	left: 0;
 }
@@ -213,7 +253,11 @@ p {
 
 #footer .footer-top .footer-links ul i {
 	padding-right: 2px;
+<<<<<<< HEAD
 	color: #1a050f;
+=======
+	color: white;
+>>>>>>> own
 	font-size: 18px;
 	line-height: 1;
 }
@@ -255,7 +299,11 @@ p {
 #footer .footer-newsletter form {
 	margin-top: 30px;
 	background: #fff;
+<<<<<<< HEAD
 	padding: 2px 5px;
+=======
+	padding: 5px 10px;
+>>>>>>> own
 	position: relative;
 	border-radius: 4px;
 	text-align: left;
@@ -263,9 +311,14 @@ p {
 
 #footer .footer-newsletter form input[type="email"] {
 	border: 0;
+<<<<<<< HEAD
 	padding: 5px 8px;
 	width: calc(100% - 100px);
 	background: #1a050f;
+=======
+	padding: 4px 8px;
+	width: calc(100% - 100px);
+>>>>>>> own
 }
 
 #footer .footer-newsletter form input[type="submit"] {
@@ -277,18 +330,160 @@ p {
 	background: none;
 	font-size: 16px;
 	padding: 0 20px;
+<<<<<<< HEAD
 	background: #fff;
 	color: #1a050f;
+=======
+	background: #000000;
+	color: #fff;
+>>>>>>> own
 	transition: 0.3s;
 	border-radius: 0 4px 4px 0;
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
+<<<<<<< HEAD
 	background: #1a050f;
+=======
+	background: #494343;
+>>>>>>> own
 }
 
 #footer .credits {
 	padding-top: 5px;
 	font-size: 13px;
+<<<<<<< HEAD
 }
+=======
+}
+/* deals */
+.col-lg-3 .btn.btn-primary {
+  width: 100%;
+  height: 43px;
+  box-shadow: none;
+  outline: none;
+  background-color: #67971f;
+  color: white;
+  font-weight: 800;
+  padding: 0px 15px;
+  line-height: 22px;
+  border: none;
+}
+
+.col-lg-3 .btn.btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.col-lg-3 .btn.btn-primary:hover {
+  background-color: #aadf5a;
+
+}
+
+.col-lg-3 ul {
+  width: 100%;
+}
+
+.col-lg-9 .btn.btn-secondary {
+  width: 100%;
+  height: 100% !important;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  font-weight: 800;
+  padding: 0px 15px;
+  line-height: 22px;
+  border: none;
+}
+
+
+.col-lg-9 .btn.btn-primary {
+  background-color: #67971f;
+  border: none;
+  height: 100%;
+  width: 100px;
+}
+
+.col-lg-9 .btn.btn-primary:hover {
+  background-color: #aadf5a;
+}
+
+.col-lg-9 ul {
+  width: 100%;
+}
+
+/*new deals*/
+.card {
+  margin-bottom: 1rem;
+}
+
+.list-view .row > [class*=col-] {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.list-view .card {
+  flex-direction: row;
+}
+@media (max-width: 575.98px) {
+  .list-view .card {
+    flex-direction: column;
+  }
+}
+.list-view .card > .card-img-top {
+  width: auto;
+}
+.list-view .card .card-body {
+  display: inline-block;
+}
+
+/*Top deals*/
+.card {
+  margin-bottom: 1rem;
+}
+
+.list-views .row > [class*=col-] {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.list-views .card {
+  flex-direction: row;
+}
+@media (max-width: 575.98px) {
+  .list-views .card {
+    flex-direction: column;
+  }
+}
+.list-views .card > .card-img-top {
+  width: auto;
+}
+.list-views .card .card-body {
+  display: inline-block;
+}
+
+/*excluisive deals*/
+.card {
+  margin-bottom: 1rem;
+}
+
+.list-viewz .row > [class*=col-] {
+  max-width: 100%;
+  flex: 0 0 100%;
+  flex-direction: column;
+}
+.list-viewz .card {
+  flex-direction: row;
+}
+@media (max-width: 575.98px) {
+  .list-viewz .card {
+    flex-direction: column;
+  }
+}
+.list-viewz .card > .card-img-top {
+  width: auto;
+}
+.list-viewz .card .card-body {
+  display: inline-block;
+}
+>>>>>>> own
