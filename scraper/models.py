@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import gettext as _
 
 # Create your models here.
+<<<<<<< HEAD
 import requests
 from bs4 import BeautifulSoup
 from time import sleep
@@ -35,6 +36,8 @@ def jumia_mobile_phone_page():
                 sleep(randint(3,15)) #To mute process after click to sitmulate Human Interaction 
 #jumia_mobile_phone_page()
 
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
 
 class JumiaMobilePhoneModel(models.Model):
     image= models.URLField(_("Image"))
@@ -45,6 +48,7 @@ class JumiaMobilePhoneModel(models.Model):
     def __str__(self):
         return self.product_name
 
+<<<<<<< HEAD
 def mobile_phone_killamall():
     url ="https://www.kilimall.co.ke/new/commoditysearch?c=1057&page="  #Source URL
      # Changes the page number
@@ -72,6 +76,8 @@ def mobile_phone_killamall():
             sleep(randint(3,15)) #To mute process after click to sitmulate Human Interaction 
 #mobile_phone_killamall()
 
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
 class KillaMallMobilePhone(models.Model):
     image= models.URLField(_("Image"))
     Link=models.CharField(_("Link"),max_length=300)
@@ -82,6 +88,7 @@ class KillaMallMobilePhone(models.Model):
         return self.product_name
 
 
+<<<<<<< HEAD
 def jumia_fashion_page():
     url ="https://www.jumia.co.ke/category-fashion-by-jumia/?page="
 
@@ -109,6 +116,8 @@ def jumia_fashion_page():
     pass
 #jumia_fashion_page()
 
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
 class JumiaFasionModel(models.Model):
     image= models.URLField(_("Image"))
     Link=models.CharField(_("Link"),max_length=300)
@@ -119,6 +128,7 @@ class JumiaFasionModel(models.Model):
         return self.product_name
 
 
+<<<<<<< HEAD
 def killamall_fashion_page():
     url ="https://www.kilimall.co.ke/new/commoditysearch?c=1294&page="
 
@@ -144,6 +154,8 @@ def killamall_fashion_page():
                 the_writer.writerow(product_info)
         sleep(randint(3,10))
 #killamall_fashion_page()
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
 
 class KillaMallFasionModel(models.Model):
     image= models.URLField(_("Image"))

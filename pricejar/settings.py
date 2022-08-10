@@ -11,9 +11,13 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import os
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+import os
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -44,9 +48,13 @@ INSTALLED_APPS = [
 
     'base.apps.BaseConfig',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'scraper.apps.ScraperConfig',
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+    'scraper.apps.ScraperConfig',
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
 ]
 
 MIDDLEWARE = [
@@ -150,12 +158,19 @@ EMAIL_USE_TLS = True
 
 # django_project/settings.py
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
 LOGIN_REDIRECT_URL = "/"
 
 
 # Media URL and ROOT for user profile images
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+<<<<<<< HEAD
 MEDIA_URL = '/media/'
 =======
 LOGIN_REDIRECT_URL = "/"
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+MEDIA_URL = '/media/'
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
