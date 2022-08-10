@@ -19,18 +19,7 @@ from django.contrib.auth import login
 from . import forms
 from .forms import ContactForm
 
-<<<<<<< HEAD
-from django.http import HttpResponse
-from django.shortcuts import render, redirect
-from django.conf import settings
-from django.contrib.auth import login
-from django.views import View
-from . import forms
-
-
-=======
 from django.views.generic import TemplateView
->>>>>>> main
 
 
 #homepage view
@@ -134,36 +123,6 @@ def error404(request):
     return render(request, 'base/error404.html')
 #end of error 404 view
 
-<<<<<<< HEAD
-
-# start of user profile    
-@login_required
-def Userprofile(request):
-    return render(request, 'base/userprofilepage.html')
-# end of user profile
-
-# Contact
-def contact(request):
-    
-    if request.method == "POST":
-        form = ContactForm(request.POST)
-
-        if form.is_valid():
-            form.save()
-            messages.add_message(request, messages.INFO, 'Your contact information and message were successfully submitted.')
-
-    form = ContactForm()
-    context = {'form': form}
-    return render(request, 'base/contact.html', context)
-# End
-
-#start of faq view
-def faq(request):
-    return render(request, 'base/faq.html')
-#end of faq view
-
-=======
->>>>>>> main
 # start of user profile    
 @login_required
 def Userprofile(request):

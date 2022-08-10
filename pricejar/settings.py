@@ -51,12 +51,8 @@ INSTALLED_APPS = [
     'scraper.apps.ScraperConfig',
 
     'scraper.apps.ScraperConfig',
-<<<<<<< HEAD
-
-=======
     "crispy_forms", # new
     "crispy_bootstrap5", # new
->>>>>>> main
 ]
 
 MIDDLEWARE = [
