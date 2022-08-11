@@ -34,5 +34,10 @@ urlpatterns = [
     path('about/', views.About_Us_View.as_view(), name='about'),
     
     path('contact', views.contact, name='contact'), # contact url
+    
+    path('documentation1', views.documentation1, name='documentation1'),
+    path('documentation2', views.documentation2, name='documentation2'),
+
+
 ] 
    
