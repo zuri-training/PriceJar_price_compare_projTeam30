@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+
+{% if request.user.is_authenticated %}
+
+<h4>Welcome {{request.user.Username}} </h4>
+
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>About us</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/style.css' %}"/>
+	</head>
+	<body>
+<nav class="navbar navbar-expand-md px-lg-5">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#"><span style="color:#801b4b">Pr</span><span style="color:#c0b66c">ice</span>Jar</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item active ">
+          <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">compare by Store</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Deals</a>
+        </li>
+      </ul>
+      <button class="btn my-2 my-sm-0 logi" type="submit">log in</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-secondary my-2 my-sm-0 nbtn" type="submit">log out</button>
+    </div>
+</nav>
+<div class="container-fluid ">
+<div class="about me-auto">
+  <h2 class="abouth2">About Us</h2>
+  <p class="text-center bout">We work tirelessly as a Team to provide you with the best price comparism<br>that suites your budget without having to break the bank to get what you<br> desire for yourself or your family.</p>
+</div>  
+</div>
+<br>
+<br>
+<div class="container mb-5">
+  <div class="container">
+    <h2 class="text-center section-title hw">How It Works</h2>   
+    <p class="text-center">Steps to follow in order to navigate through our website</p> 
+  </div>
+  <br><br>
+  <div class="container text-center">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-5 signpost border border-danger">
+        <img src="/pricejar/theme/assets/img/number.png"><br>
+    <h6>Create Account/Sign in</h6>
+    <br>
+  <p>Create an account or Sign In to your existing account to have access to all the wonderful features our platform has ranging from item search and comparing of items with 
+    other stores</p><br>
+       </div>
+      </div>
+      <div class="col ">
+        <div class="p-5 searchm bg-light border border-danger">
+          <img src="/pricejar/theme/assets/img/number (1).png"><br>
+      <h6>Browse for your item</h6><br>
+    <p>Once you are done creating an account or signing to your existing account, browse through the list of items or input an item name on the search bar or filter your search to narrow down your 
+      search</p>
+      <br>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-5 comp border border-danger">
+          <img src="/pricejar/theme/assets/img/number (2).png"><br>    
+      <h6>Browse for your item</h6><br>
+    <p>Once you have gotten the item you want, you can compare the prices with other store and you will be redirected to the store for a proper review of the item on the store and make your purchase
+      of the item</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+<div class="container mt-5 pt-5">
+  <div class="container border pt-5">
+  <div class="team text-center team"><h3>Meet Our Leaders</h3>
+  <p>Meet our esteemed team leader working tirelesly to make you happy.</p>
+</div>
+  <div class="container">
+    <div class="row me-auto text-center">
+<div class="col">
+  {% load static %} <img src="{% static 'base/media/members/neo4j.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Nwachukwu Obed</h5>
+    <p class="card-text">Team-lead|backend dev</p>
+    <i class="bi bi-github"></i>   <i class="bi bi-twitter"></i>   <i class="bi bi-linkedin"></i>
+  </div>
+</div>
+<div class="col">
+    {% load static %} <img src="{% static 'base/media/members/mirera.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mirera Nyaundi</h5>
+    <p class="card-text">sub-team-lead|backend dev</p>
+    <i class="bi bi-github"></i>   <i class="bi bi-twitter"></i>   <i class="bi bi-linkedin"></i>
+  </div>
+</div>
+<div class="col">
+    {% load static %} <img src="{% static 'base/media/members/olamide.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Olaniyan Olamide</h5>
+    <p class="card-text">Sub-team-lead|designer</p>
+    <i class="bi bi-github"></i>   <i class="bi bi-twitter"></i>   <i class="bi bi-linkedin"></i>
+  </div>
+</div>
+<div class="col">
+    {% load static %} <img src="{% static 'base/media/members/victor.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Okwuonu Victor</h5>
+    <p class="card-text">sub-team-lead|frontend dev</p>
+    <i class="bi bi-github"></i>   <i class="bi bi-twitter"></i>   <i class="bi bi-linkedin"></i>
+  </div>
+</div>
+<div class="col">
+    {% load static %} <img src="{% static 'base/media/members/oluwaseun.png' %}" class="card-img-top" alt="..."> 
+  <div class="card-body">
+    <h5 class="card-title">Adeniyi Oluwaseun</h5>
+    <p class="card-text">|designer|</p>
+    <i class="bi bi-github"></i>   <i class="bi bi-twitter"></i>   <i class="bi bi-linkedin"></i>
+  </div>
+</div>
+<div class="container p-5">
+  <button class="btn " type="button" data-bs-toggle="modal" data-bs-target="#team-members">View all team members</button>
+</div>
+ </div>   
+  </div>
+</div>
+</div>
+<div class="modal fade" id="team-members" tabindex="-1" aria-labelledby="tm" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tm">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<!-- <footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>PriceJar<span>.</span></h3>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Support</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Contact us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>Subscribe to our weekly newsletters to get updates from our team</p>
+          <form action="" method="post">
+            <input type="email" name="email" placeholder="email address"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="me-auto text-center">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PriceJar</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Team _30</a>
+      </div>
+    </div>
+
+</footer>End Footer -->
+
+		<!-- Bootstrap JavaScript Libraries -->
+		<script
+			src="/pricejar/theme/js/bootstrap.bundle.js"
+		></script>
+	</body>
+</html>
+
+
+{% endblock content %}
