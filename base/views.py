@@ -1,6 +1,7 @@
 
 from email.mime import base
 from os import terminal_size
+from re import template
 
 from django.shortcuts import render
 from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
@@ -111,3 +112,14 @@ class About_Us_View(TemplateView):
 #faq
 def faq(request):
     return render(request,'base/faq.html')
+
+ #documentation1
+def documentation1(request):
+    return render(request,'base/documentation1.html')
+    
+
+#documentation2
+def documentation2(request):
+    return render(request,'base/documentation2.html')
+    
+
