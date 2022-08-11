@@ -43,12 +43,6 @@ urlpatterns = [
 
 
     #About Us
-<<<<<<< HEAD
-    path('about/', views.About_Us_View.as_view())
-    
-
-=======
     path('about/', views.About_Us_View.as_view(), name='about')
->>>>>>> main
 ] 
 
