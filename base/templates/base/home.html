@@ -1,20 +1,15 @@
-{%extends 'base.html'%}
+{%extends "base.html"%}
 {%load static%}
-<!DOCTYPE html>
-<html lang="en">
-
 {%block content%}
+
 <body style="background:white">
 
-    
       <!-- Body -->
-<br>
-<br>
 <br>
 <br>
 
 <!-- search -->
-      <div>
+      <div style="margin: 90px;">
         <h2 class="multicolor text-center">Spend Less. Deal Smartly</h2>
         <div class="input-group">
           <div class="dropdown">
@@ -36,12 +31,21 @@
 <br>
 
 <br>
-      <div class="grid container-fluid" >
-        <div class="item-a"><img src="" class="img-fluid" alt=""></div>
-        <div class="item-b"><img src="" class="img-fluid" alt=""></div>
-        <div class="item-c"><img src="" class="img-fluid" alt=""></div>
-        <div class="item-d"><img src="" class="img-fluid" alt=""></div>
-        <div class="item-e"><img src="" class="img-fluid" alt=""></div>
+<br>
+<br>
+<br>
+      <div class="grid container-fluid align-items-center" style="justify-content: center; align-items: center;">
+        <div class="item-a"><img src="{%static 'assets/images/Pic.png'%}" class="img-fluid" alt=""></div>
+        <div class="item-f"><img src="{%static 'assets/images/Clothings2-pic.png'%}" class="img-fluid" alt=""></div>
+        <div class="item-b"><img src="{%static 'assets/images/Clothings-pic.png'%}" class="img-fluid" alt=""></div>
+        <div class="item-c" style="background: linear-gradient(331.96deg, #F2B109 -95.3%, #801B4B 100%);">
+         <h4 class="text-white">Hottest <br> Niche Deals</h4>
+         <p  class="text-white">Members only</p>
+          <img src="{%static 'assets/images/Ads image.png'%}" class="align-items-end" alt="">
+        </div>
+        <div class="item-d"><img src="{%static 'assets/images/pic2.png'%}" class="img-fluid" alt=""></div>
+        <div class="item-e"><img src="{%static 'assets/images/pexels-skitterphoto-615302 1.png'%}" class="img-fluid" alt=""></div>
+        <div class="item-g"><img src="{%static 'assets/images/Accessories image.png'%}" class="img-fluid" alt=""></div>
      </div>
 
      <br>
@@ -81,7 +85,7 @@
       <h1>Bestselling</h1>
       <div class="row" style="height: 700px;">
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="width: 33%;">
-          <div class="short-div bg-light " style=" height: 250px; margin-bottom: 20px; " >
+          <div class="short-div " style=" height: 250px; margin-bottom: 20px; background-image: url(https://images.pexels.com/photos/7290089/pexels-photo-7290089.jpeg?auto=compress&cs=tinysrgb&w=600);" >
             <div style=" width:auto; height: 50px; padding-top: 140px; margin: 10px; ">
               <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
               <h4> Beauty products</h4>
@@ -89,15 +93,15 @@
               </div>
             </div>
           </div>
-          <div class="short-div bg-light " style=" height: 400px;">
-            <div style="padding-top: 280px; width:auto; height: 50px; margin: 10px;">
+          <div class="short-div " style=" height: 400px;">
+            <div style="padding-top: 280px; width:auto; height: 50px; margin: 10px; background-image: url(https://images.pexels.com/photos/9705821/pexels-photo-9705821.jpeg?auto=compress&cs=tinysrgb&w=600);">
               <h4> Groceries</h4>
               <a href="" class="text-dark">Search within category</a>
             </div>
           </div>
         </div>
           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="width: 33%;">
-            <div class="short-div bg-light align-items-end" style="height: 200px; margin-bottom: 20px;">
+            <div class="short-div bg-light align-items-end" style="height: 200px; margin-bottom: 20px; background-image: url(https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=400);">
               <div style="padding-top: 120px; width:auto; height: 50px; margin: 10px;">
                 <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
                 <h4> Watches</h4>
@@ -105,7 +109,7 @@
                 </div>
               </div>
              </div>
-            <div class="short-div bg-light" style=" height: 230px; margin-bottom: 10px;">
+            <div class="short-div bg-light" style=" height: 230px; margin-bottom: 10px; background-image: url(https://images.pexels.com/photos/3345882/pexels-photo-3345882.jpeg?auto=compress&cs=tinysrgb&w=400);">
               <div style="padding-top: 150px; width:auto; height: 50px; margin: 10px;">
                 <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
                 <h4> Gadgets</h4>
@@ -113,7 +117,7 @@
                 </div>
               </div>
             </div>
-            <div class="short-div bg-light" style=" height: 210px; margin-bottom: 10px;">
+            <div class="short-div bg-light" style=" height: 210px; margin-bottom: 10px; background-image: url(https://images.pexels.com/photos/3954434/pexels-photo-3954434.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);">
               <div style="padding-top: 124px; width:auto; height: 50px; margin: 10px;">
                 <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
                   <h4> Automotive</h4>
@@ -123,7 +127,7 @@
             </div>
           </div>
         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-2" style="padding:0px; width: 33%; ">
-          <div class="short-div bg-light" style=" margin-bottom: 10px; height: 300px;">
+          <div class="short-div bg-light" style=" margin-bottom: 10px; height: 300px; background-image: url(https://images.pexels.com/photos/2249249/pexels-photo-2249249.jpeg?auto=compress&cs=tinysrgb&w=400);">
             <div style="padding-top: 190px; width:auto; height: 50px; margin: 10px; ">
               <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
                 <h4> Clothing & Accesories</h4>
@@ -131,8 +135,8 @@
               </div>
             </div>
           </div>
-          <div class="short-div bg-light" style="  height: 360px;">
-            <div style="padding-top: 235px; width:auto; height: 50px; margin: 10px;">
+          <div class="short-div" style="  height: 360px;">
+            <div style="padding-top: 235px; width:auto; height: 50px; margin: 10px; background-image: url(https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?auto=compress&cs=tinysrgb&w=400);">
               <div style="background: rgba(253, 253, 253, 0.7);padding: 5px;">
                 <h4>Home decor</h4>
                 <a href="" class="text-dark">Search within category</a>  
@@ -162,40 +166,40 @@
             <br>
             <div class="container">
               <div class="row row-cols-2">
-                <div class="col " style="width: fit-content; ">
-                  <a href="" class="card-body text-dark">
+                <div class="col " id="disappear" style="width: fit-content; ">
+                  <a href="#Aliexpress" class="card-body text-dark">
+                    <h5 class="card-title">Aliexpress</h5>
+                    <p class="card-text">Aliexpress.com</p>
+                  </a>
+                </div>
+                <div class="col" id="disappear" style="width: fit-content;">
+                  <a href="#Aliexpress" class="card-body text-dark">
+                    <h5 class="card-title">Aliexpress</h5>
+                    <p class="card-text">Aliexpress.com</p>
+                  </a>
+                </div>
+                <div class="col" id="disappear" style="width: fit-content;">
+                  <a href="#Aliexpress" class="card-body text-dark">
                     <h5 class="card-title">Aliexpress</h5>
                     <p class="card-text">Aliexpress.com</p>
                   </a>
                 </div>
                 <div class="col" style="width: fit-content;">
-                  <a href="" class="card-body text-dark">
-                    <h5 class="card-title">Aliexpress</h5>
-                    <p class="card-text">Aliexpress.com</p>
-                  </a>
-                </div>
-                <div class="col" style="width: fit-content;">
-                  <a href="" class="card-body text-dark">
-                    <h5 class="card-title">Aliexpress</h5>
-                    <p class="card-text">Aliexpress.com</p>
-                  </a>
-                </div>
-                <div class="col" style="width: fit-content;">
-                  <a href="" class="card-body text-dark">
+                  <a href="#jumia" class="card-body text-dark">
                     <h5 class="card-title">Jumia</h5>
                     <p class="card-text">Jumia.com</p>
                   </a>
                 </div>
-                <div class="col " style="width: fit-content;">
-                  <a href="" class="card-body text-dark">
+                <div class="col " id="disappear" style="width: fit-content;">
+                  <a href="#Aliexpress" class="card-body text-dark">
                     <h5 class="card-title"> Aliexpress</h5>
                     <p class="card-text">Aliexpress.com</p>
                   </a>
                 </div>
                 <div class="col " style="width: fit-content;">
-                  <a href="" class="card-body text-dark">
-                    <h5 class="card-title">Aliexpress  </h5>
-                    <p class="card-text">Aliexpress.com</p>
+                  <a href="#samsung" class="card-body text-dark">
+                    <h5 class="card-title">samsung  </h5>
+                    <p class="card-text">samsung.com</p>
                   </a>
                 </div>
                 <div class="col" style="width: fit-content;">
@@ -205,7 +209,7 @@
                   </a>
                 </div>
                 <div class="col " style="width: fit-content;">
-                  <a href="" class="card-body text-dark">
+                  <a href="#Aliexpress" class="card-body text-dark">
                     <h5 class="card-title">Aliexpress</h5>
                     <p class="card-text">Aliexpress.com</p>
                   </a>
@@ -215,57 +219,147 @@
 
           </div>
           <div class="col-9">
-              <div class="" style="padding-top: px; padding-left: 40px;">
-                <img src="something.png" class="img-fluid " alt="" style="padding-top: 140px; ">
-                <div class="" style="padding-top: px; width:270px; height: 50px;">
-                  <h2>SAMSUNG</h2>
-                  <p>Discover the latest in electronic & smart appliance 
+          <div id="respond" class="carousel carousel-dark slidecol-9" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000" style="background-position: fit-content;">
+                <img src="{%static 'assets/images/pexels-photo-1229861.png'%}" class="d-block w-100" alt="..." style="background-position: fit-content;">
+                <div id="samsung" class="carousel-caption d-none d-md-block" style="background-color: ;">
+                  <h5 class="text-white">Samsung</h5>
+                  <p class="text-white">Discover the latest in electronic & smart appliance 
                     technology with Samsung. Find the next big 
                     thing from smartphones & ablets to laptops &
                     tvs & more.</p>
-                  <button class="btn bg-secondary text-white" style="width: fit-content ;">Search by brand</button>
+                    <button class="btn text-white" style="width: fit-content ; background-color: transparent;">Search by brand</button>
                 </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="{%static 'assets/images/pexels-photo-996329.png'%}" class="d-block w-100" alt="...">
+                <div id="Aliexpress" class="carousel-caption d-none d-md-block" style="background-color: ;">
+                  <h5 class="text-white">Aliexpress</h5>
+                  <p class="text-white">Some representative placeholder content for the Aliexpress.</p>
+                  <button class="btn text-white" style="width: fit-content ; background-color: transparent;">Search by brand</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{%static 'assets/images/pexels-photo-6075800.jpeg'%}" class="d-block w-100" alt="...">
+                <div id="jumia" class="carousel-caption d-none d-md-block" style="background-color: ;">
+                  <h5>Jumia</h5>
+                  <p>Some representative placeholder content for Jumia.</p>
+                  <button class="btn text-white" style="width: fit-content ; background-color: transparent;">Search by brand</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
               </div>
           </div>
         </div>
       </div>
 
+
       <br>
 
       <!-- top deals -->
-      <div class="row" style="padding: 40px; background:white;">
+      <div class="row" style="padding: 40px;">
         <h4 class="col" style="text-align: left;">Top Deals</h4>
         <a href="" class="col" style="text-align: right; color: black;">See all</a>
         <hr>
 <!-- carousel -->
-        <div class="col carousel" style="width: 50%; padding-top: 100px;">
+<div class="col carousel" id="car" style="width: 50%; padding-top: 100px;">
 
-          <input type="radio" name="position"/>
-          <input type="radio" name="position2" checked />
-          <input type="radio" name="position" />
-          
-          <main id="carousel">
-            <div class="item">
-              <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
-            </div>
-            <div class="item">
-              <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
-            </div>
-            <div class="item active">
-              <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
-            </div>
+  <input type="radio" name="position1"/>
+  <input type="radio" name="position1" checked />
+  <input type="radio" name="position1" />
+  
+  <main id="carousel">
+    <div class="item">
+      <img src="" class="align-items-end" alt="">
+      <h3 class="bottom-left">50% off</h3>
+      <p class="bottom-left-ish">50%</p>
+    </div>
+    <div class="item active">
+      <img src="{%static 'assets/images/Picture frame.png'%}" class="align-items-end" alt="">
+      <h3 class="bottom-left">50% off</h3>
+      <p class="bottom-left-ish">50%</p>
+    </div>
+    <div class="item">
+      <img src="" class="align-items-end" alt="">
+      <h3 class="bottom-left">50% off</h3>
+      <p class="bottom-left-ish">50%</p>
+    </div>
 
-          <main>
+
+  <main>
+
           
-          </div>
+      </div>
           <div class="text-center">
             <button class="btn text-white " style="width: 240px; background: #801B4B;
             box-shadow: 8px 8px 32px #F3DBE7;
             border-radius: 8px;">Compare price</button>
           </div>
-      </div>
+</div>
 
-      
+      <!-- ex-problem -->
+
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slidecol-9" data-bs-ride="carousel" style="margin: 65px;" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000" style="background-position: fit-content;">
+            <img src="{%static 'assets/images/pexels-photo-2536965.jpeg'%}" class="d-block w-100" alt="..." style="background-position: fit-content;">
+            <div class="carousel-caption d-none d-md-block float-right" style="background-color: rgba(42, 41, 41, 0.69); width: 350px; padding: 20px;">
+              <p class="text-white">Grab the best deals.</p>
+              <h3 class="text-white">Spend less. Stress less.</h3>
+                <button class="btn text-dark" style="width: fit-content ; background-color:rgb(216, 190, 19);">See top Deals</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="{%static 'assets/images/pexels-photo-5632334.jpeg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="background-color: rgba(42, 41, 41, 0.69); width: 350px; padding: 20px;">
+              <p class="text-white">Grab the best deals.</p>
+              <h3 class="text-white">Spend less. Stress less.</h3>
+              <button class="btn text-dark" style="width: fit-content ; background-color: rgb(216, 190, 19);">See top Deals</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{%static 'assets/images/pexels-photo-6567607.jpeg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="background-color: rgba(42, 41, 41, 0.69); width: 350px; padding: 20px;">
+              <p class="text-white">Grab the best deals.</p>
+              <h3 class="text-white">Spend less. Stress less.</h3>
+              <button class="btn text-dark" style="width: fit-content ; background-color: rgb(216, 190, 19);">See top Deals</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
       <!-- top trends -->
       <div class="row" style="padding: 40px;">
         <h4 class="col" style="text-align: left;">Top trends</h4>
@@ -275,7 +369,7 @@
         <!-- note; only one same name posti0n can be checked -->
 
 <!-- carousel -->
-<div class="col carousel" style="width: 50%; padding-top: 100px;">
+<div class="col carousel" id="car" style="width: 50%; padding-top: 100px;">
 
   <input type="radio" name="position"/>
   <input type="radio" name="position" checked />
@@ -283,13 +377,19 @@
   
   <main id="carousel">
     <div class="item">
-      <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
-    </div>
-    <div class="item">
-      <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
+      <img src="" class="align-items-end" alt="">
+      <h3 class="bottom-left">50% off</h3>
+      <p class="bottom-left-ish">50%</p>
     </div>
     <div class="item active">
-      <h3 class="align-items-start text-white" style="padding-left: 25px;">50% OFF</h3>
+      <img src="{%static 'assets/images/Picture frame.png'%}" class="align-items-end" alt="">
+        <h3 class="bottom-left">50% off</h3>
+        <p class="bottom-left-ish">50%</p>
+    </div>
+    <div class="item ">
+      <img src="" class="align-items-end" alt="">
+      <h3 class="bottom-left">50% off</h3>
+      <p class="bottom-left-ish">50%</p>
     </div>
 
   <main>
@@ -308,5 +408,4 @@
       <br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
-</html>
 {%endblock content%}
