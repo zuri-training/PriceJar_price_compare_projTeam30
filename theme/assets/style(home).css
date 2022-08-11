@@ -226,9 +226,9 @@ background: black;
 /* media query */
 
 @media only screen and (max-width: 1400px) {
-  div.item-a{
+  /* div.item-a{
     display: none;
-}
+} */
 div.item-e{
     display: none;
 }
@@ -347,7 +347,11 @@ div.item-d{
 
 /* disappearance of '50% off' on small screens cause its uglyyy */
 
-
+@media only screen and (max-width:540px) {
+   .bottom-left{
+    display: none;
+   }
+}
   
 
 /* disappearance of irrelevant brands on small screen */
