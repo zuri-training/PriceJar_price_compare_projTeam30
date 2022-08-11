@@ -13,7 +13,11 @@
  * Bootstrap Utilities v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 .clearfix::after {
@@ -25,7 +29,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .text-bg-primary {
   color: #fff !important;
   background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important;
@@ -123,7 +131,11 @@
   color: #1a1e21 !important;
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .link-primary {
   color: #0d6efd !important;
 }
@@ -182,7 +194,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   color: #1a1e21 !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .ratio {
@@ -222,7 +238,11 @@
   --bs-aspect-ratio: calc(3 / 4 * 100%);
 =======
   --bs-aspect-ratio: 75%;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .ratio-16x9 {
@@ -235,7 +255,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   --bs-aspect-ratio: 42.8571428571%;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .fixed-top {
@@ -264,7 +288,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .sticky-bottom {
   position: -webkit-sticky;
   position: sticky;
@@ -276,7 +304,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 @media (min-width: 576px) {
   .sticky-sm-top {
     position: -webkit-sticky;
@@ -287,7 +319,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .sticky-sm-bottom {
     position: -webkit-sticky;
     position: sticky;
@@ -298,7 +334,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 @media (min-width: 768px) {
   .sticky-md-top {
@@ -310,7 +350,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .sticky-md-bottom {
     position: -webkit-sticky;
     position: sticky;
@@ -321,7 +365,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 @media (min-width: 992px) {
   .sticky-lg-top {
@@ -333,7 +381,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .sticky-lg-bottom {
     position: -webkit-sticky;
     position: sticky;
@@ -344,7 +396,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 @media (min-width: 1200px) {
   .sticky-xl-top {
@@ -356,7 +412,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .sticky-xl-bottom {
     position: -webkit-sticky;
     position: sticky;
@@ -367,7 +427,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 @media (min-width: 1400px) {
   .sticky-xxl-top {
@@ -379,7 +443,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .sticky-xxl-bottom {
     position: -webkit-sticky;
     position: sticky;
@@ -402,10 +470,12 @@
   align-self: stretch;
 }
 
+<<<<<<< HEAD
 =======
 }
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 }
 
 .vstack {
@@ -416,6 +486,9 @@
 }
 
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute !important;
@@ -448,7 +521,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .vr {
   display: inline-block;
   align-self: stretch;
@@ -462,7 +539,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -502,7 +583,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .opacity-0 {
   opacity: 0 !important;
 }
@@ -527,7 +612,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .overflow-auto {
   overflow: auto !important;
 }
@@ -690,7 +779,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .border-0 {
@@ -706,7 +799,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .border-top-0 {
@@ -722,7 +819,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .border-end-0 {
@@ -738,7 +839,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .border-bottom-0 {
@@ -754,7 +859,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .border-start-0 {
@@ -851,7 +960,11 @@
 =======
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .border-secondary {
@@ -936,7 +1049,11 @@
 
 .border-opacity-100 {
   --bs-border-opacity: 1;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .w-25 {
@@ -1080,7 +1197,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .justify-content-start {
   justify-content: flex-start !important;
 }
@@ -1598,7 +1719,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .gap-0 {
   gap: 0 !important;
 }
@@ -1627,7 +1752,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
 }
@@ -1683,7 +1812,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .fw-semibold {
   font-weight: 600 !important;
 }
@@ -1692,7 +1825,11 @@
 =======
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 .fw-bolder {
   font-weight: bolder !important;
 }
@@ -1828,7 +1965,11 @@
 =======
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .text-secondary {
@@ -1886,7 +2027,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   --bs-text-opacity: 1;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   color: #6c757d !important;
 }
 
@@ -1898,7 +2043,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   --bs-text-opacity: 1;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -1910,15 +2059,22 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   --bs-text-opacity: 1;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .text-reset {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> own
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   --bs-text-opacity: 1;
   color: inherit !important;
 }
@@ -2043,54 +2199,112 @@
 }
 
 =======
+=======
+  --bs-text-opacity: 1;
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   color: inherit !important;
 }
 
+.text-opacity-25 {
+  --bs-text-opacity: 0.25;
+}
+
+.text-opacity-50 {
+  --bs-text-opacity: 0.5;
+}
+
+.text-opacity-75 {
+  --bs-text-opacity: 0.75;
+}
+
+.text-opacity-100 {
+  --bs-text-opacity: 1;
+}
+
 .bg-primary {
-  background-color: #0d6efd !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-success {
-  background-color: #198754 !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-info {
-  background-color: #0dcaf0 !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-warning {
-  background-color: #ffc107 !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-danger {
-  background-color: #dc3545 !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-body {
-  background-color: #fff !important;
+.bg-black {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-white {
-  background-color: #fff !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-body {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-transparent {
+  --bs-bg-opacity: 1;
   background-color: transparent !important;
 }
 
+<<<<<<< HEAD
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+.bg-opacity-10 {
+  --bs-bg-opacity: 0.1;
+}
+
+.bg-opacity-25 {
+  --bs-bg-opacity: 0.25;
+}
+
+.bg-opacity-50 {
+  --bs-bg-opacity: 0.5;
+}
+
+.bg-opacity-75 {
+  --bs-bg-opacity: 0.75;
+}
+
+.bg-opacity-100 {
+  --bs-bg-opacity: 1;
+}
+
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
 }
@@ -2130,7 +2344,11 @@
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   border-radius: var(--bs-border-radius) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .rounded-0 {
@@ -2161,7 +2379,11 @@
   border-radius: 0.2rem !important;
 =======
   border-radius: var(--bs-border-radius-sm) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .rounded-2 {
@@ -2182,7 +2404,11 @@
 
 .rounded-5 {
   border-radius: var(--bs-border-radius-2xl) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .rounded-circle {
@@ -2217,7 +2443,11 @@
   border-radius: 50rem !important;
 =======
   border-radius: var(--bs-border-radius-pill) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .rounded-top {
@@ -2243,7 +2473,11 @@
 =======
   border-bottom-left-radius: var(--bs-border-radius) !important;
   border-top-left-radius: var(--bs-border-radius) !important;
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 
 .visible {
@@ -2260,8 +2494,11 @@
   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> own
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .float-sm-end {
     float: right !important;
   }
@@ -2451,388 +2688,348 @@
 <<<<<<< HEAD
 =======
 
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .float-sm-end {
     float: right !important;
   }
-
   .float-sm-none {
     float: none !important;
   }
-
   .d-sm-inline {
     display: inline !important;
   }
-
   .d-sm-inline-block {
     display: inline-block !important;
   }
-
   .d-sm-block {
     display: block !important;
   }
-
   .d-sm-grid {
     display: grid !important;
   }
-
   .d-sm-table {
     display: table !important;
   }
-
   .d-sm-table-row {
     display: table-row !important;
   }
-
   .d-sm-table-cell {
     display: table-cell !important;
   }
-
   .d-sm-flex {
     display: flex !important;
   }
-
   .d-sm-inline-flex {
     display: inline-flex !important;
   }
-
   .d-sm-none {
     display: none !important;
   }
-
   .flex-sm-fill {
     flex: 1 1 auto !important;
   }
-
   .flex-sm-row {
     flex-direction: row !important;
   }
-
   .flex-sm-column {
     flex-direction: column !important;
   }
-
   .flex-sm-row-reverse {
     flex-direction: row-reverse !important;
   }
-
   .flex-sm-column-reverse {
     flex-direction: column-reverse !important;
   }
-
   .flex-sm-grow-0 {
     flex-grow: 0 !important;
   }
-
   .flex-sm-grow-1 {
     flex-grow: 1 !important;
   }
-
   .flex-sm-shrink-0 {
     flex-shrink: 0 !important;
   }
-
   .flex-sm-shrink-1 {
     flex-shrink: 1 !important;
   }
-
   .flex-sm-wrap {
     flex-wrap: wrap !important;
   }
-
   .flex-sm-nowrap {
     flex-wrap: nowrap !important;
   }
-
   .flex-sm-wrap-reverse {
     flex-wrap: wrap-reverse !important;
   }
-
-  .gap-sm-0 {
-    gap: 0 !important;
-  }
-
-  .gap-sm-1 {
-    gap: 0.25rem !important;
-  }
-
-  .gap-sm-2 {
-    gap: 0.5rem !important;
-  }
-
-  .gap-sm-3 {
-    gap: 1rem !important;
-  }
-
-  .gap-sm-4 {
-    gap: 1.5rem !important;
-  }
-
-  .gap-sm-5 {
-    gap: 3rem !important;
-  }
-
   .justify-content-sm-start {
     justify-content: flex-start !important;
   }
-
   .justify-content-sm-end {
     justify-content: flex-end !important;
   }
-
   .justify-content-sm-center {
     justify-content: center !important;
   }
-
   .justify-content-sm-between {
     justify-content: space-between !important;
   }
-
   .justify-content-sm-around {
     justify-content: space-around !important;
   }
-
   .justify-content-sm-evenly {
     justify-content: space-evenly !important;
   }
-
   .align-items-sm-start {
     align-items: flex-start !important;
   }
-
   .align-items-sm-end {
     align-items: flex-end !important;
   }
-
   .align-items-sm-center {
     align-items: center !important;
   }
-
   .align-items-sm-baseline {
     align-items: baseline !important;
   }
-
   .align-items-sm-stretch {
     align-items: stretch !important;
   }
-
   .align-content-sm-start {
     align-content: flex-start !important;
   }
-
   .align-content-sm-end {
     align-content: flex-end !important;
   }
-
   .align-content-sm-center {
     align-content: center !important;
   }
-
   .align-content-sm-between {
     align-content: space-between !important;
   }
-
   .align-content-sm-around {
     align-content: space-around !important;
   }
-
   .align-content-sm-stretch {
     align-content: stretch !important;
   }
-
   .align-self-sm-auto {
     align-self: auto !important;
   }
-
   .align-self-sm-start {
     align-self: flex-start !important;
   }
-
   .align-self-sm-end {
     align-self: flex-end !important;
   }
-
   .align-self-sm-center {
     align-self: center !important;
   }
-
   .align-self-sm-baseline {
     align-self: baseline !important;
   }
-
   .align-self-sm-stretch {
     align-self: stretch !important;
   }
-
   .order-sm-first {
     order: -1 !important;
   }
-
   .order-sm-0 {
     order: 0 !important;
   }
-
   .order-sm-1 {
     order: 1 !important;
   }
-
   .order-sm-2 {
     order: 2 !important;
   }
-
   .order-sm-3 {
     order: 3 !important;
   }
-
   .order-sm-4 {
     order: 4 !important;
   }
-
   .order-sm-5 {
     order: 5 !important;
   }
-
   .order-sm-last {
     order: 6 !important;
   }
-
   .m-sm-0 {
     margin: 0 !important;
   }
-
   .m-sm-1 {
     margin: 0.25rem !important;
   }
-
   .m-sm-2 {
     margin: 0.5rem !important;
   }
-
   .m-sm-3 {
     margin: 1rem !important;
   }
-
   .m-sm-4 {
     margin: 1.5rem !important;
   }
-
   .m-sm-5 {
     margin: 3rem !important;
   }
-
   .m-sm-auto {
     margin: auto !important;
   }
+<<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .mx-sm-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .mx-sm-1 {
     margin-right: 0.25rem !important;
     margin-left: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .mx-sm-2 {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .mx-sm-3 {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .mx-sm-4 {
     margin-right: 1.5rem !important;
     margin-left: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .mx-sm-5 {
     margin-right: 3rem !important;
     margin-left: 3rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .mx-sm-auto {
     margin-right: auto !important;
     margin-left: auto !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .my-sm-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .my-sm-1 {
     margin-top: 0.25rem !important;
     margin-bottom: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .my-sm-2 {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .my-sm-3 {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .my-sm-4 {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .my-sm-5 {
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .my-sm-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .mt-sm-0 {
     margin-top: 0 !important;
   }
@@ -2937,235 +3134,241 @@
   }
 =======
 
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .mt-sm-0 {
     margin-top: 0 !important;
   }
-
   .mt-sm-1 {
     margin-top: 0.25rem !important;
   }
-
   .mt-sm-2 {
     margin-top: 0.5rem !important;
   }
-
   .mt-sm-3 {
     margin-top: 1rem !important;
   }
-
   .mt-sm-4 {
     margin-top: 1.5rem !important;
   }
-
   .mt-sm-5 {
     margin-top: 3rem !important;
   }
-
   .mt-sm-auto {
     margin-top: auto !important;
   }
-
   .me-sm-0 {
     margin-right: 0 !important;
   }
-
   .me-sm-1 {
     margin-right: 0.25rem !important;
   }
-
   .me-sm-2 {
     margin-right: 0.5rem !important;
   }
-
   .me-sm-3 {
     margin-right: 1rem !important;
   }
-
   .me-sm-4 {
     margin-right: 1.5rem !important;
   }
-
   .me-sm-5 {
     margin-right: 3rem !important;
   }
-
   .me-sm-auto {
     margin-right: auto !important;
   }
-
   .mb-sm-0 {
     margin-bottom: 0 !important;
   }
-
   .mb-sm-1 {
     margin-bottom: 0.25rem !important;
   }
-
   .mb-sm-2 {
     margin-bottom: 0.5rem !important;
   }
-
   .mb-sm-3 {
     margin-bottom: 1rem !important;
   }
-
   .mb-sm-4 {
     margin-bottom: 1.5rem !important;
   }
-
   .mb-sm-5 {
     margin-bottom: 3rem !important;
   }
-
   .mb-sm-auto {
     margin-bottom: auto !important;
   }
-
   .ms-sm-0 {
     margin-left: 0 !important;
   }
-
   .ms-sm-1 {
     margin-left: 0.25rem !important;
   }
-
   .ms-sm-2 {
     margin-left: 0.5rem !important;
   }
-
   .ms-sm-3 {
     margin-left: 1rem !important;
   }
-
   .ms-sm-4 {
     margin-left: 1.5rem !important;
   }
-
   .ms-sm-5 {
     margin-left: 3rem !important;
   }
-
   .ms-sm-auto {
     margin-left: auto !important;
   }
-
   .p-sm-0 {
     padding: 0 !important;
   }
-
   .p-sm-1 {
     padding: 0.25rem !important;
   }
-
   .p-sm-2 {
     padding: 0.5rem !important;
   }
-
   .p-sm-3 {
     padding: 1rem !important;
   }
-
   .p-sm-4 {
     padding: 1.5rem !important;
   }
-
   .p-sm-5 {
     padding: 3rem !important;
   }
+<<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-sm-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-sm-1 {
     padding-right: 0.25rem !important;
     padding-left: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-sm-2 {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-sm-3 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-sm-4 {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-sm-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-sm-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-sm-1 {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-sm-2 {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-sm-3 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-sm-4 {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-sm-5 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   .pt-sm-0 {
     padding-top: 0 !important;
@@ -3265,69 +3468,57 @@
   }
 =======
 
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .pt-sm-0 {
     padding-top: 0 !important;
   }
-
   .pt-sm-1 {
     padding-top: 0.25rem !important;
   }
-
   .pt-sm-2 {
     padding-top: 0.5rem !important;
   }
-
   .pt-sm-3 {
     padding-top: 1rem !important;
   }
-
   .pt-sm-4 {
     padding-top: 1.5rem !important;
   }
-
   .pt-sm-5 {
     padding-top: 3rem !important;
   }
-
   .pe-sm-0 {
     padding-right: 0 !important;
   }
-
   .pe-sm-1 {
     padding-right: 0.25rem !important;
   }
-
   .pe-sm-2 {
     padding-right: 0.5rem !important;
   }
-
   .pe-sm-3 {
     padding-right: 1rem !important;
   }
-
   .pe-sm-4 {
     padding-right: 1.5rem !important;
   }
-
   .pe-sm-5 {
     padding-right: 3rem !important;
   }
-
   .pb-sm-0 {
     padding-bottom: 0 !important;
   }
-
   .pb-sm-1 {
     padding-bottom: 0.25rem !important;
   }
-
   .pb-sm-2 {
     padding-bottom: 0.5rem !important;
   }
-
   .pb-sm-3 {
     padding-bottom: 1rem !important;
   }
+<<<<<<< HEAD
 
 =======
   .mx-sm-0 {
@@ -3585,6 +3776,8 @@
     padding-bottom: 1rem !important;
   }
 >>>>>>> own
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .pb-sm-4 {
     padding-bottom: 1.5rem !important;
   }
@@ -3601,28 +3794,48 @@
     padding-left: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .ps-sm-3 {
     padding-left: 1rem !important;
   }
-
   .ps-sm-4 {
     padding-left: 1.5rem !important;
   }
-
   .ps-sm-5 {
     padding-left: 3rem !important;
   }
-
+  .gap-sm-0 {
+    gap: 0 !important;
+  }
+  .gap-sm-1 {
+    gap: 0.25rem !important;
+  }
+  .gap-sm-2 {
+    gap: 0.5rem !important;
+  }
+  .gap-sm-3 {
+    gap: 1rem !important;
+  }
+  .gap-sm-4 {
+    gap: 1.5rem !important;
+  }
+  .gap-sm-5 {
+    gap: 3rem !important;
+  }
   .text-sm-start {
     text-align: left !important;
   }
-
   .text-sm-end {
     text-align: right !important;
   }
+<<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .text-sm-center {
     text-align: center !important;
   }
@@ -3632,6 +3845,7 @@
     float: left !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .float-md-end {
     float: right !important;
   }
@@ -3859,7 +4073,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .float-md-end {
     float: right !important;
   }
@@ -4050,7 +4268,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-md-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -4061,7 +4283,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-md-1 {
     margin-right: 0.25rem !important;
     margin-left: 0.25rem !important;
@@ -4072,7 +4298,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-md-2 {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
@@ -4083,7 +4313,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-md-3 {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
@@ -4094,7 +4328,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-md-4 {
     margin-right: 1.5rem !important;
     margin-left: 1.5rem !important;
@@ -4105,7 +4343,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-md-5 {
     margin-right: 3rem !important;
     margin-left: 3rem !important;
@@ -4116,7 +4358,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-md-auto {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -4127,7 +4373,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-md-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -4138,7 +4388,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-md-1 {
     margin-top: 0.25rem !important;
     margin-bottom: 0.25rem !important;
@@ -4149,7 +4403,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-md-2 {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
@@ -4160,7 +4418,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-md-3 {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
@@ -4171,7 +4433,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-md-4 {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
@@ -4182,7 +4448,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-md-5 {
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
@@ -4193,7 +4463,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-md-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -4305,7 +4579,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mt-md-0 {
     margin-top: 0 !important;
   }
@@ -4411,98 +4689,134 @@
 <<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-md-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-md-1 {
     padding-right: 0.25rem !important;
     padding-left: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-md-2 {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-md-3 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-md-4 {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-md-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-md-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-md-1 {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-md-2 {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-md-3 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-md-4 {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-md-5 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   .pt-md-0 {
     padding-top: 0 !important;
@@ -4603,6 +4917,7 @@
 =======
 
 =======
+<<<<<<< HEAD
   .px-md-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -4652,6 +4967,9 @@
     padding-bottom: 3rem !important;
   }
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .pt-md-0 {
     padding-top: 0 !important;
   }
@@ -4716,28 +5034,48 @@
     padding-left: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .ps-md-3 {
     padding-left: 1rem !important;
   }
-
   .ps-md-4 {
     padding-left: 1.5rem !important;
   }
-
   .ps-md-5 {
     padding-left: 3rem !important;
   }
-
+  .gap-md-0 {
+    gap: 0 !important;
+  }
+  .gap-md-1 {
+    gap: 0.25rem !important;
+  }
+  .gap-md-2 {
+    gap: 0.5rem !important;
+  }
+  .gap-md-3 {
+    gap: 1rem !important;
+  }
+  .gap-md-4 {
+    gap: 1.5rem !important;
+  }
+  .gap-md-5 {
+    gap: 3rem !important;
+  }
   .text-md-start {
     text-align: left !important;
   }
-
   .text-md-end {
     text-align: right !important;
   }
+<<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .text-md-center {
     text-align: center !important;
   }
@@ -4747,6 +5085,7 @@
     float: left !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .float-lg-end {
     float: right !important;
   }
@@ -4974,7 +5313,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .float-lg-end {
     float: right !important;
   }
@@ -5165,7 +5508,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-lg-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -5176,7 +5523,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-lg-1 {
     margin-right: 0.25rem !important;
     margin-left: 0.25rem !important;
@@ -5187,7 +5538,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-lg-2 {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
@@ -5198,7 +5553,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-lg-3 {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
@@ -5209,7 +5568,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-lg-4 {
     margin-right: 1.5rem !important;
     margin-left: 1.5rem !important;
@@ -5220,7 +5583,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-lg-5 {
     margin-right: 3rem !important;
     margin-left: 3rem !important;
@@ -5231,7 +5598,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-lg-auto {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -5242,7 +5613,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-lg-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -5253,7 +5628,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-lg-1 {
     margin-top: 0.25rem !important;
     margin-bottom: 0.25rem !important;
@@ -5264,7 +5643,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-lg-2 {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
@@ -5275,7 +5658,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-lg-3 {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
@@ -5286,7 +5673,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-lg-4 {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
@@ -5297,7 +5688,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-lg-5 {
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
@@ -5308,7 +5703,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-lg-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -5420,7 +5819,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mt-lg-0 {
     margin-top: 0 !important;
   }
@@ -5526,98 +5929,134 @@
 <<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-lg-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-lg-1 {
     padding-right: 0.25rem !important;
     padding-left: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-lg-2 {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-lg-3 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-lg-4 {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-lg-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-lg-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-lg-1 {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-lg-2 {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-lg-3 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-lg-4 {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-lg-5 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   .pt-lg-0 {
     padding-top: 0 !important;
@@ -5718,6 +6157,7 @@
 =======
 
 =======
+<<<<<<< HEAD
   .px-lg-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -5767,6 +6207,9 @@
     padding-bottom: 3rem !important;
   }
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .pt-lg-0 {
     padding-top: 0 !important;
   }
@@ -5831,28 +6274,48 @@
     padding-left: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .ps-lg-3 {
     padding-left: 1rem !important;
   }
-
   .ps-lg-4 {
     padding-left: 1.5rem !important;
   }
-
   .ps-lg-5 {
     padding-left: 3rem !important;
   }
-
+  .gap-lg-0 {
+    gap: 0 !important;
+  }
+  .gap-lg-1 {
+    gap: 0.25rem !important;
+  }
+  .gap-lg-2 {
+    gap: 0.5rem !important;
+  }
+  .gap-lg-3 {
+    gap: 1rem !important;
+  }
+  .gap-lg-4 {
+    gap: 1.5rem !important;
+  }
+  .gap-lg-5 {
+    gap: 3rem !important;
+  }
   .text-lg-start {
     text-align: left !important;
   }
-
   .text-lg-end {
     text-align: right !important;
   }
+<<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .text-lg-center {
     text-align: center !important;
   }
@@ -5862,6 +6325,7 @@
     float: left !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .float-xl-end {
     float: right !important;
   }
@@ -6089,7 +6553,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .float-xl-end {
     float: right !important;
   }
@@ -6280,7 +6748,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xl-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -6291,7 +6763,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xl-1 {
     margin-right: 0.25rem !important;
     margin-left: 0.25rem !important;
@@ -6302,7 +6778,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xl-2 {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
@@ -6313,7 +6793,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xl-3 {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
@@ -6324,7 +6808,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xl-4 {
     margin-right: 1.5rem !important;
     margin-left: 1.5rem !important;
@@ -6335,7 +6823,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xl-5 {
     margin-right: 3rem !important;
     margin-left: 3rem !important;
@@ -6346,7 +6838,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xl-auto {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -6357,7 +6853,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xl-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -6368,7 +6868,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xl-1 {
     margin-top: 0.25rem !important;
     margin-bottom: 0.25rem !important;
@@ -6379,7 +6883,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xl-2 {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
@@ -6390,7 +6898,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xl-3 {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
@@ -6401,7 +6913,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xl-4 {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
@@ -6412,7 +6928,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xl-5 {
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
@@ -6423,7 +6943,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -6535,7 +7059,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mt-xl-0 {
     margin-top: 0 !important;
   }
@@ -6641,98 +7169,134 @@
 <<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-xl-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-xl-1 {
     padding-right: 0.25rem !important;
     padding-left: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-xl-2 {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-xl-3 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-xl-4 {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .px-xl-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-xl-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-xl-1 {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-xl-2 {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-xl-3 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-xl-4 {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .py-xl-5 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   .pt-xl-0 {
     padding-top: 0 !important;
@@ -6833,6 +7397,7 @@
 =======
 
 =======
+<<<<<<< HEAD
   .px-xl-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -6882,6 +7447,9 @@
     padding-bottom: 3rem !important;
   }
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .pt-xl-0 {
     padding-top: 0 !important;
   }
@@ -6947,6 +7515,7 @@
   }
   .ps-xl-3 {
     padding-left: 1rem !important;
+<<<<<<< HEAD
   }
   .ps-xl-4 {
     padding-left: 1.5rem !important;
@@ -6955,17 +7524,44 @@
 
   .ps-xl-5 {
     padding-left: 3rem !important;
+=======
   }
-
+  .ps-xl-4 {
+    padding-left: 1.5rem !important;
+  }
+  .ps-xl-5 {
+    padding-left: 3rem !important;
+  }
+  .gap-xl-0 {
+    gap: 0 !important;
+  }
+  .gap-xl-1 {
+    gap: 0.25rem !important;
+  }
+  .gap-xl-2 {
+    gap: 0.5rem !important;
+  }
+  .gap-xl-3 {
+    gap: 1rem !important;
+  }
+  .gap-xl-4 {
+    gap: 1.5rem !important;
+  }
+  .gap-xl-5 {
+    gap: 3rem !important;
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
+  }
   .text-xl-start {
     text-align: left !important;
   }
-
   .text-xl-end {
     text-align: right !important;
   }
+<<<<<<< HEAD
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
   .text-xl-center {
     text-align: center !important;
   }
@@ -6975,6 +7571,7 @@
     float: left !important;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .float-xxl-end {
     float: right !important;
   }
@@ -7196,7 +7793,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .float-xxl-end {
     float: right !important;
   }
@@ -7387,7 +7988,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xxl-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -7398,7 +8003,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xxl-1 {
     margin-right: 0.25rem !important;
     margin-left: 0.25rem !important;
@@ -7409,7 +8018,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xxl-2 {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
@@ -7420,7 +8033,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xxl-3 {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
@@ -7431,7 +8048,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xxl-4 {
     margin-right: 1.5rem !important;
     margin-left: 1.5rem !important;
@@ -7442,7 +8063,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xxl-5 {
     margin-right: 3rem !important;
     margin-left: 3rem !important;
@@ -7453,7 +8078,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mx-xxl-auto {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -7464,7 +8093,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xxl-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -7475,7 +8108,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xxl-1 {
     margin-top: 0.25rem !important;
     margin-bottom: 0.25rem !important;
@@ -7486,7 +8123,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xxl-2 {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
@@ -7497,7 +8138,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xxl-3 {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
@@ -7508,7 +8153,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xxl-4 {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
@@ -7519,7 +8168,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xxl-5 {
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
@@ -7530,7 +8183,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .my-xxl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -7642,7 +8299,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .mt-xxl-0 {
     margin-top: 0 !important;
   }
@@ -7749,7 +8410,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .px-xxl-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -7760,7 +8425,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .px-xxl-1 {
     padding-right: 0.25rem !important;
     padding-left: 0.25rem !important;
@@ -7771,7 +8440,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .px-xxl-2 {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
@@ -7782,7 +8455,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .px-xxl-3 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
@@ -7793,7 +8470,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .px-xxl-4 {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
@@ -7804,7 +8485,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .px-xxl-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
@@ -7815,7 +8500,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .py-xxl-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -7826,7 +8515,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .py-xxl-1 {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
@@ -7837,7 +8530,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .py-xxl-2 {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
@@ -7848,7 +8545,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .py-xxl-3 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
@@ -7859,7 +8560,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .py-xxl-4 {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
@@ -7870,7 +8575,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .py-xxl-5 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
@@ -7976,7 +8685,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .pt-xxl-0 {
     padding-top: 0 !important;
   }
@@ -8077,7 +8790,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .text-xxl-center {
     text-align: center !important;
   }
@@ -8097,7 +8814,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .fs-2 {
     font-size: 2rem !important;
   }
@@ -8108,7 +8829,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .fs-4 {
     font-size: 1.5rem !important;
   }
@@ -8146,7 +8871,11 @@
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .d-print-inline-block {
     display: inline-block !important;
   }
@@ -8175,7 +8904,11 @@
 
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
   .d-print-none {
     display: none !important;
   }

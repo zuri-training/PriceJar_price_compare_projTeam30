@@ -108,4 +108,8 @@ headers ={'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 #         product_info=[image, link, product_name, price]
 #         # the_writer.writerow
 #         print(product_info)
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10

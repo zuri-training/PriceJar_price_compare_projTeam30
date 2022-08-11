@@ -28,7 +28,11 @@ function listShow(e) {
 >>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
 =======
   $gridCont.hasClass('list-views') ? $gridCont.removeClass('list-views') : $gridCont.addClass('list-views');
+<<<<<<< HEAD
 >>>>>>> own
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 function gList(e) {
   var $gridCont = $('.grid-containers')

@@ -1,5 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
 * {
 	box-sizing: border-box;
@@ -95,13 +99,14 @@ p {
 	font-size: 28px;
 	line-height: 40px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/* or 143% */
 
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 	text-align: center;
-
-	/* Black */
-
 	color: #110109;
+<<<<<<< HEAD
 
 	/* Inside auto layout */
 
@@ -109,6 +114,8 @@ p {
 	text-align: center;
 	color: #110109;
 >>>>>>> main
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 	flex: none;
 	order: 1;
 	align-self: stretch;
@@ -125,9 +132,13 @@ p {
 	color: #fbfbfb;
 	border-radius: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   border: 1px solid #F2B109;
 >>>>>>> main
+=======
+  border: 1px solid #F2B109;
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 .signpost > h6 {
 	font-family: "Mulish";
@@ -149,9 +160,13 @@ p {
 .searchm {
 	border-radius: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   border: 1px solid #AA6787;
 >>>>>>> main
+=======
+  border: 1px solid #AA6787;
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 .searchm > h6 {
 	font-family: "Mulish";
@@ -175,9 +190,13 @@ p {
 	background: #f8d884;
 	border-radius: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   border: 1px solid #F2B109;
 >>>>>>> main
+=======
+  border: 1px solid #F2B109;
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 }
 .comp > h6 {
 	font-family: "Mulish";
@@ -288,6 +307,7 @@ p {
 <<<<<<< HEAD
 <<<<<<< HEAD
 	background: #1a050f;
+<<<<<<< HEAD
 =======
 	background: #000000;
 >>>>>>> own
@@ -295,6 +315,8 @@ p {
 =======
 	background: #1a050f;
 >>>>>>> main
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 	left: 0;
 }
 
@@ -313,6 +335,7 @@ p {
 <<<<<<< HEAD
 <<<<<<< HEAD
 	color: #1a050f;
+<<<<<<< HEAD
 =======
 	color: white;
 >>>>>>> own
@@ -320,6 +343,8 @@ p {
 =======
 	color: #1a050f;
 >>>>>>> main
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 	line-height: 1;
 }
 
@@ -363,6 +388,7 @@ p {
 <<<<<<< HEAD
 <<<<<<< HEAD
 	padding: 2px 5px;
+<<<<<<< HEAD
 =======
 	padding: 5px 10px;
 >>>>>>> own
@@ -370,6 +396,8 @@ p {
 =======
 	padding: 2px 5px;
 >>>>>>> main
+=======
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 	border-radius: 4px;
 	text-align: left;
 }

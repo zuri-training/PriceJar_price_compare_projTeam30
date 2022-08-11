@@ -10,11 +10,22 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+<<<<<<< HEAD
 
 import os
 
 import os
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+import os
+=======
+>>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+import os
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 from pathlib import Path
 import django_on_heroku
 
@@ -47,12 +58,23 @@ INSTALLED_APPS = [
     
     #installed apps and libraries
     'base.apps.BaseConfig',
+<<<<<<< HEAD
 
     'scraper.apps.ScraperConfig',
 
     'scraper.apps.ScraperConfig',
     "crispy_forms", # new
     "crispy_bootstrap5", # new
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'scraper.apps.ScraperConfig',
+=======
+>>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+    'scraper.apps.ScraperConfig',
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 ]
 
 MIDDLEWARE = [
@@ -156,6 +178,14 @@ EMAIL_USE_TLS = True
 
 
 # django_project/settings.py
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+LOGIN_REDIRECT_URL = "/"
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
 
 LOGIN_REDIRECT_URL = "/"
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
@@ -163,11 +193,19 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # Media URL and ROOT for user profile images
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+<<<<<<< HEAD
 MEDIA_URL = '/media/'
 
 LOGIN_REDIRECT_URL = "/"
+<<<<<<< HEAD
 
 
 
 django_on_heroku.settings(locals())
 
+=======
+>>>>>>> 113443751e7132b0b294df84db685278a2e26bb9
+=======
+MEDIA_URL = '/media/'
+>>>>>>> 4a6f097ef043a5e6c9b68297f0b78ca8a9d38ea4
+>>>>>>> c5ab4a06a17bd4d9225d92c62369f8da586c1a10
