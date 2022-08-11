@@ -29,6 +29,10 @@ urlpatterns = [
     path('faq',views.faq, name='faq'),
     # user profile
     path('user_profile', views.Userprofile, name ='userprofilepage'),
+
+    #About Us
+    path('about/', views.About_Us_View.as_view(), name='about'),
+    
     path('contact', views.contact, name='contact'), # contact url
 ] 
    
