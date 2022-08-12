@@ -21,7 +21,7 @@ color: transparent;
 
 /* general carousel */
 
-.carousel {
+#car {
     height: 600px;
     margin: 0;
     display: grid;
@@ -53,7 +53,7 @@ color: transparent;
     position: absolute;
     width: 300px;
     height: 250px;
-    background-color: coral;
+    background-color: rgb(254, 232, 232);
     --r: calc(var(--position) - var(--offset));
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: all 0.25s linear;
@@ -141,85 +141,185 @@ color: transparent;
 .item-a{
     position: absolute;
     width: 300px;
-    height: 402px;
+    height: 702px;
     left: 30px;
-    top: 310px;
+    top: 410px;
     
     /* White/70 */
     
-    background: #CBCBCB;
     border-radius: 16px;
     grid-area: a;
 }
+
 .item-b{
     position: absolute;
-    width: 200px;
-    height: 296px;
+    width: 240px;
+    height: 256px;
     left: 380px;
-    top: 360px;
+    top: 460px;
     
     /* White/70 */
     
-    background: #CBCBCB;
+    background: white;
     border-radius: 16px;    grid-area: b;
 }
+
+.item-f{
+  position: absolute;
+width: 240px;
+height: 256px;
+left: 470px;
+top: 750px;
+background: white;
+
+}
+
 .item-c{
     position: absolute;
     width: 200px;
     height: 296px;
-    left: 640px;
-    top: 260px;
+    left: 680px;
+    top: 600px;
     
     /* White/70 */
     
-    background: #CBCBCB;
+    background: white;
     border-radius: 16px;    grid-area: c;
 }
 .item-d{
     position: absolute;
     width: 200px;
-    height: 296px;
-    left: 910px;
-    top: 360px;
+    height: 480px;
+    left: 870px;
+    top: 460px;
     
     /* White/70 */
     
-    background: #CBCBCB;
+    background: white;
     border-radius: 16px;    grid-area: d;
 }
+.item-g{
+  position: absolute;
+width: 280px;
+height: 224px;
+left: 1220px;
+top: 850px;
+
+background: black;
+
+}
+
 .item-e{
     position: absolute;
     width: 280px;
     height: 395px;
-    left: 1190px;
-    top: 470px;
+    left: 1170px;
+    top: 410px;
     
     /* White/70 */
     
-    background: #CBCBCB;
+    background: white;
+    border-color: #801B4B;
     border-radius: 16px;    grid-area: e;
 }
 
 /* media query */
 
-@media only screen and (max-width: 1450px) {
-    div.item-a{
-        display: none;
+@media only screen and (max-width: 1400px) {
+  /* div.item-a{
+    display: none;
+} */
+div.item-e{
+    display: none;
+}
+/* div.item-f{
+    display: none;
+} */
+div.item-g{
+    display: none;
+}
+div.item-b{
+    left: 220px;
     }
-    div.item-e{
-        display: none;
+div.item-c{
+    left: 450px;
     }
-    div.item-b{
-        left: 20px;
-        }
-    div.item-c{
-        left: 250px;
-        }
-    div.item-d{
-        left: 480px;
-        }
-    
+div.item-d{
+    left: 680px;
+    }
   }
+@media only screen and (max-width: 1750px) {
+  div.item-a{
+    left: 95px;
+  }
+div.item-e{
+  left: 1250px;
+}
+div.item-b{
+    left: 470px;
+    }
+div.item-c{
+    left: 740px;
+    }
+div.item-d{
+    left: 1000px;
+    }
+    /* div.item-f{
+      display: none;
+  }
+  div.item-g{
+      display: none;
+  } */
+  }
+@media only screen and (min-width: 1800px) {
+  div.item-a{
+    left: 295px;
+  }
+div.item-e{
+  left: 1475px;
+}
+div.item-b{
+    left: 660px;
+    }
+div.item-c{
+    left: 9535px;
+    }
+div.item-d{
+    left: 1215px;
+    }
+    /* div.item-f{
+      display: none;
+  }
+  div.item-g{
+      display: none;
+  } */
+  }
+
+
+@media only screen and (max-width: 1300px) {
+  div.item-a{
+    display: none;
+}
+div.item-e{
+    display: none;
+}
+div.item-f{
+  display: none;
+}
+div.item-g{
+  display: none;
+}
+div.item-b{
+    left: 70px;
+    }
+div.item-c{
+    left: 330px;
+    }
+div.item-d{
+    left: 570px;
+    }
+
+}
 
 @media only screen and (max-width: 670px){
     div.item-a{
@@ -237,8 +337,64 @@ color: transparent;
     div.item-c{
         left: 150px;
         }
+        div.item-f{
+          display: none;
+      }
+      div.item-g{
+          display: none;
+      }
+}
+
+/* disappearance of '50% off' on small screens cause its uglyyy */
+
+@media only screen and (max-width:540px) {
+   .bottom-left{
+    display: none;
+   }
 }
   
+
+/* disappearance of irrelevant brands on small screen */
+
+@media only screen and (max-width:1200px) {
+  div#disappear{
+    display: none;
+  } 
+
+}
+
+/* brand carousel orientation for smaller sreen */
+
+@media only screen and (max-width:1000px) {
+  div#respond{
+    margin-top: 130px;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  div#respond{
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  div#respond{
+    display: none;
+  }
+}
+
+/* text over pic (carousel) */
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottom-left-ish {
+  position: absolute;
+  bottom: 0px;
+  left: 125px;
+}
   
   /* footer */
 
