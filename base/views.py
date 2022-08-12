@@ -5,8 +5,8 @@ from os import terminal_size
 from re import template
 
 from django.shortcuts import render
-from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
-from django. contrib.auth.forms import PasswordResetForm,PasswordChangeForm
+from django.contrib.auth.views import PasswordResetView, PasswordChangeDoneView, PasswordChangeView, PasswordResetDoneView
+from django. contrib.auth.forms import PasswordResetForm, PasswordChangeForm
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy
 from django.contrib.auth.decorators import login_required
@@ -23,10 +23,10 @@ from .forms import ContactForm, UpdateProfileForm
 from django.views.generic import TemplateView
 
 
-#homepage view
+# homepage view
 def homePage(request):
-     #--search logic
-    #querying the database 
+    # --search logic
+    # querying the database
     # q = request.GET.get('q') if request.GET.get('q') != None else ''
 
     # products = Product.objects.filter(
@@ -37,9 +37,11 @@ def homePage(request):
     #  #--end of search logic
     # context = {"products":products}
     return render(request, 'base/home.html')
-#end of homepage view
+# end of homepage view
 
-#user registration functionality
+# user registration functionality
+
+
 def signup_page(request):
     form = forms.SignupForm()
 
@@ -53,79 +55,93 @@ def signup_page(request):
             login(request, user)
             return redirect(settings.LOGIN_REDIRECT_URL)
         else:
-            messages.error(request, 'An error occurred during regestration, please try again')
+            messages.error(
+                request, 'An error occurred during regestration, please try again')
     return render(request, 'base/register.html', context={'form': form})
-#end of user registration functionality
+# end of user registration functionality
 
- #PasswordChangeView
+ # PasswordChangeView
+
+
 class Password_Change_View(PasswordChangeView):
     Form_class = PasswordChangeForm
     success_url = reverse_lazy('PasswordChangeView')
     template_name = 'registration/password_change_form.html'
     title = gettext_lazy('password change')
-    #end of PasswordChangeView
- 
+    # end of PasswordChangeView
 
-#PasswordResetView
+
+# PasswordResetView
 class Password_Reset_View(PasswordResetView):
     Form_class = PasswordResetForm
     template_name = "base/password_reset.html"
-#end of PasswordResetView
+# end of PasswordResetView
 
 
-#password_change_done_view
+# password_change_done_view
 class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
     template_name = "password_change_done.html"
     title = "Password Change Done Successfully"
-#end of password_change_done_view
+# end of password_change_done_view
 
 
-#password__reset_done_view
+# password__reset_done_view
 class PriceJarPassWordResetDoneView(PasswordResetDoneView):
     template_name = "password_reset_sent.html"
 
 # class DealsPageView(View):
 #     template_name= "templates/deals.html"
 
+
 def DealsPageView(request):
     return render(request, 'base/deals.html',)
 
-#start of error 404 view
+# start of error 404 view
+
+
 def error404(request):
     return render(request, 'base/error404.html')
-#end of error 404 view
+# end of error 404 view
 
-# start of user profile    
-@login_required
+# start of user profile
+# @login_required
+
+
 def userprofile(request):
     return render(request, 'base/userprofile.html')
 
+
 def userprofile_settings(request):
-    context={}
+    context = {}
     context['form'] = UpdateProfileForm
     return render(request, 'base/userprofile_settings.html', context)
 # end of user profile
 
 # Contact
+
+
 def contact(request):
     context = {}
     context['form'] = ContactForm
     return render(request, 'base/contact.html', context)
 
+
 class About_Us_View(TemplateView):
     template_name = "base/about.html"
 
-#faq
+# faq
+
+
 def faq(request):
-    return render(request,'base/faq.html')
+    return render(request, 'base/faq.html')
 
- #documentation1
+ # documentation1
+
+
 def documentation1(request):
-    return render(request,'base/documentation1.html')
-    
+    return render(request, 'base/documentation1.html')
 
-#documentation2
+
+# documentation2
 def documentation2(request):
-    return render(request,'base/documentation2.html')
-    
-
+    return render(request, 'base/documentation2.html')
