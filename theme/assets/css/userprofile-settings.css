@@ -134,6 +134,7 @@ html,body{
 	margin: auto;
   }
   .avatar-upload .avatar-preview {
+	margin: auto;
 	width: 192px;
 	height: 192px;
 	position: relative;
@@ -347,7 +348,7 @@ label{
 	outline: none;
 }
 #save-changes{
-	margin: 50px 0 0 0;
+	margin: 50px 0;
 	display: flex;
 	justify-content: center;
 }
@@ -361,7 +362,6 @@ label{
     color: #FDFDFD;
 }
 #save-changes input:hover{
-	margin: 20px auto;
     padding: 9px 30px;
     box-shadow: 8px 8px 32px #F3DBE7;
     border-radius: 5px;
@@ -370,7 +370,6 @@ label{
     color: #FDFDFD;
 }
 #save-changes input:active{
-	margin: 20px auto;
     padding: 9px 30px;
     box-shadow: 8px 8px 32px #F3DBE7;
     border-radius: 5px;
@@ -582,7 +581,7 @@ label{
 		flex-direction: row;
 	  }
 }
-@media (max-width: 500px){
+@media (max-width: 600px){
 	.profile-field{
 		margin: 80px auto 5rem auto;
 		border: 1px solid #AA6787;
