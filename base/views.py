@@ -1,5 +1,6 @@
 
 from email.mime import base
+from multiprocessing import context
 from os import terminal_size
 from re import template
 
@@ -17,7 +18,7 @@ from django.conf import settings
 from django.contrib.auth import login
 # from .models import Product
 from . import forms
-from .forms import ContactForm
+from .forms import ContactForm, UpdateProfileForm
 
 from django.views.generic import TemplateView
 
@@ -96,8 +97,13 @@ def error404(request):
 
 # start of user profile    
 @login_required
-def Userprofile(request):
-    return render(request, 'base/userprofilepage.html')
+def userprofile(request):
+    return render(request, 'base/userprofile.html')
+
+def userprofile_settings(request):
+    context={}
+    context['form'] = UpdateProfileForm
+    return render(request, 'base/userprofile_settings.html', context)
 # end of user profile
 
 # Contact
