@@ -28,7 +28,7 @@
 
 # About the Project
 
-![Home](https://github.com/zuri-training/PriceJar_price_compare_projTeam30/blob/main/homepage.JPG)
+![Home](https://github.com/zuri-training/PriceJar_price_compare_projTeam30/blob/main/Thumbnail.png)
 
 ## Description
 
