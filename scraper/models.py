@@ -21,6 +21,15 @@ class KillaMallMobilePhone(models.Model):
     def __str__(self):
         return self.product_name
 
+class ShopitMobilePhone(models.Model):
+    image= models.URLField(_("Image"))
+    Link=models.CharField(_("Link"),max_length=500)
+    product_name=models.CharField(_("Product_Name"), max_length=500)
+    price=models.CharField(_("Price"), max_length=500)
+
+    def __str__(self):
+        return self.product_name
+
 
 class JumiaFasionModel(models.Model):
     image= models.URLField(_("Image"))
