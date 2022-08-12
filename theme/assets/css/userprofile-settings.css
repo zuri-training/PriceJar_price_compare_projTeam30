@@ -517,7 +517,7 @@ label{
 	padding-top: 5px;
 	font-size: 13px;
 }
-@media (min-width: 500px) {
+@media (max-width: 800px) {
 	.profile-section{
 		width: 35%;
 	}
@@ -546,6 +546,12 @@ label{
 	  }
 	  .set-new-password-input-field{
 		flex-direction: column;
+	  }
+	  .label1{
+		padding: 0;
+	  }
+	  .label2{
+		padding: 0;
 	  }
 }
 @media (min-width: 700px) and (min-height: 1000px){
