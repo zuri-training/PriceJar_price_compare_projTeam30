@@ -26,7 +26,7 @@ html,body{
     text-align: center;
 }
 .profile-section{
-    width: 20%;
+    width: 25%;
     border-right: 1px solid #AA6787;
     background-color: #FFFAED;
 }
@@ -62,6 +62,7 @@ html,body{
     height: 90px;
     border-radius: 50%;
     margin-top: 40px;
+	margin-bottom: 20px;
 }
 .other-profile-views{
     display: flex;
@@ -76,6 +77,149 @@ html,body{
     width: 80%;
     text-align:start;
     margin: 25px 60px;
+}
+.price-alert-field{
+	border: 1px solid #B0AAAD;
+	border-radius: 8px;
+	padding: 4px;
+	
+}
+.price-alert-top{
+	border-radius: 8px;
+	background-color: #F6F6F6;	
+	display: flex;
+	flex-direction: row;
+	padding: 4px;
+}
+.price-alert-info{
+	width: 80%;
+	background: #F6F6F6;
+	border-radius: 5px;
+	padding: 8px;
+	border: #CBCBCB 1px solid;
+	margin-right: 5px;
+}
+.price-alert-top h4{
+	font-size: 23px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.price-alert-top p{
+	font-size: 10px;
+}
+.price-alert-top .price-alert-info .filter{
+	font-size: 13px;
+	margin: 8px 0;
+}
+.price-alert-top a{
+	text-decoration: none;
+}
+.price-alert-top a span{
+	margin: 0 10px;
+}
+.price-alert-top a:hover span{
+	color: #6B173F;
+}
+.price-alert-top a:active span{
+	color: #AA6787;
+}
+.price-alert-top a img{
+	width: 80px;
+	height: 85px;
+	border: none;
+	border-radius: 8px;
+	margin-right: 10px;
+}
+.price-alert-top a:hover img{
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.price-alert-condition{
+	display: flex;
+	justify-content: center;
+	width: 23%;
+	background: #F6F6F6;
+	border-radius: 5px;
+	padding: 10px;
+	border: #CBCBCB 1px solid;
+	position: relative;
+}
+.price-alert-condition-content {
+	padding: 0 8px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.price-alert-condition .price-alert-condition-content p{
+	font-size: 11.5px;
+}
+.price-alert-condition label{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #CBCBCB;
+	font-size: 22px;
+}
+.price-alert-top input{
+	width: 65px;
+	height: 35px;
+	border-radius: 5px;
+	border: #CBCBCB solid 1px;
+	/* margin: 5px; */
+	font-size: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.price-alert-top a button{
+	text-decoration: none;
+	width: 100%;
+	background: #F2B109;
+	border-radius: 8px;
+	border: none;
+	font-size: 13px;
+	color: #FDFDFD;
+	font-weight: 700;
+	height: 40px;
+	margin: 10px 0;
+}
+.price-alert-top a:hover button{
+	background: #CA9308;
+}
+.price-alert-top a:active button{
+	background: #F6CB5B;
+}
+.price-alert-bottom{
+	
+	text-align: center;
+	/* padding: 4px; */
+}
+.price-alert-bottom p{
+	height: 40px;
+	margin: auto 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.price-alert-bottom a button{
+	/* display: block; */
+	width: 100%;
+	background: #801B4B;
+	border-radius: 5px;
+	border: none;
+	font-size: 13px;
+	color: #FDFDFD;
+	font-weight: 700;
+	height: 40px;
+	margin: 0;
+	/* padding: 0; */
+}
+.price-alert-bottom a:hover button{
+	background: #6B173F;
+}
+.price-alert-bottom a:active button{
+	background: #AA6787;
 }
 #footer {
 	color: #fff;
@@ -216,26 +360,3 @@ html,body{
 	padding-top: 5px;
 	font-size: 13px;
 }
-@media(max-width: 800px) {
-    .profile-field{
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media (max-width: 376px){
-    .profile-field{
-        width: 100%;
-        padding: 0;
-    }
-} 
-@media (max-width: 330px){
-    .profile-field{
-        width: 100%;
-        padding: 0;
-    }
-    .profile-field img{
-        width: 80%;
-        height: auto;
-    }
-} 
