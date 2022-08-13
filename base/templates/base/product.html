@@ -1,3 +1,6 @@
+
+{%load static%}
+{%block content%}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,16 +13,16 @@
 		/>
 
 		<!-- Bootstrap CSS v5.2.0-beta1 -->
-		<link rel="stylesheet" href="/theme/css/bootstrap.css" />
+		<link rel="stylesheet" href="{% static 'assets/css/bootstrap.css'%}" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
 		/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
-		<link rel="stylesheet" href="/theme/assets/css/product.css" />
+		<link rel="stylesheet" href="{% static 'assets/css/product.css'%}" />
 	</head>
 	<body>
+        {%include 'navbar.html'%}
     <div class="container justify-content-center">
 		<div class="container mt-2 mb-3">
 			<div class="row no-gutters">
@@ -27,29 +30,29 @@
 					<div class="card">
 						<div class="demo">
 							<ul id="lightSlider">
-								<li data-thumb="/theme/assets/img/shoes.png">
-									<img src="/theme/assets/img/shoes.png" />
+								<li data-thumb="{%static 'assets/images/shoes.png'%}">
+									<img src="{%static 'assets/images/shoes.png'%}" />
 								</li>
-								<li data-thumb="/theme/assets/img/Shoe color type2.png">
-									<img src="/theme/assets/img/Shoe color type2.png" />
+								<li data-thumb="{%static 'assets/images/Shoe color type2.png'%}">
+									<img src="{%static 'assets/images/Shoe color type2.png'%}" />
 								</li>
-								<li data-thumb="/theme/assets/img/Shoe color type3.png">
-									<img src="/theme/assets/img/Shoe color type3.png" />
+								<li data-thumb="{%static 'assets/images/Shoe color type3.png'%}">
+									<img src="{%static 'assets/images/Shoe color type3.png'%}" />
 								</li>
-								<li data-thumb="/theme/assets/img/Shoe color type4.png">
-									<img src="/theme/assets/img/Shoe color type4.png" />
+								<li data-thumb="{%static 'assets/images/Shoe color type4.png'%}">
+									<img src="{%static 'assets/images/Shoe color type4.png'%}" />
 								</li>
-								<li data-thumb="/theme/assets/img/Shoe color type5.png">
-									<img src="/theme/assets/img/Shoe color type5.png" />
+								<li data-thumb="{%static 'assets/images/Shoe color type5.png'%}">
+									<img src="{%static 'assets/images/Shoe color type5.png'%}" />
 								</li>
-								<li data-thumb="/theme/assets/img/Shoe color type5.png">
-									<img src="/theme/assets/img/Shoe color type5.png" />
+								<li data-thumb="{%static 'assets/images/Shoe color type5.png'%}">
+									<img src="{%static 'assets/images/Shoe color type5.png'%}" />
 								</li>
-								<li data-thumb="/theme/assets/img/Shoe color type6.png">
-									<img src="/theme/assets/img/Shoe color type6.png" />
+								<li data-thumb="{%static 'assets/images/Shoe color type6.png'%}">
+									<img src="{%static 'assets/images/Shoe color type6.png'%}" />
 								</li>
-								<li data-thumb="/theme/assets/img/Shoe color type.png">
-									<img src="/theme/assets/img/Shoe color type.png" />
+								<li data-thumb="{%static 'assets/images/Shoe color type.png'%}">
+									<img src="{%static 'assets/images/Shoe color type.png'%}" />
 								</li>
 							</ul>
 						</div>
@@ -126,7 +129,7 @@
       <h3 class="text-center">Other stores</h3>
       <div class="row d-flex">
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
@@ -134,63 +137,63 @@
   </div>
         </div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
         <div class="card" style="width: 15rem;">
-          <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+          <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Nike Airforce One (1)</p>
     <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
@@ -203,9 +206,9 @@
   <li class="nav-item" role="presentation">
     <a
       class="nav-link active"
-      id="comments-tab"
+      id="ex1-tab-1"
       data-mdb-toggle="tab"
-      href="#comments"
+      href="#ex1-tabs-1"
       role="tab"
       aria-controls="ex1-tabs-1"
       aria-selected="true"
@@ -215,13 +218,13 @@
   <li class="nav-item" role="presentation">
     <a
       class="nav-link"
-      id="reviews"
+      id="ex1tab2"
       data-mdb-toggle="tab"
-      href="#reviews"
+      href="#ex1tabs2"
       role="tab"
-      aria-controls="ex1tabs2"
+      aria-controls="ex1-tabs-2"
       aria-selected="false"
-    >Reviews(20)</a
+      >Reviews(20)</a
     >
   </li>
 </ul>
@@ -231,9 +234,9 @@
 <div class="tab-content" id="ex1-content">
   <div
     class="tab-pane fade show active"
-    id="comments"
+    id="ex1-tabs-1"
     role="tabpanel"
-    aria-labelledby="comments-tab"
+    aria-labelledby="ex1-tab-1"
   >
   <div class="container">
     <div class="row gx-2">
@@ -385,7 +388,7 @@
 </div>
 </div>
   </div>
-  <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews">
+  <div class="tab-pane fade" id="ex1tabs2" role="tabpanel" aria-labelledby="ex1tab2">
     <div class="container">
       <div class="row g-0">
         <div class="col-md-4">
@@ -447,20 +450,20 @@
           </div>
         </div>
       </div>
-      <div class="container p-3">
-        <div class="row">
-      <button class="btn btn-bordered justify-content-center mx-auto col-2" style=" color: #801b4b;">Load more</button>
-    </div>
-    </div>
     </div>
   </div>
+  <div class="container p-3">
+    <div class="row">
+  <button class="btn btn-bordered justify-content-center mx-auto col-2" style=" color: #801b4b;">Load more</button>
+</div>
+</div>
 </div>
 <div class="container">
   <h3 class="text-center">Related product</h3>
   <hr>
   <div class="row d-flex">
     <div class="card" style="width: 15rem;">
-      <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+      <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
 <div class="card-body">
 <p class="card-text">Nike Airforce One (1)</p>
 <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
@@ -468,28 +471,28 @@
 </div>
     </div>
     <div class="card" style="width: 15rem;">
-      <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+      <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
 <div class="card-body">
 <p class="card-text">Nike Airforce One (1)</p>
 <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
 <p class="card-text"><h4>$48.99</h4></p>
 </div></div>
     <div class="card" style="width: 15rem;">
-      <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+      <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
 <div class="card-body">
 <p class="card-text">Nike Airforce One (1)</p>
 <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
 <p class="card-text"><h4>$48.99</h4></p>
 </div></div>
     <div class="card" style="width: 15rem;">
-      <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+      <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
 <div class="card-body">
 <p class="card-text">Nike Airforce One (1)</p>
 <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
 <p class="card-text"><h4>$48.99</h4></p>
 </div></div>
     <div class="card" style="width: 15rem;">
-      <img src="/theme/assets/img/Frame 16139.png" class="card-img-top" alt="...">
+      <img src="{%static 'assets/images/Frame 16139.png'%}" class="card-img-top" alt="...">
 <div class="card-body">
 <p class="card-text">Nike Airforce One (1)</p>
 <p class="card-text"><strong><small>brand:&nbsp;&nbsp;<span style="color:#801b4b">jumia </span></small></strong></p>
@@ -505,8 +508,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
-		<script src="/theme/js/bootstrap.bundle.js"></script>
-		<script src="/theme/assets/css/product.js"></script>
+		<script src="{% static 'assets/css/bootstrap.bundle.js' %}"></script>
+		<script src="{% static 'assets/css/product.js' %}"></script>
 	</body>
 </html>
+{%endblock content%}

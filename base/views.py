@@ -121,5 +121,9 @@ def documentation1(request):
 #documentation2
 def documentation2(request):
     return render(request,'base/documentation2.html')
+
+# single product view
+def product_view(request):
+    return render(request,'base/product.html')
     
 
