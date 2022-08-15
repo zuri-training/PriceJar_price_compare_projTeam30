@@ -66,6 +66,7 @@ class Password_Change_View(PasswordChangeView):
  
 
 #PasswordResetView
+
 class Password_Reset_View(PasswordResetView):
     Form_class = PasswordResetForm
     template_name = "base/password_reset.html"
@@ -73,6 +74,7 @@ class Password_Reset_View(PasswordResetView):
 
 
 #password_change_done_view
+
 class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
     template_name = "password_change_done.html"
     title = "Password Change Done Successfully"
@@ -80,12 +82,13 @@ class PriceJar_Password_Change_Done_View(PasswordChangeDoneView):
 
 
 #password__reset_done_view
+ 
 class PriceJarPassWordResetDoneView(PasswordResetDoneView):
     template_name = "password_reset_sent.html"
 
 # class DealsPageView(View):
 #     template_name= "templates/deals.html"
-
+@login_required 
 def DealsPageView(request):
     return render(request, 'base/deals.html',)
 
@@ -123,9 +126,10 @@ def documentation2(request):
     return render(request,'base/documentation2.html')
 
 # single product view
+@login_required 
 def product_view(request):
     return render(request,'base/product.html')
-
+@login_required 
 def categories_view(request):
     return render(request,'base/categories.html')
     
