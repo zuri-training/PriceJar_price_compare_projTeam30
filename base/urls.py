@@ -39,7 +39,8 @@ urlpatterns = [
 
     # contact url
     path('contact/', views.contact, name='contact'), 
-    path('product/',views.product_view,name ='product')
+    path('product/',views.product_view,name ='product'),
+    path('categories/',views.categories_view,name ='categories'),
 
 ] 
    
