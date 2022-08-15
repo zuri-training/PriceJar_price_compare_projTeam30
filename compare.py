@@ -10,7 +10,7 @@ def searchJumiaFashion():
     'link' : []
 }
     #Prompt user search. 
-    userInput = input('Enter product')
+    userInput = input('Enter product : ')
     
     product_name = jumia_fashion['Product_Name']
     
@@ -45,6 +45,92 @@ def searchJumiaFashion():
             display['price'].append(available_product['price'][0].item())#price
             display['link'].append(available_product['link'][0].item())#link
             
-    return pd.DataFrame(display)
+    print(display)
+
+csv1 = 'jumia_phones.csv'
+csv2 = 'shopit_phones.csv'
+def compareProduct(csv1, csv2):
+
+    userInput = input('Enter product')
+
+    jumia_phone = pd.read_csv(csv1)
+    shopit_phone = pd.read_csv(csv2)
+
+
+    jumia_phone
+
+    available_product = {
+        'jumia' : {
+            'image' : [],
+            'product' : [],
+            'price' : [],
+            'link' : []
+        },
+
+        'shopit' :{
+            'image' : [],
+            'product' : [],
+            'price' : [],
+            'link' : []
+        }
+    }
+
+    jumia_product_name = jumia_phone['Product_Name']
+    shopit_product_name = shopit_phone['Product_Name']
+
+    # search through the database for jumia
+    for product in jumia_product_name:
+        if userInput in product:
+#             print(jumia_fashion[jumia_fashion['Product_Name']==product])
+            available_product['jumia']['image'].append(jumia_phone[jumia_phone['Product_Name']==product]['Image'])
+            available_product['jumia']['product'].append(jumia_phone[jumia_phone['Product_Name']==product]['Product_Name'])
+            available_product['jumia']['price'].append(jumia_phone[jumia_phone['Product_Name']==product]['Price'])
+            available_product['jumia']['link'].append(jumia_phone[jumia_phone['Product_Name']==product]['Link'])
+
+    for product in shopit_product_name:
+        if userInput in product:
+#             print(jumia_fashion[jumia_fashion['Product_Name']==product])
+            available_product['shopit']['image'].append(shopit_phone[shopit_phone['Product_Name']==product]['Image'])
+            available_product['shopit']['product'].append(shopit_phone[shopit_phone['Product_Name']==product]['Product_Name'])
+            available_product['shopit']['price'].append(shopit_phone[shopit_phone['Product_Name']==product]['Price'])
+            available_product['shopit']['link'].append(shopit_phone[shopit_phone['Product_Name']==product]['Link'])
+
+    # avail_price = {
+        
+    # }
+
+    jumia_price = available_product['jumia']['price']
+    shopit_price = available_product['shopit']['price']
+
+    display = {
+            'jumia' : {
+                'image' : [],
+                'product' : [],
+                'price' : [],
+                'link' : []
+                
+            },
+
+            'shopit':{
+                'image' : [],
+                'product' : [],
+                'price' : [],
+                'link' : []
+            }
+
+        }
     
-searchJumiaFashion()
+    for i in range(len(available_product)):
+            display['jumia']['image'].append(available_product['image'][0].item())#image
+            display['jumia']['product'].append(available_product['product'][0].item())#product
+            display['jumia']['price'].append(available_product['price'][0].item())#price
+            display['jumia']['link'].append(available_product['link'][0].item())#link
+
+
+
+
+    #print(int(''.join(filter(str.isdigit, jumia_price[0].item()))))
+#searchJumiaFashion()
+
+
+compareProduct(csv1, csv2)
