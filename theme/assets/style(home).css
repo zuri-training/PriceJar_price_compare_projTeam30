@@ -1,15 +1,18 @@
 /* multicolored text */
 
 .multicolor{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
   background: linear-gradient(90.27deg, #801B4B -1.51%, #F2B109 122.8%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
 }
 
-/* images */
-/* https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=400 */
 
 .short-div{
   max-width: 100%;
