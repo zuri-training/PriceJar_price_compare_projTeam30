@@ -125,5 +125,8 @@ def documentation2(request):
 # single product view
 def product_view(request):
     return render(request,'base/product.html')
+
+def categories_view(request):
+    return render(request,'base/categories.html')
     
 
