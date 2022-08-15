@@ -9,3 +9,4 @@ $('#multi22').mdbRange({
     }
   }
 });
+
