@@ -6,7 +6,7 @@ from django.utils.translation import gettext as _
 class JumiaMobilePhoneModel(models.Model):
     image= models.URLField(_("Image"))
     product_name=models.CharField(_("Product_Name"), max_length=500)
-    price=models.IntegerField(_("Price"))
+    price=models.CharField(_("Price"), max_length=500)
     Link=models.CharField(_("Link"),max_length=300)
     
     def __str__(self):
@@ -15,7 +15,7 @@ class JumiaMobilePhoneModel(models.Model):
 class KillaMallMobilePhone(models.Model):
     image= models.URLField(_("Image"))
     product_name=models.CharField(_("Product_Name"), max_length=500)
-    price=models.IntegerField(_("Price"))
+    price=models.CharField(_("Price"), max_length=500)
     Link=models.CharField(_("Link"),max_length=300)
 
     def __str__(self):
@@ -24,7 +24,7 @@ class KillaMallMobilePhone(models.Model):
 class ShopitMobilePhoneModel(models.Model):
     image= models.URLField(_("Image"))
     product_name=models.CharField(_("Product_Name"), max_length=500)
-    price=models.IntegerField(_("Price"))
+    price=models.CharField(_("Price"), max_length=500)
     Link=models.CharField(_("Link"),max_length=300)
     
     def __str__(self):
@@ -34,7 +34,7 @@ class ShopitMobilePhoneModel(models.Model):
 class JumiaFasionModel(models.Model):
     image= models.URLField(_("Image"))
     product_name=models.CharField(_("Product_Name"), max_length=500)
-    price=models.IntegerField(_("Price"))
+    price=models.CharField(_("Price"), max_length=500)
     Link=models.CharField(_("Link"),max_length=300)
 
     def __str__(self):
@@ -45,7 +45,7 @@ class JumiaFasionModel(models.Model):
 class KillaMallFasionModel(models.Model):
     image= models.URLField(_("Image"))
     product_name=models.CharField(_("Product_Name"), max_length=500)
-    price=models.IntegerField(_("Price"))
+    price=models.CharField(_("Price"), max_length=500)
     Link=models.CharField(_("Link"),max_length=300)
 
     def __str__(self):
