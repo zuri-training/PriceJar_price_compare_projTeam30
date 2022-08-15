@@ -9,7 +9,7 @@
   style="background-color: #ffff"
 >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="padding: 10px">
+    <a class="navbar-brand" href="{% url 'home' %}" style="padding: 10px">
       <span style="color: #801b4b">P</span>
       <span style="color: #801b4b">R</span>
       <span style="color: #801b4b">I</span>
@@ -53,16 +53,16 @@
             Categories
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Computer/Laptops</a></li>
+            <li><a class="dropdown-item" href="#">Phones & Accessories</a></li>
             <li><hr class="dropdown-divider" /></li>
             <li>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Fashion</a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href=""
+          <a class="nav-link active" aria-current="page" href="{% url 'categories' %}"
             >Compare by stores</a
           >
         </li>
@@ -70,7 +70,7 @@
           <a
             class="nav-link active"
             aria-current="page"
-            href="{%url 'deals-page'%}"
+            href="{% url 'deals-page' %}"
             >Deals</a
           >
         </li>
@@ -78,7 +78,7 @@
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href=""
-            >You are logged in</a
+            >You are logged in as {{ request.user.username}}</a
           >
         </li>
         <li class="nav-item">
@@ -98,7 +98,7 @@
   style="background-color: #ffff"
 >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="padding: 10px">
+    <a class="navbar-brand" href="{% url 'home' %}" style="padding: 10px">
       <span style="color: #801b4b">P</span>
       <span style="color: #801b4b">R</span>
       <span style="color: #801b4b">I</span>
@@ -142,16 +142,16 @@
             Categories
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Computer/Laptops</a></li>
+            <li><a class="dropdown-item" href="#">Phones & Accessories</a></li>
             <li><hr class="dropdown-divider" /></li>
             <li>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Fashion</a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href=""
+          <a class="nav-link active" aria-current="page" href="{% url 'categories' %}"
             >Compare by stores</a
           >
         </li>
