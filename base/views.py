@@ -13,6 +13,7 @@ from django.contrib import messages
 from django.conf import settings
 from django.contrib.auth import login
 from .forms import ContactForm
+from . import forms
 from django.views.generic import TemplateView
 from .models import Comment, ShopitMobilePhoneModel 
 
