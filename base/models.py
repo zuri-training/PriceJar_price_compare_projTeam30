@@ -5,6 +5,7 @@ import email
 # from unicodedata import name
 from django.db import models
 from django.contrib.auth.models import User
+from scraper.models import JumiaMobilePhoneModel, ShopitMobilePhoneModel
 
 # Create your models here.
 
@@ -12,14 +13,6 @@ from django.contrib.auth.models import User
 # User profile
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    
-    # Retty work on the below error too
-#     ERRORS:
-# base.UserProfile.avatar: (fields.E210) Cannot use ImageField because Pillow is not installed.
-#         HINT: Get Pillow at https://pypi.org/project/Pillow/ or run command "python -m pip install Pillow".
-
-    #ordering products from most recent updated/created to least updated
-
 
     def __str__(self):
         return self.name
@@ -33,5 +26,19 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.email
+
+
+class Comment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(ShopitMobilePhoneModel, on_delete=models.CASCADE)
+    body = models.TextField()
+    updated = models.DateTimeField(auto_now= True)
+    created = models.DateTimeField(auto_now_add= True)
+
+    class Meta:
+        ordering = ['-updated', '-created']
+
+    def __str__(self):
+        return self.body[0:50]
 
 

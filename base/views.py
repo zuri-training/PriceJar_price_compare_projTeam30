@@ -3,23 +3,18 @@ from email.mime import base
 from os import terminal_size
 from re import template
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.views import PasswordResetView,PasswordChangeDoneView,PasswordChangeView,PasswordResetDoneView
 from django. contrib.auth.forms import PasswordResetForm,PasswordChangeForm
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-
-from django.shortcuts import render, redirect
-from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth import login
-# from .models import Product
-from . import forms
 from .forms import ContactForm
-
 from django.views.generic import TemplateView
+from .models import Comment, ShopitMobilePhoneModel 
 
 
 #homepage view
@@ -125,12 +120,31 @@ def documentation1(request):
 def documentation2(request):
     return render(request,'base/documentation2.html')
 
+
 # single product view
 @login_required 
-def product_view(request):
-    return render(request,'base/product.html')
+def product_view(request, pk):
+    product = ShopitMobilePhoneModel.objects.get(id=pk)
+    #gettig all comments belong to a specific product. product.comment_set.all() => product is the specific product
+    #message is the child class were are querying
+    comments = product.comment_set.all().order_by('-created')
+    if request.method == 'POST':
+        comments = Comment.objects.create(
+            user= request.user,
+            product=product,
+            body=request.POST.get('comment')
+        )
+        
+        #redirect to have it back to a 'get' request
+        return redirect('product', pk=product.id)
+
+    context= {'comments':comments, 'product':product}
+    return render(request,'base/product.html', context)
+# end of single product view   
+ 
+
+#start of categories view
 @login_required 
 def categories_view(request):
-    return render(request,'base/categories.html')
-    
-
+    return render(request,'base/categories.html')   
+#end of categories view
