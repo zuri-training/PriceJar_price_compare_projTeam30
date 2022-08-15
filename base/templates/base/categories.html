@@ -1,5 +1,5 @@
-{%load static%}
-{%block content%}
+
+{%load static%} 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,131 +10,78 @@
     <link rel="stylesheet" href="{%static 'assets/css/style(hom).css'%}" />
     <link rel="stylesheet" href="{%static 'assets/css/bootstrap.css'%}" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="{%static 'assets/css/categories.css'%}" />
   </head>
   <body>
-    {%include 'navbar.html'%}
+    <!-- {%include 'navbar.html'%} -->
+    {%block content%}
     <div class="container hero p-5">
       <h2 class="text-center p-5">Compare By Stores</h2>
       <div class="row d-flex justify-content-center">
-        <div class="col-9">
-          <div class="input-group mx-0">
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle py-2"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                style="background-color: #801b4b; color: #fff"
-              >
-                Select store A
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
+        <div class="col-6">
+          <div class="input-group">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #801b4b; color: #fff"
+            >
+              Store A
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action before</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Another action before</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
             <input
-              type="search"
-              class="form-control rounded py-2"
-              placeholder="Search"
-              aria-label="Search"
-              aria-describedby="search-addon"
+              type="text"
+              class="form-control"
+              aria-label="Text input with 2 dropdown buttons"
             />
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle py-2"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                style="background-color: #801b4b; color: #fff"
-              >
-                Select Store B
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    style="background-color: #801b4b; color: #fff"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <a class="dropdown-item" href="#">Another action</a>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    style="background-color: #801b4b; color: #fff"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <a class="dropdown-item" href="#">action</a>
-                <a class="dropdown-item" href="#">action</a>
-                <a class="dropdown-item" href="#">action</a>
-                <a class="dropdown-item" href="#">action</a>
-                <a class="dropdown-item" href="#">action</a>
-              </div>
-            </div>
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #801b4b; color: #fff"
+            >
+              Store B
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
         <div class="col-2">
           <div class="dropdown">
             <button
-              class="btn btn-secondary dropdown-toggle py-2"
+              class="btn btn-secondary dropdown-toggle"
               type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
+              data-bs-toggle="dropdown"
               aria-expanded="false"
               style="background-color: #801b4b; color: #fff"
             >
-              <i class="bi bi-plus"></i> Add another store
+              Select Another Store
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </div>
         </div>
         <div class="container d-flex justify-content-center pt-3">
@@ -150,244 +97,490 @@
     </div>
     <div class="container border">
       <div class="row d-flex justify-content-between">
-        <div class="col-3 justify-content-center">
-          <ul class="nav flex-column">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+        <div class="col-3 g-0">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  CATEGORIES
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne"
               >
-                CATEGORIES
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Uncategorized</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body w-100">Uncategorized</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Appliances
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
               >
-                Appliances
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Computer
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Beauty and care
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Clothing and accessories
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Computer
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Electronics
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Clothing and accessories
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Health and beauty
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Electronics
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Kids
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Health and beauty
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Lifestyle
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Kids
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Office cupplies
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Lifestyle
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Outdoor
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Office supplies
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Sport and entertainment
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
-                Outdoor
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Sport and entertainment
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <hr />
-          <div class="container">
-            <div class="row">
-              <form class="multi-range-field my-5 pb-5">
-                <input id="multi22" class="multi-range" type="range" />
-              </form>
-
-              <!-- Example -->
-              <label for="ex3">Example</label>
-              <input type="text" id="ex3" class="form-control" disabled />
-              <label for="ex4">Example</label>
-              <input type="text" id="ex4" class="form-control" disabled />
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
             </div>
           </div>
           <hr />
+          <div slider id="slider-distance">
+            <div>
+              <div inverse-left style="width: 70%"></div>
+              <div inverse-right style="width: 70%"></div>
+              <div range style="left: 30%; right: 40%"></div>
+              <span thumb style="left: 30%"></span>
+              <span thumb style="left: 60%"></span>
+              <div sign style="left: 30%">
+                <span id="value">30</span>
+              </div>
+              <div sign style="left: 60%">
+                <span id="value">60</span>
+              </div>
+            </div>
+            <input
+              type="range"
+              tabindex="0"
+              value="30"
+              max="100"
+              min="0"
+              step="1"
+              oninput="
+            this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+            var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+            var children = this.parentNode.childNodes[1].childNodes;
+            children[1].style.width=value+'%';
+            children[5].style.left=value+'%';
+            children[7].style.left=value+'%';children[11].style.left=value+'%';
+            children[11].childNodes[1].innerHTML=this.value;"
+            />
+
+            <input
+              type="range"
+              tabindex="0"
+              value="60"
+              max="100"
+              min="0"
+              step="1"
+              oninput="
+            this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+            var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+            var children = this.parentNode.childNodes[1].childNodes;
+            children[3].style.width=(100-value)+'%';
+            children[5].style.right=(100-value)+'%';
+            children[9].style.left=value+'%';children[13].style.left=value+'%';
+            children[13].childNodes[1].innerHTML=this.value;"
+            />
+          </div>
+          <div class="container px-5">
+            <p class="mt-5">Set Price Alert:</p>
+            <div class="row d-flex justify-content-between">
+              <input
+                type="input"
+                class="col-1 form-control d-flex justify-content-start w-50"
+                name="min"
+                id="min"
+                placeholder="min"
+              /><i class="bi bi-dash-lg justify-content-center"></i
+              ><input
+                type="input"
+                class="form-control d-flex justify-content-end w-50 col-1"
+                name="max"
+                id="max"
+                placeholder="max"
+              />
+            </div>
+          </div>
+          <button
+            class="btn text-center mt-3 w-100"
+            style="background-color: #801b4b; color: #fff"
+          >
+            Set alert
+          </button>
+          <hr />
+          <div class="container text-center">
+            <div class="row gy-2">
+              <div
+                class="card-body col-5 mx-2"
+                style="background-color: #f6d151"
+                style="background-color: #801b4b"
+              >
+                <h5>Amazon</h5>
+                <small>amazon.co.uk</small>
+              </div>
+              <div
+                class="card-body col-5 mx-2"
+                style="background-color: #f6d151"
+              >
+                <h5>Apple</h5>
+                <small>amazon.co.uk</small>
+              </div>
+              <div
+                class="card-body col-5 mx-2"
+                style="background-color: #f6d151"
+              >
+                <h5>Best buy</h5>
+                <small>amazon.co.uk</small>
+              </div>
+              <div
+                class="card-body col-5 mx-2"
+                style="background-color: #f6d151"
+              >
+                <h5>Ebay</h5>
+                <small>amazon.co.uk</small>
+              </div>
+              <div
+                class="card-body col-5 mx-2"
+                style="background-color: #f6d151"
+              >
+                <h5>Nike</h5>
+                <small>amazon.co.uk</small>
+              </div>
+              <div
+                class="card-body col-5 mx-2"
+                style="background-color: #f6d151"
+              >
+                <h5>Samsung</h5>
+                <small>amazon.co.uk</small>
+              </div>
+              <div
+                class="card-body col-5 mx-2"
+                style="background-color: #f6d151"
+              >
+                <h5>walmart</h5>
+                <small>amazon.co.uk</small>
+              </div>
+              <div
+                class="card-body col-5 mx-2"
+                style="background-color: #f6d151"
+              >
+                <h5>Target</h5>
+                <small>amazon.co.uk</small>
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn text-center mt-3 w-100"
+            style="background-color: #801b4b; color: #fff"
+          >
+            Search with stores
+          </button>
+          <button
+            class="btn text-center mt-3 w-100"
+            style="background-color: #f6d151; color: #fff"
+          >
+            open all stores
+          </button>
         </div>
+
         <div class="col-8">
           <div class="row d-flex justify-content-center g-0">
             <div class="col-6">
@@ -1635,7 +1828,7 @@
       </div>
     </div>
     <script src="{%static 'assets/css/bootstrap.bundle.js'%}"></script>
+    {%endblock content%}
     {%include 'footer.html' %}
   </body>
 </html>
-{%endblock content%}
