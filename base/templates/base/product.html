@@ -31,8 +31,8 @@
 						<div class="demo">
 							<ul id="lightSlider">
 								<li data-thumb="{%static 'assets/images/shoes.png'%}">
-									<img src="{%static 'assets/images/shoes.png'%}" />
-								</li>
+									<img src="{{ product.image }}" />
+								<!-- </li>
 								<li data-thumb="{%static 'assets/images/Shoe color type2.png'%}">
 									<img src="{%static 'assets/images/Shoe color type2.png'%}" />
 								</li>
@@ -53,7 +53,7 @@
 								</li>
 								<li data-thumb="{%static 'assets/images/Shoe color type.png'%}">
 									<img src="{%static 'assets/images/Shoe color type.png'%}" />
-								</li>
+								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 					<div class="card">
 						<div class="about">
 							<span class="font-weight-bold"
-								><h2>Nike Airforce One (1)</h2>
+								><h2>{{product.product_name}}</h2>
 							</span>
               <div class="d-flex flex-row align-items-center">
                 <div class="p-ratings">
@@ -77,16 +77,11 @@
               <small><strong>brand:</strong> <span class="" style="color:maroon">Amazon store</span></small>
               <p class="text-muted"> total purchase: 4231</p>
 						</div>
-<h4 class="font-weight-bold">$3,444</h4>
+<h4 class="font-weight-bold">{{ product.price }}</h4>
 <div class="mt-2">
   <span class="font-weight-bold">Description</span>
   <p>
-    The minimalist collaboration features chairs, lightening,
-    Shelves, Sofas, Desks and various home accessories, all
-    offering form and function at the same point.We use
-    high-strength clamps and joinery techniques specially designed
-    for engineered wood beds. Ergo, no irksome creaks - and you
-    can sleep like a baby, well into adulthood!
+    {{product.product_name}}
   </p>
 </div>
 						<div class="product-description">
@@ -117,7 +112,7 @@
 							</div>
 							
 							<div class="mt-5">
-								<span class="font-weight-bold"><button type="button" class="btn " style="background-color: #801b4b; color:white"><small>buy now</small></button></span>
+    <span class="font-weight-bold"><button type="button" class="btn " style="background-color: #801b4b; color:white"><small><a href="{{ product.Link }}" style="text-decoration:none; color:antiquewhite;">buy now</a></small></button></span>
                 <span>share this product:&nbsp;<i class="bi bi-twitter" style="color: #801b4b;"></i>&nbsp;<i class="bi bi-facebook"style="color: #801b4b;"></i>&nbsp;<i class="bi bi-instagram"style="color: #801b4b;"></i>&nbsp;<i class="bi bi-linkedin"style="color: #801b4b;"></i>&nbsp;</span>
 							</div>
 						</div>
@@ -125,7 +120,7 @@
 				</div>
 			</div>
       </div>
-    <div class="container">
+    <!-- <div class="container">
       <h3 class="text-center">Other stores</h3>
       <div class="row d-flex">
         <div class="card" style="width: 15rem;">
@@ -200,7 +195,7 @@
     <p class="card-text"><h4>$48.99</h4></p>
   </div></div>
       </div>
-    </div>
+    </div> -->
     <!-- Tabs navs -->
 <ul class="nav nav-tabs mb-3 justify-content-center" id="ex1" role="tablist">
   <li class="nav-item" role="presentation">
@@ -243,9 +238,10 @@
       <div class="col-8">
       <div class="tab-pane active" id="tabs-1" role="tabpanel">
         <div class="product__details__tab__desc">
+          {% for comment in comments %}
           <div class="p-2">
           <div class="card border p-2">
-            <h4 class="card-title">Isah james</h4>
+            <h4 class="card-title">{{comment.user}}</h4>
             <div class="card-body">
               <div class="p-ratings">
                 <i class="fa fa-star checked"></i>
@@ -254,85 +250,11 @@
                 <i class="fa fa-star checked"></i>
                 <i class="fa fa-star checked"></i>
               </div>
-              <p class="card-text">This pair of air force 1 is super lightweight and comfort, I use it for my casual outing and picnics because of the light. weight. The delivery service is superb as i got my shoes earlier than the delivery date.</p>
+              <p class="card-text">{{comment.body}} This pair of air force 1 is super lightweight and comfort, I use it for my casual outing and picnics because of the light. weight. The delivery service is superb as i got my shoes earlier than the delivery date.</p>
             </div>
           </div>
         </div>
-        <div class="p-2">
-          <div class="card border p-2">
-            <h4 class="card-title">Isah james</h4>
-            <div class="card-body">
-              <div class="p-ratings">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-              </div>
-              <p class="card-text">This pair of air force 1 is super lightweight and comfort, I use it for my casual outing and picnics because of the light. weight. The delivery service is superb as i got my shoes earlier than the delivery date.</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2">
-          <div class="card border p-2">
-            <h4 class="card-title">Isah james</h4>
-            <div class="card-body">
-              <div class="p-ratings">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-              </div>
-              <p class="card-text">This pair of air force 1 is super lightweight and comfort, I use it for my casual outing and picnics because of the light. weight. The delivery service is superb as i got my shoes earlier than the delivery date.</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2">
-          <div class="card border p-2">
-            <h4 class="card-title">Isah james</h4>
-            <div class="card-body">
-              <div class="p-ratings">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-              </div>
-              <p class="card-text">This pair of air force 1 is super lightweight and comfort, I use it for my casual outing and picnics because of the light. weight. The delivery service is superb as i got my shoes earlier than the delivery date.</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2">
-          <div class="card border p-2">
-            <h4 class="card-title">Isah james</h4>
-            <div class="card-body">
-              <div class="p-ratings">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-              </div>
-              <p class="card-text">This pair of air force 1 is super lightweight and comfort, I use it for my casual outing and picnics because of the light. weight. The delivery service is superb as i got my shoes earlier than the delivery date.</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2">
-          <div class="card border p-2">
-            <h4 class="card-title">Isah james</h4>
-            <div class="card-body">
-              <div class="p-ratings">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-              </div>
-              <p class="card-text">This pair of air force 1 is super lightweight and comfort, I use it for my casual outing and picnics because of the light. weight. The delivery service is superb as i got my shoes earlier than the delivery date.</p>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
         </div>
       </div>
     </div>
@@ -454,11 +376,16 @@
   </div>
   <div class="container p-3">
     <div class="row">
+  <form action="" method="post">
+    {% csrf_token%}
+    <input type="textarea" name="comment" placeholder="Leave your comment.."></input>
+    <input type="submit" value="Send">
+  </form>
   <button class="btn btn-bordered justify-content-center mx-auto col-2" style=" color: #801b4b;">Load more</button>
 </div>
 </div>
 </div>
-<div class="container">
+<!-- <div class="container">
   <h3 class="text-center">Related product</h3>
   <hr>
   <div class="row d-flex">
@@ -499,7 +426,7 @@
 <p class="card-text"><h4>$48.99</h4></p>
 </div></div>
   </div>
-</div>
+</div> -->
 </div>
 
     

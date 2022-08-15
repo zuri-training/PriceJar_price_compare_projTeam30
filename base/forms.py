@@ -2,9 +2,9 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
-from django.forms import ModelForm
-from .models import Contact
+from .models import Contact, Comment
 from crispy_forms.helper import FormHelper
+
 
 class SignupForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
@@ -27,3 +27,8 @@ class ContactForm(forms.ModelForm):
         'email'  : forms.TextInput(attrs = {'type':'email','id':'registerEmail','placeholder':'MawuliOwusu@gmail.com'}),
         'message' :  forms.Textarea(attrs = {'class':'form-control rounded-0','id':'exampleFormControlTextarea1','rows':'10','placeholder':'What would you like to tell us?'}),}
          
+
+# class CommentForm(forms.ModelForm):
+#     class Meta:
+#         model = Comment
+#         fields = ('body')
