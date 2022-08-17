@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
-  
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #fffafa;">
+  {% include 'navbar.html' %}
+  <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #fffafa;">
     <div class="container-fluid">
       <a class=" navbar-brand " href="{% url 'home' %}" style="padding: 10px;">
         <span style="color: #801B4B;">P</span>
@@ -123,7 +123,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
 <!-- CARD!! -->
 <br>
@@ -150,7 +150,7 @@
         aria-controls="pills-Login" aria-selected="false">Log In</a>
     </li>
      </ul>
-      <form action="" method="post">
+      <form action="" method="POST">
         {% csrf_token %}
         <!-- Name input -->
         <div class="form-outline mb-4">
